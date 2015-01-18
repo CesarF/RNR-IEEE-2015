@@ -1,0 +1,343 @@
+body 
+{
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* 03. NAVIGATION ================================================== */
+
+nav #logo {	
+	float:left;
+	z-index: 99999;
+	}
+
+nav #logo img{
+	width: 70px;
+}
+	
+nav {	
+	z-index: 999;
+	width: 100%;
+	height: 80px;
+	background: #16a085;}
+
+
+/* Some stylesheet reset */
+#nav, #nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* The main navigation bar */
+#nav {
+	width: 100%; /* The menu will take the width of its container */}
+
+#nav>li {
+	float: right;
+	position: relative;
+	padding: 10px 0;
+	padding-right: 6px;}
+
+/* The main navigation links */
+#nav>li>a {
+	/* Layout */
+	display: block;
+	padding: 0px 0px 0 30px;
+
+	/* Typography */
+	font-family: 'latolight', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	/* Transitions */
+	-webkit-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-ms-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-moz-transition: color .2s ease-in, border-top-color .2s ease-in;
+	-o-transition: color .2s ease-in, border-top-color .2s ease-in;
+	transition: color .2s ease-in, border-top-color .2s ease-in;}
+
+/* The hover state of the links */
+#nav li:hover a, #nav li .selected {
+	color: #CCC;}
+
+#nav>li.dropdown>a {
+	padding-right: 28px;}
+
+/* The arrow indicating a dropdown menu */
+.dropdown>a::after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 0;
+	width: 0;
+	border: 4px solid transparent;
+	border-top-color: inherit;
+	right: 11px;
+	top: 21px;}
+
+/*  The submenus */
+#nav ul {
+	display: block;
+	position: absolute;
+	top: 43px;
+	left: -9999px;
+	opacity: 0;
+	background: #272727;
+	cursor: pointer;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-transition: opacity .22s ease-in;
+	-ms-transition: opacity .22s ease-in;
+	-moz-transition: opacity .22s ease-in;
+	-o-transition: opacity .22s ease-in;
+	transition: opacity .22s ease-in;}
+
+#nav ul li {	
+	display: block;
+	position: absolute;
+	height: 0px;
+	-webkit-transition: height .15s ease-in;
+	-ms-transition: height .15s ease-in;
+	-moz-transition: height .15s ease-in;
+	-o-transition: height .15s ease-in;
+	transition: height .15s ease-in;}
+
+/* The submenu appears when its parent is hovered */
+#nav>li:hover>ul {
+	left: 0px;
+	opacity: 1;}
+
+#nav li:hover>ul>li {
+	position: relative;
+	height: 31px;}
+
+/* The submenu links */
+#nav ul li a {
+	/* Layout */
+	display: block;
+	padding: 7px 12px 7px 22px;
+	width: 130px;
+
+	/* Typography */
+	font-family: 'latolight', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: #aaa;
+	
+	/* Background & effects */
+	background: #FFF;
+	-webkit-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-ms-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-moz-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	-o-transition: color .2s ease-in, border-left-color .2s ease-in;;
+	transition: color .2s ease-in, border-left-color .2s ease-in;;}
+
+/* Rounded corners for the last submenu link */
+#nav ul>li:last-child>a {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;}
+
+/* Changing the link color on hover */
+#nav ul li:hover>a {
+	color: #ccc;}
+ 
+.cbp-af-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #16a085;
+	z-index: 10000;
+	height: 120px;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;}
+
+/* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
+
+.cbp-af-header #logo {
+	padding:30px 0px 0px 70px; 
+	width:90px;}
+
+.cbp-af-header #nav a {
+	line-height: 100px;}
+
+.cbp-af-header.cbp-af-header-shrink #logo { 
+	padding:20px 20px 0px 0px; 
+	width:60px;}
+
+/* Transitions and class for reduced height */
+
+.cbp-af-header #logo,
+.cbp-af-header #nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;}
+
+.cbp-af-header.cbp-af-header-shrink {
+	height: 80px;}
+
+.cbp-af-header.cbp-af-header-shrink #nav a {
+	line-height: 60px;}
+
+
+/* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
+
+.mobile-menu {
+	display:none;
+	background: #FFF;
+	width:100%;
+	z-index: 99999999;
+	position: absolute;
+	top:0;
+	border-bottom: 1px solid #BBB;}
+	
+
+.mobile-menu .row {
+	background: #F5F5F5;
+	padding-top:10px;
+	padding-bottom: 10px;}
+	
+
+.mobile-menu-inner .nav-mobile li {
+	color: #4D4C4C;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	margin-top: 2%;
+	background-color: #fFF;
+	border-bottom: 4px solid #e5e5e5;
+	padding: 6px 20px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;	}
+	
+
+.mobile-menu-inner .nav-mobile li:hover {
+	background-color: #F17C71;
+	border-bottom: 4px solid #E95855;	}
+	
+
+.mobile-menu-inner .nav-mobile li:hover a {
+	color: #fFF;	}
+	
+
+.mobile-menu-inner .nav-mobile li a {
+	display: block;
+	width:100%;
+	color: #4D4C4C;
+	text-transform:uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;	}
+	
+
+#collapse {
+	display:none;}
+
+
+.mobile-menu h3 {
+	background: url("../img/line.gif") no-repeat scroll center 55px transparent;
+	color: #4D4C4C;
+	font: 16px 'Lato', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;}
+
+/* Styling for mobile devices */
+
+@media screen and (max-width: 768px) {
+
+	/* Display the mobile menu */	
+	.mobile-menu {display:block;}	
+
+	form  { overflow:hidden; }	
+	/* Header Lower height & Color*/	
+	#header { margin-top: 0px; padding:150px 0 100px 0; background-color: #353847; }
+	
+	/* Not Showing the Navigation */
+	.cbp-af-header {display: none;}		
+}
+
+/* 14. MEDIA QUERIES PARA TABLETS (EN SU MAYORIA PARA EL HEADER RESPONSIVE) ================================================== */
+
+@media only screen and (min-width : 769px) and (max-width : 843px) {
+
+	#nav>li>a
+	{
+	 	font-size: 9px;		 
+	}
+}
+
+@media only screen and (min-width : 844px) and (max-width : 889px) {
+
+	#nav>li>a
+	{
+	 	font-size: 10px;		 
+	}
+}
+
+@media only screen and (min-width : 890px) and (max-width : 959px) {
+
+	#nav>li>a
+	{
+	 	font-size: 11px;		 
+	}
+}
+
+@media only screen and (min-width : 960px) and (max-width : 1024px) {
+
+	#nav>li>a
+	{
+	 	font-size: 12px;		 
+	}
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1112px) {
+
+	#nav>li>a
+	{
+	 	font-size: 13px;		 
+	}
+}
+
+@media only screen and (min-width : 1113px) and (max-width : 1150px) {
+
+	#nav>li>a
+	{
+	 	font-size: 13px;		 
+	}
+}
+
+@media only screen and (min-width : 1151px) and (max-width : 1207px) {
+
+	#nav>li>a
+	{		
+	 	font-size: 14px;		 
+	}
+}
+
+@media only screen and (min-width : 1208px) and (max-width : 1280px) {
+
+	#nav>li>a
+	{		
+	 	font-size: 14px;		 
+	}
+}
+
+@media only screen and (min-width : 1281px) and (max-width : 1360px) {
+
+	#nav>li>a
+	{
+		font-size: 15px;		 
+	}
+}
