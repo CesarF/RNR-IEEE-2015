@@ -274,7 +274,8 @@ nav {
 
 	#nav>li>a
 	{
-	 	font-size: 9px;		 
+		padding-left: 0px;
+	 	font-size: 11px;		 
 	}
 }
 
@@ -282,7 +283,8 @@ nav {
 
 	#nav>li>a
 	{
-	 	font-size: 10px;		 
+		padding-left: 9px;
+	 	font-size: 11px;		 
 	}
 }
 
@@ -290,7 +292,8 @@ nav {
 
 	#nav>li>a
 	{
-	 	font-size: 11px;		 
+		padding-left: 4px;
+	 	font-size: 12px;		 
 	}
 }
 
@@ -298,7 +301,8 @@ nav {
 
 	#nav>li>a
 	{
-	 	font-size: 12px;		 
+		padding-left: 6px;
+	 	font-size: 13px;		 
 	}
 }
 
@@ -306,30 +310,26 @@ nav {
 
 	#nav>li>a
 	{
-	 	font-size: 13px;		 
+		padding-left: 8px;
+	 	font-size: 14px;		 
 	}
 }
 
-@media only screen and (min-width : 1113px) and (max-width : 1150px) {
+@media only screen and (min-width : 1113px) and (max-width : 1207px) {
 
 	#nav>li>a
 	{
+		padding-left: 23px;
 	 	font-size: 13px;		 
-	}
-}
-
-@media only screen and (min-width : 1151px) and (max-width : 1207px) {
-
-	#nav>li>a
-	{		
-	 	font-size: 14px;		 
+			 
 	}
 }
 
 @media only screen and (min-width : 1208px) and (max-width : 1280px) {
 
 	#nav>li>a
-	{		
+	{	
+		padding-left: 28px;
 	 	font-size: 14px;		 
 	}
 }
@@ -338,6 +338,7 @@ nav {
 
 	#nav>li>a
 	{
+		padding-left: 31px;
 		font-size: 15px;		 
 	}
 }
