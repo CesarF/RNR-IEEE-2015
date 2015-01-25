@@ -10,12 +10,28 @@
 
     <meta name="author" content="Fabian Stevens Varon">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="./favicon.png" />		
+    <link rel="shortcut icon" href="./favicon.png" />	
+
+	
+    <!-- Css Files ############################################### -->
+
     <!-- Font Awesome Iconos vectoriales -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Template  -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Normalize resetea el css  -->
+    <link rel="stylesheet" href="css/normalize.css">
 
+
+    <!-- Js Files ############################################### -->
+
+    <!-- Jquery Files -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<!-- Slide -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	
 </head>
 <body>
 
@@ -69,7 +85,45 @@
 
 <!-- END Header ############################################### -->
 
+ <!--Slider ############################################### -->
+<div class="callbacks_container">
+	 <ul class="rslides" id="slider">
+		  <li><img src="img/img1.jpg" alt=""></li>
+		  <li><img src="img/img2.jpg" alt=""></li>
+		  <li><img src="img/img3.jpg" alt=""></li>
+		  <li><img src="img/img4.jpg" alt=""></li>
+		  <li><img src="img/img5.jpg" alt=""></li>
+		  <li><img src="img/img6.jpg" alt=""></li>
+		  <li><img src="img/img7.jpg" alt=""></li>	 
+	</ul>
+</div>
+  
+<!--/Slider ###############################################-->
+
 </div> <!-- END Div Container ###############################################  -->
+
+<!-- Slider script -->
+<script>
+
+    $(function () {
+
+      // Slideshow 4
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
 
 
 

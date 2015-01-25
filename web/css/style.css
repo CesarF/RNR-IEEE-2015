@@ -18,7 +18,7 @@ nav {
 	z-index: 999;
 	width: 100%;
 	height: 80px;
-	background: #16a085;}
+	background: #ED1B24;}
 
 
 /* Some stylesheet reset */
@@ -57,6 +57,8 @@ nav {
 	-moz-transition: color .2s ease-in, border-top-color .2s ease-in;
 	-o-transition: color .2s ease-in, border-top-color .2s ease-in;
 	transition: color .2s ease-in, border-top-color .2s ease-in;}
+
+	#nav>li>a:hover{color:#FFD504 !important ;}
 
 /* The hover state of the links */
 #nav li:hover a, #nav li .selected {
@@ -138,17 +140,13 @@ nav {
 #nav ul>li:last-child>a {
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;}
-
-/* Changing the link color on hover */
-#nav ul li:hover>a {
-	color: #ccc;}
  
 .cbp-af-header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #16a085;
+	background: #ED1B24;
 	z-index: 10000;
 	height: 120px;
 	border-bottom: 1px solid #e5e5e5;
@@ -184,9 +182,123 @@ nav {
 .cbp-af-header.cbp-af-header-shrink #nav a {
 	line-height: 60px;}
 
+/*04 Slide  ============================================================================== */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.callbacks_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+  }
+
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.callbacks li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.callbacks img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+  }
+
+.callbacks .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(0,0,0, .8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+  }
+
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("themes.gif") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.callbacks_nav:active {
+  opacity: 1.0;
+  }
+
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+@media screen and (max-width: 600px) {
+  
+  .callbacks_nav {
+    top: 47%;
+    }
+  }
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
-
 .mobile-menu {
 	display:none;
 	background: #FFF;
@@ -245,27 +357,103 @@ nav {
 
 
 .mobile-menu h3 {
-	background: url("../img/line.gif") no-repeat scroll center 55px transparent;
+	background: url("../img/line.gif") no-repeat scroll center 21px transparent;
 	color: #4D4C4C;
 	font: 16px 'Lato', sans-serif;
 	letter-spacing: 2px;
 	font-weight: 700;
+	padding-bottom: 5px;
 	text-align: center;
 	text-transform: uppercase;}
 
+
 /* Styling for mobile devices */
+
 
 @media screen and (max-width: 768px) {
 
-	/* Display the mobile menu */	
+	/* Display the mobile menu */
+	
 	.mobile-menu {display:block;}	
 
-	form  { overflow:hidden; }	
-	/* Header Lower height & Color*/	
+	form  { overflow:hidden; }
+	
+	/* Header Lower height & Color*/
+	
 	#header { margin-top: 0px; padding:150px 0 100px 0; background-color: #353847; }
 	
 	/* Not Showing the Navigation */
-	.cbp-af-header {display: none;}		
+
+	.cbp-af-header {display: none;}
+	
+	/* Align Center the interblock Text & Button */
+	
+	.container .interblock_footer , .container .interblock_footer .buttongo {text-align: center;}
+	
+	/* Lower height of the interblock footer */
+	
+	.container #interblock_footer {padding:0px 0 20px 0 ;}
+	
+	/* Not Showing the text on the interblock Footer */
+	
+	.container #interblock_footer p, #interblock_footer h2 {display: none;}
+	
+	/* Bigger Social Icon */
+	
+	#interblock_footer .icon { font-size: 40px; text-align: center; }
+	
+    #interblock_footer ul {text-align: center;}
+    
+    /* Align center the Contact Info footer text */
+    
+    #contact_info p {text-align: center;}
+    
+    /* 100% Width of works Items & IMG */
+    
+    #projects_grid .items .item {width: 100%; margin-left:0;}
+    
+    #projects_grid .items .item img {width:100%;}
+    
+    /* Lower margin-top for better scrolling */
+    
+    .slide_portfolio .closeit { cursor: pointer; margin-top:10px; margin-bottom:0px;}
+    
+    /* Padding on Portfolio Detail Text */
+    
+    #portfolio_detail p {padding: 0 20px;}
+    
+    /* Filter Function takes all the width */
+    
+    #projects_grid .filter li a { width: 100%; margin-top: 2%;}
+    
+    /* Team Row takes all the width */
+    
+    #team .row {width:100%;}
+    
+    /* 100% of the Member Pictures */
+    
+    .row .member img { width: 100%; height:auto; }
+    
+    /* Not Showing the interblock button Go To ( useless with iphone ) */
+                
+    .buttongo {display: none;}
+
+    /* Service Settings */
+    
+    .service .service {width:100%; margin-bottom: 2%; margin-top: 2%;}
+    
+    /* Align center the Title of each Service */
+    
+    .service .service h3 {text-align: center;}
+    
+    /* Don't show the Text of each Service ( too much for scrolling ) */
+    
+    .service .service p {display: none;}
+    
+    /* 100% Width of Each Service Picture */
+    
+    .service .service img {width:100%; }
+       
 }
 
 /* 14. MEDIA QUERIES PARA TABLETS (EN SU MAYORIA PARA EL HEADER RESPONSIVE) ================================================== */
