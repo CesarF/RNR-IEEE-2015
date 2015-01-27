@@ -3,6 +3,10 @@ body
     font-family: 'Helvetica', sans-serif;
 }
 
+html {
+  background: #222 url("images/bg.png") repeat;
+}
+
 /* 03. NAVIGATION ================================================== */
 
 nav #logo {	
@@ -149,7 +153,6 @@ nav {
 	background: #ED1B24;
 	z-index: 10000;
 	height: 120px;
-	border-bottom: 1px solid #e5e5e5;
 	overflow: hidden;
 	-webkit-transition: height 0.3s;
 	-moz-transition: height 0.3s;
@@ -208,14 +211,6 @@ nav {
   float: left;
   }
 
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
-
 .callbacks_container {
   margin-bottom: 50px;
   position: relative;
@@ -246,6 +241,7 @@ nav {
   height: auto;
   width: 100%;
   border: 0;
+  padding-top: 120px;
   }
 
 .callbacks .caption {
@@ -385,6 +381,8 @@ nav {
 	/* Not Showing the Navigation */
 
 	.cbp-af-header {display: none;}
+
+	.callbacks img {padding-top: 58px;}
 	
 	/* Align Center the interblock Text & Button */
 	
