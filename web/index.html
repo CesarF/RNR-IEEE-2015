@@ -6,38 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Titulo de la página -->
 	<title>RNR Bogotá 2015</title>
-	
-
     <meta name="author" content="Fabian Stevens Varon">
     <!-- Favicon-->
     <link rel="shortcut icon" href="./favicon.png" />	
-
 	
     <!-- Css Files ############################################### -->
-
     <!-- Font Awesome Iconos vectoriales -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Template  -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Normalize resetea el css  -->
     <link rel="stylesheet" href="css/normalize.css">
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 
     <!-- Js Files ############################################### -->
-
     <!-- Jquery Files -->
-    <script src="js/jquery.min.js"></script>
-	<script src="js/jquery-1.9.1.min.js"></script>
-	<!-- Slide -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<!-- Slide -->	
 	<script src="js/responsiveslides.min.js"></script>
-	
+	 <!-- Menu -->
+	<script src="js/classie.js" type="text/javascript"></script>
+	<!-- Main Javascript File -->
+	<script src="js/main.js" type="text/javascript"></script> 
+
 </head>
 <body>
-
-<!-- Div Container ###############################################  -->
-
-<div class="container">
 
 <!-- Header MOVIL ############################################### -->
 
@@ -46,15 +41,15 @@
 			<div class="row">
 				<div class="mobile-menu-inner">
 					<ul class="nav-mobile">
-	                    <li><a href="#contacto">Contacto</a></li>
-	                    <li><a href="#patrocinadores">Patrocinadores</a></li>
-	                    <li><a href="#desarroladores">Desarrolladores</a></li>
-	                    <li><a href="#comite">Comité Organizador</a></li>
-	                    <li><a href="#lugar">Lugar</a></li>
-	                    <li><a href="#agenda">Agenda</a></li>
-	                    <li><a href="#historia">Historia</a></li>
-	                    <li><a href="#rnr">RNR</a></li>
 						<li><a href="#inicio">Incio</a></li>
+	                    <li><a href="#rn">RNR</a></li>
+	                    <li><a href="#historia">Historia</a></li>
+	                    <li><a href="#agenda">Agenda</a></li>
+	                    <li><a href="#lugar">Lugar</a></li>
+	                    <li><a href="#comite">Comité Organizador</a></li>
+	                    <li><a href="#desarroladores">Desarrolladores</a></li>
+	                    <li><a href="#patrocinadores">Patrocinadores</a></li>
+	                    <li><a href="#contacto">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
@@ -68,7 +63,7 @@
 
 		<div class="cbp-af-header">		
 			<nav class="row">
-				 <div id="logo"><a href="#"><img alt="Logo Temporal" src="./img/logo.png"></a></div>				
+				 <div id="logo"><a href="index.html"><img alt="Logo Temporal" src="./img/logo.png"></a></div>				
 				 <ul id="nav">
 	                  <li><a href="#contacto">Contacto</a></li>
 	                  <li><a href="#patrocinadores">Patrocinadores</a></li>
@@ -77,8 +72,8 @@
 	                  <li><a href="#lugar">Lugar</a></li>
 	                  <li><a href="#agenda">Agenda</a></li>
 	                  <li><a href="#historia">Historia</a></li>
-	                  <li><a href="#rnr">RNR</a></li>
-					  <li><a href="#inicio">Incio</a></li>
+	                  <li><a href="#RNR">RNR</a></li>
+					  <li><a href="#logo">Incio</a></li>
 				 </ul>			 
 			</nav>
 		</div> 
@@ -100,7 +95,44 @@
   
 <!--/Slider ###############################################-->
 
-</div> <!-- END Div Container ###############################################  -->
+<!-- banner-bottom -->	
+<section id="RNR">
+	<div class="bottom-grids">
+		<div class="col-md-4 bottom-grid bottom-grid-left">
+						
+			<i class="fa fa-question fa-5x"></i>
+				<h4>Que es La RNR</h4>
+					<p>La Reunión Nacional de Ramas Estudiantiles IEEE Sección Colombia es un 
+						evento organizado por una o varias Ramas Estudiantiles pertenecientes a la
+						Sección Colombia de la Región 9 de IEEE.
+
+						Este evento tiene como principal objetivo promover la labor de IEEE y
+						profesionalizar en términos no académicos a los estudiantes universitarios
+						del país buscando así crear lideres innovadores y emprendedores e incentivar
+						el ingenio y la labor social.
+
+						IEEE, mejorando la tecnología para el benficio de la humanidad.
+					</p>
+		</div>
+			
+		<div class="col-md-4 bottom-grid bottom-grid-middle">
+			<i class="fa fa-check fa-5x"></i>
+				<h4>¿Por qué Asistir?</h4>
+					<p>Lorem Ipsum is that it has a 
+					   more-or-less normal more-or-less normal
+					   distribution of lettersmore-or-less normal
+					</p>
+		</div>
+		<div class="col-md-4 bottom-grid bottom-grid-right">						
+			<i class="fa fa-th-list fa-5x"></i>
+			<h4>Que podrás Encontrar</h4>
+			<p>Lorem Ipsum is that it has a 
+				more-or-less normal more-or-less normal 
+				distribution of lettersmore-or-less normal
+			</p>
+		</div>
+	</div>			
+</section>
 
 <!-- Slider script -->
 <script>

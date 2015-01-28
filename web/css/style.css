@@ -4,8 +4,10 @@ body
 }
 
 html {
-  background: #222 url("images/bg.png") repeat;
+  background: #222 url("bg.png") repeat;
 }
+
+p{text-align: justify;}
 
 /* 03. NAVIGATION ================================================== */
 
@@ -15,7 +17,7 @@ nav #logo {
 	}
 
 nav #logo img{
-	width: 70px;
+	width: 170px;
 }
 	
 nav {	
@@ -161,14 +163,14 @@ nav {
 /* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
 
 .cbp-af-header #logo {
-	padding:30px 0px 0px 70px; 
+	padding:11px 0px 0px 31px; 
 	width:90px;}
 
 .cbp-af-header #nav a {
 	line-height: 100px;}
 
 .cbp-af-header.cbp-af-header-shrink #logo { 
-	padding:20px 20px 0px 0px; 
+	padding:0px 0px 0px 31px; 
 	width:60px;}
 
 /* Transitions and class for reduced height */
@@ -290,9 +292,32 @@ nav {
 @media screen and (max-width: 600px) {
   
   .callbacks_nav {
-    top: 47%;
+    top: 74%;
     }
   }
+
+/* 05. INFO WHAT'S RNR ... ================================================== */
+
+/*-- banner-bottom --*/
+.bottom-grid{
+	text-align:center;
+}
+.bottom-grid h4{
+	font-size:26px;
+	color:#FFF;
+	font-weight: 700;
+	margin: 1em 0;
+	text-transform:uppercase;
+}
+.bottom-grid p{
+	font-size: 16px;
+	color: #f4f4f4;
+	margin:0;
+	line-height: 1.8em;
+}
+.bottom-grid i {
+	color: #f4f4f4;
+}
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
 .mobile-menu {
@@ -314,7 +339,6 @@ nav {
 .mobile-menu-inner .nav-mobile li {
 	color: #4D4C4C;
 	display: block;
-	width: 100%;
 	cursor: pointer;
 	margin-top: 2%;
 	background-color: #fFF;
@@ -341,6 +365,7 @@ nav {
 	width:100%;
 	color: #4D4C4C;
 	text-transform:uppercase;
+	text-decoration:none;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
@@ -382,76 +407,11 @@ nav {
 
 	.cbp-af-header {display: none;}
 
-	.callbacks img {padding-top: 58px;}
-	
-	/* Align Center the interblock Text & Button */
-	
-	.container .interblock_footer , .container .interblock_footer .buttongo {text-align: center;}
-	
-	/* Lower height of the interblock footer */
-	
-	.container #interblock_footer {padding:0px 0 20px 0 ;}
-	
-	/* Not Showing the text on the interblock Footer */
-	
-	.container #interblock_footer p, #interblock_footer h2 {display: none;}
-	
-	/* Bigger Social Icon */
-	
-	#interblock_footer .icon { font-size: 40px; text-align: center; }
-	
-    #interblock_footer ul {text-align: center;}
-    
-    /* Align center the Contact Info footer text */
-    
-    #contact_info p {text-align: center;}
-    
-    /* 100% Width of works Items & IMG */
-    
-    #projects_grid .items .item {width: 100%; margin-left:0;}
-    
-    #projects_grid .items .item img {width:100%;}
-    
-    /* Lower margin-top for better scrolling */
-    
-    .slide_portfolio .closeit { cursor: pointer; margin-top:10px; margin-bottom:0px;}
-    
-    /* Padding on Portfolio Detail Text */
-    
-    #portfolio_detail p {padding: 0 20px;}
-    
-    /* Filter Function takes all the width */
-    
-    #projects_grid .filter li a { width: 100%; margin-top: 2%;}
-    
-    /* Team Row takes all the width */
-    
+	.callbacks img {padding-top: 56px;}
+	    
+   
     #team .row {width:100%;}
     
-    /* 100% of the Member Pictures */
-    
-    .row .member img { width: 100%; height:auto; }
-    
-    /* Not Showing the interblock button Go To ( useless with iphone ) */
-                
-    .buttongo {display: none;}
-
-    /* Service Settings */
-    
-    .service .service {width:100%; margin-bottom: 2%; margin-top: 2%;}
-    
-    /* Align center the Title of each Service */
-    
-    .service .service h3 {text-align: center;}
-    
-    /* Don't show the Text of each Service ( too much for scrolling ) */
-    
-    .service .service p {display: none;}
-    
-    /* 100% Width of Each Service Picture */
-    
-    .service .service img {width:100%; }
-       
 }
 
 /* 14. MEDIA QUERIES PARA TABLETS (EN SU MAYORIA PARA EL HEADER RESPONSIVE) ================================================== */
@@ -460,8 +420,8 @@ nav {
 
 	#nav>li>a
 	{
-		padding-left: 0px;
-	 	font-size: 11px;		 
+		padding-left: 1px;
+	 	font-size: 9px;		 
 	}
 }
 
@@ -469,7 +429,7 @@ nav {
 
 	#nav>li>a
 	{
-		padding-left: 9px;
+		padding-left: 6px;
 	 	font-size: 11px;		 
 	}
 }
@@ -478,8 +438,8 @@ nav {
 
 	#nav>li>a
 	{
-		padding-left: 4px;
-	 	font-size: 12px;		 
+		padding-left: 11px;
+	 	font-size: 11px;		 
 	}
 }
 
@@ -488,7 +448,7 @@ nav {
 	#nav>li>a
 	{
 		padding-left: 6px;
-	 	font-size: 13px;		 
+	 	font-size: 12px;		 
 	}
 }
 
@@ -497,7 +457,7 @@ nav {
 	#nav>li>a
 	{
 		padding-left: 8px;
-	 	font-size: 14px;		 
+	 	font-size: 13px;		 
 	}
 }
 
