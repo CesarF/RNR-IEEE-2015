@@ -289,8 +289,7 @@ nav {
   right: 0;
   }
 
-@media screen and (max-width: 600px) {
-  
+@media screen and (max-width: 600px) {  
   .callbacks_nav {
     top: 74%;
     }
@@ -298,25 +297,59 @@ nav {
 
 /* 05. INFO WHAT'S RNR ... ================================================== */
 
-/*-- banner-bottom --*/
-.bottom-grid{
-	text-align:center;
+article{
+   float:left;
+   width:30%;
 }
-.bottom-grid h4{
+
+section{
+
+   margin:10px auto;
+   overflow:hidden;
+   padding:8px 0;
+   text-align:center;
+   width:90%;
+   color: #fff;
+}
+
+.fila1{padding-right: 3%;
+padding-left: 1%}
+.fila2{padding-right: 3%;}
+.fila3{padding-right: 3%;}
+
+section article h4{
+	text-align: center;
+	color: #FFF;
 	font-size:26px;
 	color:#FFF;
 	font-weight: 700;
 	margin: 1em 0;
 	text-transform:uppercase;
 }
-.bottom-grid p{
-	font-size: 16px;
+
+section article p{
 	color: #f4f4f4;
+	font-size: 16px;
 	margin:0;
 	line-height: 1.8em;
 }
-.bottom-grid i {
-	color: #f4f4f4;
+
+@media screen and (max-width:1000px){
+   section{
+      width:100%;
+   }
+}
+
+@media screen and (max-width:700px){
+   article{
+      width:100%;
+   }
+}
+
+@media screen and (max-width:768px){
+   section{
+     padding:0px 0;
+   }
 }
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
