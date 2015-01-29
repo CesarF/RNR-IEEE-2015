@@ -11,12 +11,12 @@ p{text-align: justify;}
 
 /* 03. NAVIGATION ================================================== */
 
-nav #logo {	
+nav #Logo {	
 	float:left;
 	z-index: 99999;
 	}
 
-nav #logo img{
+nav #Logo img{
 	width: 170px;
 }
 	
@@ -162,20 +162,20 @@ nav {
 
 /* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
 
-.cbp-af-header #logo {
+.cbp-af-header #Logo {
 	padding:11px 0px 0px 31px; 
 	width:90px;}
 
 .cbp-af-header #nav a {
 	line-height: 100px;}
 
-.cbp-af-header.cbp-af-header-shrink #logo { 
+.cbp-af-header.cbp-af-header-shrink #Logo { 
 	padding:0px 0px 0px 31px; 
 	width:60px;}
 
 /* Transitions and class for reduced height */
 
-.cbp-af-header #logo,
+.cbp-af-header #Logo,
 .cbp-af-header #nav a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -350,6 +350,171 @@ section article p{
    section{
      padding:0px 0;
    }
+}
+
+/*06 SEPARATE ARROWS ========================================================================*/
+
+article{
+   float:left;
+   width:30%;
+}
+
+section{
+
+   margin:10px auto;
+   overflow:hidden;
+   padding:8px 0;
+   text-align:center;
+   width:90%;
+   color: #fff;
+}
+
+.fila1{padding-right: 3%;
+padding-left: 1%}
+.fila2{padding-right: 3%;}
+.fila3{padding-right: 3%;}
+
+section article h4{
+	text-align: center;
+	color: #FFF;
+	font-size:26px;
+	color:#FFF;
+	font-weight: 700;
+	margin: 1em 0;
+	text-transform:uppercase;
+}
+
+section article p{
+	color: #f4f4f4;
+	font-size: 16px;
+	margin:0;
+	line-height: 1.8em;
+}
+
+@media screen and (max-width:1000px){
+   section{
+      width:100%;
+   }
+}
+
+@media screen and (max-width:700px){
+   article{
+      width:100%;
+   }
+}
+
+@media screen and (max-width:768px){
+   section{
+     padding:0px 0;
+   }
+}
+
+.arrow-separator
+{
+	position: relative;
+}
+
+.arrow-separator:after
+	{
+		top: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-width: 12px;
+		left: 50%;
+		margin-left: -12px;
+		z-index: 11;
+	}
+	
+	.arrow-white:after
+	{
+		border-color: #111111 rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
+	}
+
+/*07 Agenda ========================================================================*/
+
+.AgendaSect{
+
+   margin:10px auto;
+   overflow:hidden;
+   padding:8px 0;
+   text-align:center;
+   width:100%;
+   color: #fff;
+}
+
+.Agendafila1
+{
+	padding-left: 10%;
+}
+
+.Agendafila2
+{
+	padding-right: 0%;
+}
+
+.Agendafila3
+{
+	padding-right: 0%;
+}
+
+.AgendaArt1
+{
+background-color:#a6008f;
+width: 200px;
+height: 200px;
+}
+
+
+.AgendaArt2
+{
+background-color: #01C5BE;
+width: 200px;
+height: 200px;
+}
+
+.AgendaArt3
+{
+background-color: #11f049;
+width: 200px;
+height: 200px;
+}
+
+.Agendah4{
+	text-align: center;
+	font-size:40px;
+	color:#FFF;
+	font-weight: 700;
+	margin: 0.7em 0;
+	text-transform:uppercase;
+	padding-top: 1%;
+}
+
+.AgendaP{
+	color: #f4f4f4;
+	font-size: 6em;
+	margin:0;
+	line-height: 2.2em;
+	text-align: center;
+	padding-left: 7%;   
+}
+
+@media screen and (max-width:1000px){
+   section{
+      width:100%;
+   }
+}
+
+@media screen and (max-width:700px){
+   article{
+      width:100%;
+   }
+}
+
+@media screen and (max-width:768px){
 }
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
