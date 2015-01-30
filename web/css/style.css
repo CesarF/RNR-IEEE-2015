@@ -243,7 +243,7 @@ nav {
   height: auto;
   width: 100%;
   border: 0;
-  padding-top: 120px;
+  padding-top: 60px;
   }
 
 .callbacks .caption {
@@ -296,6 +296,10 @@ nav {
   }
 
 /* 05. INFO WHAT'S RNR ... ================================================== */
+
+.WhatsRNR{
+	min-height: 500px;
+}
 
 article{
    float:left;
@@ -444,6 +448,8 @@ section article p{
    text-align:center;
    width:100%;
    color: #fff;
+   min-height:500px;
+   background: url("agenda.jpg") no-repeat;
 }
 
 .Agendafila1
@@ -468,7 +474,7 @@ section article p{
 
 .AgendaArt1
 {
-background-color:#a6008f;
+background-color:#03AF6D;
 width: 200px;
 height: 200px;
 }
@@ -476,14 +482,15 @@ height: 200px;
 
 .AgendaArt2
 {
-background-color: #01C5BE;
+background-color: #f4e000;
+color: black;
 width: 200px;
 height: 200px;
 }
 
 .AgendaArt3
 {
-background-color: #11f049;
+background-color: #f4001b;
 width: 200px;
 height: 200px;
 }
@@ -491,7 +498,7 @@ height: 200px;
 .Agendah4{
 	text-align: center;
 	font-size:40px;
-	color:#FFF;
+	color:#000;
 	font-weight: 700;
 	margin: 0.7em 0;
 	text-transform:uppercase;
@@ -504,7 +511,7 @@ height: 200px;
 	margin:0;
 	line-height: 2.2em;
 	text-align: center;
-	padding-left: 7%;   
+	padding-left: 1%;   
 }
 
 @media screen and (max-width:1000px){
