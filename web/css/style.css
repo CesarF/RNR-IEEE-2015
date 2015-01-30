@@ -9,10 +9,6 @@ html {
 
 p{text-align: justify;}
 
-@font-face {
-    font-family: Amaranth-regular;
-    src: url(fonts/Amaranth-Regular.ttf);
-}
 
 /* 03. NAVIGATION ================================================== */
 
@@ -509,7 +505,6 @@ height: 200px;
 	margin: 0.7em 0;
 	text-transform:uppercase;
 	padding-top: 1%;
-	font-family: Amaranth-Regular;
 }
 
 .AgendaP{
@@ -564,10 +559,19 @@ padding-top: 2% !important;
 
 @media screen and (max-width:768px){
 	.Agendafila1{
-	padding-left: 6% ;
-	padding-right: 5%; 
+		padding-left: 6% ;
+		padding-right: 5%; 
+	}
 }
-}
+
+/*08. INTINERARIO ========================================================================*/
+
+.Oculto{
+	width: 100%;
+	max-height: 500px;
+	background-color: red;
+} 
+
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
 .mobile-menu {

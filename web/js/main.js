@@ -60,3 +60,34 @@ var cbpAnimatedHeader = (function() {
 		});
 
 });
+// Oculta y muestra Div agenda
+function mostrar() {
+          div = document.getElementById('Oculto');
+          if ( div.style.display == 'none')     {        
+            
+            	div.style.display = 'block';
+           }
+          else {             
+            div.style.display = 'none';
+          }
+        }
+
+ // Slider script 
+ $(function () {
+
+	      // Slideshow 4
+	      $("#slider").responsiveSlides({
+	        auto: true,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks",
+	        before: function () {
+	          $('.events').append("<li>before event fired.</li>");
+	        },
+	        after: function () {
+	          $('.events').append("<li>after event fired.</li>");
+	        }
+	      });
+
+	    });

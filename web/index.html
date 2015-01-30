@@ -74,7 +74,7 @@
 	                  <li id="color2"><a href="#Agenda">Agenda</a></li>
 	                  <li><a href="#Historia">Historia</a></li>
 	                  <li id="color2"><a href="#RNR">RNR</a></li>
-					  <li><a href="#Logo">Incio</a></li>
+					  <li><a href="index.html">Incio</a></li>
 				 </ul>			 
 			</nav>
 		</div> 
@@ -146,21 +146,23 @@
 
 <!-- Agenda			  ############################################### -->
 		<section id="Agenda" class="AgendaSect">
+
 		<h4 class="Agendah4">Agenda</h4>
+
       	<article class="Agendafila1"> 
-      	<article class="AgendaArt1">
-				<p class="AgendaP">23</p>      		
+     	 <a href="#Oculto" </a>	<article id="Art1" class="AgendaArt1" onclick="javascript:mostrar();"> 
+      		<p class="AgendaP">23</p>
       	</article>       
       		</article>
 
-      <article class="Agendafila2">
-      <article class="AgendaArt2">
+      <article class="Agendafila2">      
+      <a href="#Oculto" </a>	<article id="Art2" class="AgendaArt2" onclick="javascript:mostrar();"> 
          <p class="AgendaP">24</p>      	
       </article>
       </article>
 
-      <article class="Agendafila3">
-      <article class="AgendaArt3">
+      <article class="Agendafila3">      
+      <a href="#Oculto" </a>	<article id="Art3" class="AgendaArt3" onclick="javascript:mostrar();"> 
       	 <p class="AgendaP">25</p>
       </article>
       </article>
@@ -169,34 +171,30 @@
 <!-- END Agenda 	  ###############################################-->
 
 <!-- Intinerario	  ############################################### -->
+	<div id="Oculto" style="display:none;" >
+
+	<!-- Slider 		  ############################################### -->
+	<div class="callbacks_container">
+	<ul class="rslides" >
+	<li><img src="img/img1.jpg" alt=""></li>
+	<li><img src="img/img2.jpg" alt=""></li>
+	<li><img src="img/img3.jpg" alt=""></li>
+	<li><img src="img/img4.jpg" alt=""></li>
+	<li><img src="img/img5.jpg" alt=""></li>
+	<li><img src="img/img6.jpg" alt=""></li>
+	<li><img src="img/img7.jpg" alt=""></li>	 
+	</ul>
+	<section id="RNR"></section>
+	</div>
+
+<!--END Slider  	  ###############################################-->
+		
+	</div>
 
 <!-- END Intinerario  ###############################################-->
 
 <!-- Hotel 			  ###############################################-->
 <!-- END Hotel 	 	  ###############################################-->
 
-
-<!-- Slider script -->
-	<script>
-
-	    $(function () {
-
-	      // Slideshow 4
-	      $("#slider").responsiveSlides({
-	        auto: true,
-	        pager: false,
-	        nav: true,
-	        speed: 500,
-	        namespace: "callbacks",
-	        before: function () {
-	          $('.events').append("<li>before event fired.</li>");
-	        },
-	        after: function () {
-	          $('.events').append("<li>after event fired.</li>");
-	        }
-	      });
-
-	    });
-	  </script>
 </body>
 </html>
