@@ -9,6 +9,11 @@ html {
 
 p{text-align: justify;}
 
+@font-face {
+    font-family: Amaranth-regular;
+    src: url(fonts/Amaranth-Regular.ttf);
+}
+
 /* 03. NAVIGATION ================================================== */
 
 nav #Logo {	
@@ -24,7 +29,7 @@ nav {
 	z-index: 999;
 	width: 100%;
 	height: 80px;
-	background: #ED1B24;}
+	}
 
 
 /* Some stylesheet reset */
@@ -48,14 +53,15 @@ nav {
 #nav>li>a {
 	/* Layout */
 	display: block;
-	padding: 0px 0px 0 30px;
+	padding: 0px 0px 0 28px;
 
 	/* Typography */
 	font-family: 'latolight', sans-serif;
 	font-size: 16px;
-	color: #fff;
+	color: #000;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: bold;
 	
 	/* Transitions */
 	-webkit-transition: color .2s ease-in, border-top-color .2s ease-in;
@@ -64,11 +70,13 @@ nav {
 	-o-transition: color .2s ease-in, border-top-color .2s ease-in;
 	transition: color .2s ease-in, border-top-color .2s ease-in;}
 
-	#nav>li>a:hover{color:#FFD504 !important ;}
+	#nav>li>a:hover{color:#ffab04 ;}
+
+	#color2 a:hover{color:#db0018 !important ;}
 
 /* The hover state of the links */
 #nav li:hover a, #nav li .selected {
-	color: #CCC;}
+	color: #ffab04;}
 
 #nav>li.dropdown>a {
 	padding-right: 28px;}
@@ -152,7 +160,7 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #ED1B24;
+	background: url("banner.png") #fff no-repeat;
 	z-index: 10000;
 	height: 120px;
 	overflow: hidden;
@@ -380,7 +388,6 @@ padding-left: 1%}
 
 section article h4{
 	text-align: center;
-	color: #FFF;
 	font-size:26px;
 	color:#FFF;
 	font-weight: 700;
@@ -426,7 +433,6 @@ section article p{
 		height: 0;
 		width: 0;
 		position: absolute;
-		pointer-events: none;
 		border-width: 12px;
 		left: 50%;
 		margin-left: -12px;
@@ -503,6 +509,7 @@ height: 200px;
 	margin: 0.7em 0;
 	text-transform:uppercase;
 	padding-top: 1%;
+	font-family: Amaranth-Regular;
 }
 
 .AgendaP{
@@ -519,7 +526,7 @@ height: 200px;
 	padding-left: 8% ;
 	padding-right: 4%; 
 }
-
+}
 @media screen and (max-width:700px){
    
  .AgendaArt1 , .Agendafila1 
@@ -672,8 +679,8 @@ padding-top: 2% !important;
 
 	#nav>li>a
 	{
-		padding-left: 6px;
-	 	font-size: 11px;		 
+		padding-left: 5px;
+	 	font-size: 10px;		 
 	}
 }
 
@@ -681,8 +688,8 @@ padding-top: 2% !important;
 
 	#nav>li>a
 	{
-		padding-left: 11px;
-	 	font-size: 11px;		 
+		padding-left: 10px;
+	 	font-size: 10px;		 
 	}
 }
 
@@ -690,8 +697,8 @@ padding-top: 2% !important;
 
 	#nav>li>a
 	{
-		padding-left: 6px;
-	 	font-size: 12px;		 
+		padding-left: 9px; 
+	 	font-size: 12px;		
 	}
 }
 
@@ -708,7 +715,7 @@ padding-top: 2% !important;
 
 	#nav>li>a
 	{
-		padding-left: 23px;
+		padding-left: 19px;
 	 	font-size: 13px;		 
 			 
 	}
@@ -718,7 +725,7 @@ padding-top: 2% !important;
 
 	#nav>li>a
 	{	
-		padding-left: 28px;
+		padding-left: 25px;
 	 	font-size: 14px;		 
 	}
 }
@@ -727,7 +734,7 @@ padding-top: 2% !important;
 
 	#nav>li>a
 	{
-		padding-left: 31px;
+		padding-left: 28px;
 		font-size: 15px;		 
 	}
 }
