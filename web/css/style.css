@@ -448,17 +448,22 @@ section article p{
 
 .Agendafila1
 {
-	padding-left: 10%;
+	padding-left: 15%;
+	width: 28%
 }
 
 .Agendafila2
 {
 	padding-right: 0%;
+	vertical-align: middle;
+	width: 28%
 }
 
 .Agendafila3
 {
 	padding-right: 0%;
+	float: right;
+	width: 28%
 }
 
 .AgendaArt1
@@ -503,18 +508,51 @@ height: 200px;
 }
 
 @media screen and (max-width:1000px){
-   section{
-      width:100%;
-   }
+.Agendafila1{
+	padding-left: 8% ;
+	padding-right: 4%; 
 }
 
 @media screen and (max-width:700px){
-   article{
-      width:100%;
-   }
+   
+ .AgendaArt1 , .Agendafila1 
+ {
+   	width: 100%;
+ }
+
+.Agendafila1
+  {
+   	padding-left: 0 !important;
+  }
+
+ .AgendaArt2 , .Agendafila2 
+ {
+   	width: 100%;
+ }
+
+.Agendafila2
+  {
+   	padding-left: 0 !important;
+padding-top: 2% !important;	
+  }
+
+  .AgendaArt3 , .Agendafila3 
+ {
+   	width: 100%;
+ }
+
+.Agendafila3
+  {
+   	padding-left: 0 !important;
+padding-top: 2% !important;
+  }
 }
 
 @media screen and (max-width:768px){
+	.Agendafila1{
+	padding-left: 6% ;
+	padding-right: 5%; 
+}
 }
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
