@@ -63,37 +63,56 @@ var cbpAnimatedHeader = (function() {
 // Oculta y muestra Div agenda
 function mostrar1() {
           div1 = document.getElementById('Schedule1');
+          div2 = document.getElementById('Schedule2');          
+          div3 = document.getElementById('Schedule3');
+
           if ( div1.style.display == 'none')
                {                    
             	div1.style.display = 'block';
-          	   }
+            	div2.style.display = 'none';
+            	div3.style.display = 'none';          	   }
 
           else {             
             div1.style.display = 'none';
+            div2.style.display = 'none';
+            div3.style.display = 'none';  
           }
         }
 
 function mostrar2() {
-          div2 = document.getElementById('Schedule2');
+		div1 = document.getElementById('Schedule1');
+        div2 = document.getElementById('Schedule2');          
+        div3 = document.getElementById('Schedule3');
+
           if ( div2.style.display == 'none')
                {                    
+            	div1.style.display = 'none';
             	div2.style.display = 'block';
+            	div3.style.display = 'none';  
           	   }
           	   
           else {             
+            div1.style.display = 'none';
             div2.style.display = 'none';
+            div3.style.display = 'none'; 
           }
         }
 
 function mostrar3() {
+          div1 = document.getElementById('Schedule1');
+          div2 = document.getElementById('Schedule2'); 
           div3 = document.getElementById('Schedule3');
           if ( div3.style.display == 'none')
                {                    
-            	div3.style.display = 'block';
+            	div1.style.display = 'none';
+            	div2.style.display = 'none';
+            	div3.style.display = 'block'; 
           	   }
           	   
-          else {             
-            div3.style.display = 'none';
+          else { 
+          	div1.style.display = 'none';
+            div2.style.display = 'none';
+            div3.style.display = 'none'; 
           }
         }
 

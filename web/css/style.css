@@ -451,7 +451,7 @@ section article p{
    text-align:center;
    width:100%;
    color: #fff;
-   min-height:500px;
+   min-height:548px;
    background: url("agenda.jpg") no-repeat;
 }
 
@@ -477,7 +477,7 @@ section article p{
 
 .AgendaArt1
 {
-background:#03AF6D;
+background:#14937a;
 width: 200px;
 height: 200px;
 }
@@ -505,7 +505,7 @@ height: 200px;
 	font-weight: 700;
 	margin: 0.7em 0;
 	text-transform:uppercase;
-	padding-top: 1%;
+	padding: 5%;
 }
 
 .AgendaP{
@@ -572,6 +572,7 @@ padding-top: 2% !important;
 	width: 100%;
 	min-height: 500px;
 	vertical-align: middle;
+	cursor:auto;
 }
 
 /*TABLA 1*/
@@ -580,7 +581,8 @@ table#Table1 {
 height: 100%;
 width: 100%;
 font-family: Helvetica; font-weight: 100;
-background: #14937a; color: #fff;
+background: #14937a;
+color: #fff;
 border-radius: 5px;
 text-align:center;
 }
@@ -621,7 +623,7 @@ table#Table2 {
 height: 100%;
 width: 100%;
 font-family: Helvetica; font-weight: 100;
-background: #cd8109; color: #fff;
+background: #f4cc00; color: #fff;
 border-radius: 5px;
 text-align:center;
 }
@@ -655,7 +657,7 @@ table#Table3 {
 height: 100%;
 width: 100%;
 font-family: Helvetica; font-weight: 100;
-background: #a12f23; color: #fff;
+background: #f4002f; color: #fff;
 border-radius: 5px;
 text-align:center;
 }
@@ -681,6 +683,13 @@ table#Table3 tbody td:before {
 content: attr(data-th); font-weight: bold;
 display: inline-block; width: 6rem;
 }
+}
+
+/* 12 Footer ==================================================*/
+
+footer
+{
+
 }
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
