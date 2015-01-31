@@ -136,3 +136,19 @@ function mostrar3() {
 	      });
 
 	    });
+
+ 		$(function() {
+
+				$("#owl-demo").owlCarousel({
+					items : 6,
+					lazyLoad : true,
+					autoPlay : true,
+					navigation : true,
+					navigationText : ["", ""],
+					rewindNav : true,
+					scrollPerPage : false,
+					pagination : false,
+					paginationNumbers : false,
+				});
+
+			});
