@@ -62,13 +62,19 @@ var cbpAnimatedHeader = (function() {
 });
 // Oculta y muestra Div agenda
 function mostrar() {
-          div = document.getElementById('Oculto');
-          if ( div.style.display == 'none')     {        
+          div1 = document.getElementById('Schedule1');
+          div2 = document.getElementById('Schedule2');
+          div3 = document.getElementById('Schedule3');
+
+          if ( div1.style.display == 'none')     {        
             
-            	div.style.display = 'block';
+            	div1.style.display = 'block';
+            	div2.style.display = 'none';
+            	div3.style.display = 'none';
+
            }
           else {             
-            div.style.display = 'none';
+            div1.style.display = 'none';
           }
         }
 

@@ -9,6 +9,7 @@ html {
 
 p{text-align: justify;}
 
+table, th, td {border: 1px solid black; border-color: #CCC}
 
 /* 03. NAVIGATION ================================================== */
 
@@ -247,7 +248,7 @@ nav {
   height: auto;
   width: 100%;
   border: 0;
-  padding-top: 60px;
+  padding-top: 120px;
   }
 
 .callbacks .caption {
@@ -444,7 +445,7 @@ section article p{
 
 .AgendaSect{
 
-   margin:10px auto;
+   margin:0px auto;
    overflow:hidden;
    padding:8px 0;
    text-align:center;
@@ -564,13 +565,53 @@ padding-top: 2% !important;
 	}
 }
 
-/*08. INTINERARIO ========================================================================*/
-
-.Oculto{
+/*08. Schedule ========================================================================*/
+#Schedule1
+{
+	
 	width: 100%;
-	max-height: 500px;
-	background-color: red;
-} 
+	min-height: 500px;
+	vertical-align: middle;
+}
+
+table#Table1 {
+height: 100%;
+width: 100%;
+font-family: Helvetica; font-weight: 100;
+background: #14937a; color: #fff;
+border-radius: 5px;
+text-align:center;
+}
+
+/* para las filas pares 
+table tr:nth-child(even) td {
+    background-color: #16a085 !important;
+}
+
+*/
+
+table#Table1 thead th { font-weight: 600; }
+table#Table1 thead th, table#Table1 tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table1 tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #444; background: #eee;
+}
+table#Table1 tbody tr:not(:last-child) {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+
+@media screen and (max-width: 600px) {
+table#Table1 tbody td { display: block; padding: .6rem; }
+table#Table1 thead { display: none; }
+table#Table1 tbody tr td:first-child { background: #333; color: #fff; }
+table#Table1 tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block; width: 6rem;
+}
+}
 
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
