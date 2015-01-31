@@ -477,7 +477,7 @@ section article p{
 
 .AgendaArt1
 {
-background-color:#03AF6D;
+background:#03AF6D;
 width: 200px;
 height: 200px;
 }
@@ -485,7 +485,7 @@ height: 200px;
 
 .AgendaArt2
 {
-background-color: #f4cc00;
+background: #f4cc00;
 color: black;
 width: 200px;
 height: 200px;
@@ -493,7 +493,7 @@ height: 200px;
 
 .AgendaArt3
 {
-background-color: #f4002f;
+background: #f4002f;
 width: 200px;
 height: 200px;
 }
@@ -705,7 +705,7 @@ display: inline-block; width: 6rem;
 	display: block;
 	cursor: pointer;
 	margin-top: 2%;
-	background-color: #fFF;
+	background: #fFF;
 	border-bottom: 4px solid #e5e5e5;
 	padding: 6px 20px 5px;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -716,7 +716,7 @@ display: inline-block; width: 6rem;
 	
 
 .mobile-menu-inner .nav-mobile li:hover {
-	background-color: #F17C71;
+	background: #F17C71;
 	border-bottom: 4px solid #E95855;	}
 	
 
@@ -765,7 +765,7 @@ display: inline-block; width: 6rem;
 	
 	/* Header Lower height & Color*/
 	
-	#header { margin-top: 0px; padding:150px 0 100px 0; background-color: #353847; }
+	#header { margin-top: 0px; padding:150px 0 100px 0; background: #353847; }
 	
 	/* Not Showing the Navigation */
 
