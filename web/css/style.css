@@ -485,7 +485,7 @@ height: 200px;
 
 .AgendaArt2
 {
-background-color: #f4e000;
+background-color: #f4cc00;
 color: black;
 width: 200px;
 height: 200px;
@@ -493,7 +493,7 @@ height: 200px;
 
 .AgendaArt3
 {
-background-color: #f4001b;
+background-color: #f4002f;
 width: 200px;
 height: 200px;
 }
@@ -566,13 +566,15 @@ padding-top: 2% !important;
 }
 
 /*08. Schedule ========================================================================*/
-#Schedule1
+#Schedule1, #Schedule2,#Schedule3
 {
 	
 	width: 100%;
 	min-height: 500px;
 	vertical-align: middle;
 }
+
+/*TABLA 1*/
 
 table#Table1 {
 height: 100%;
@@ -613,6 +615,73 @@ display: inline-block; width: 6rem;
 }
 }
 
+/*TABLA2*/
+
+table#Table2 {
+height: 100%;
+width: 100%;
+font-family: Helvetica; font-weight: 100;
+background: #cd8109; color: #fff;
+border-radius: 5px;
+text-align:center;
+}
+
+table#Table2 thead th { font-weight: 600; }
+table#Table2 thead th, table#Table2 tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table2 tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #444; background: #eee;
+}
+table#Table2 tbody tr:not(:last-child) {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+
+@media screen and (max-width: 600px) {
+table#Table2 tbody td { display: block; padding: .6rem; }
+table#Table2 thead { display: none; }
+table#Table2 tbody tr td:first-child { background: #333; color: #fff; }
+table#Table2 tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block; width: 6rem;
+}
+}
+
+/*TABLA3*/
+
+table#Table3 {
+height: 100%;
+width: 100%;
+font-family: Helvetica; font-weight: 100;
+background: #a12f23; color: #fff;
+border-radius: 5px;
+text-align:center;
+}
+
+table#Table3 thead th { font-weight: 600; }
+table#Table3 thead th, table#Table3 tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table3 tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #444; background: #eee;
+}
+table#Table3 tbody tr:not(:last-child) {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+
+@media screen and (max-width: 600px) {
+table#Table3 tbody td { display: block; padding: .6rem; }
+table#Table3 thead { display: none; }
+table#Table3 tbody tr td:first-child { background: #333; color: #fff; }
+table#Table3 tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block; width: 6rem;
+}
+}
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
 .mobile-menu {
