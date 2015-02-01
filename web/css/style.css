@@ -42,14 +42,13 @@ nav {
 #nav>li {
 	float: right;
 	position: relative;
-	padding: 10px 0;
 	padding-right: 6px;}
 
 /* The main navigation links */
 #nav>li>a {
 	/* Layout */
 	display: block;
-	padding: 0px 0px 0 28px;
+	padding: 3px 0px 0 28px;
 
 	/* Typography */
 	font-family: 'latolight', sans-serif;
@@ -66,13 +65,30 @@ nav {
 	-o-transition: color .2s ease-in, border-top-color .2s ease-in;
 	transition: color .2s ease-in, border-top-color .2s ease-in;}
 
-	#nav>li>a:hover{color:#ffab04 ;}
 
-	#color2 a:hover{color:#db0018 !important ;}
+		.cbp-af-header ul li a,
+		.cbp-af-header ul li a:focus {	
+		    background: repeat-x url("../img/banner_bg.jpg") 0 -94px ;
+		    transition-duration: .5s !important;
+		}
+
+		.cbp-af-header ul li:nth-child(2n+1) a,
+		.cbp-af-header ul li a:focus{
+			background: repeat-x url("../img/banner_bg2.jpg") 0 -94px ;
+		    transition-duration: .5s !important;
+		}
+
+		.cbp-af-header ul li a:hover ,
+		.cbp-af-header ul li a.current 
+		{
+		    background-position: 0 0px ;	   
+		   
+		}
+	#nav>li>a:hover{color:#fff ;}
 
 /* The hover state of the links */
 #nav li:hover a, #nav li .selected {
-	color: #ffab04;}
+	color: #fff;}
 
 #nav>li.dropdown>a {
 	padding-right: 28px;}
@@ -169,14 +185,14 @@ nav {
 /* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
 
 .cbp-af-header #Logo {
-	padding: 6px 0px 0px 15px; 
+	padding: 5px 0px 0px 6px; 
 	width:90px;}
 
 .cbp-af-header #nav a {
 	line-height: 100px;}
 
 .cbp-af-header.cbp-af-header-shrink #Logo { 
-	padding:0px 0px 0px 15px; 
+	padding:0px 0px 0px 16px; 
 	width:60px;}
 
 /* Transitions and class for reduced height */
@@ -191,7 +207,7 @@ nav {
 	height: 80px;}
 
 .cbp-af-header.cbp-af-header-shrink #nav a {
-	line-height: 60px;}
+	line-height: 86px;}
 
 /*04 Slide  ============================================================================== */
 
@@ -705,6 +721,7 @@ display: inline-block; width: 6rem;
 	position: relative;
 }
 .Sponsorsh4 h4{
+	padding-top: 2%;
 	font-size: 24px;
 	text-transform: capitalize;
 	display: inline-block;
@@ -717,7 +734,7 @@ display: inline-block; width: 6rem;
 *	v1.24
 */
 
- #owl-demo, .Sponsorsh4 , .owl-carousel , .owl-theme{background:;}
+ #owl-demo, .Sponsorsh4 , .owl-carousel , .owl-theme{background: #F3f3f3;}
     #owl-demo .item{
        margin: 0.5em;
 		transition: 0.5s all;
