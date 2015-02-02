@@ -548,6 +548,8 @@ height: 200px;
 	line-height: 2.2em;
 	text-align: center;
 	padding-left: 1%;   
+	text-decoration: none !important;
+	text-decoration: underline;
 }
 
 @media screen and (max-width:1000px){
@@ -742,9 +744,15 @@ section .comiteSection{
    float: right;
 }
 
+.comiteSection .comitefila1 , .comiteSection .comitefila2, .comiteSection .comitefila3 
+{
+	padding-top: 1%;
+}
+
+
 #templatemo_events 
 {
-    float: left;
+    /*float: left;*/
     overflow: hidden;
 }
 
