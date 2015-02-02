@@ -15,6 +15,43 @@ table, th, td {border: 1px solid black; border-color: #CCC}
     max-width: 1600px;
 }
 
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato/lato-reg-webfont.eot');
+    src: url('../fonts/lato/lato-reg-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-reg-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-reg-webfont.ttf') format('truetype'),
+         url('../fonts/lato/lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato/lato-lig-webfont.eot');
+    src: url('../fonts/lato/lato-lig-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-lig-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-lig-webfont.ttf') format('truetype'),
+         url('../fonts/lato/lato-lig-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato/lato-bol-webfont.eot');
+    src: url('../fonts/lato/lato-bol-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-bol-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-bol-webfont.ttf') format('truetype'),
+         url('../fonts/lato/lato-bol-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 
 /* 03. NAVIGATION ================================================== */
 
@@ -56,7 +93,7 @@ nav {
 	padding: 3px 0px 0 28px;
 
 	/* Typography */
-	font-family: 'latolight', sans-serif;
+	font-family: 'latobold', sans-serif;
 	font-size: 16px;
 	color: #000;
 	text-transform: uppercase;
@@ -752,13 +789,13 @@ section .comiteSection{
 
 #templatemo_events 
 {
-    /*float: left;*/
+    background: #f1f1f1;
     overflow: hidden;
 }
 
 #templatemo_events h1
 {
-    color: #fff;
+	color: #4D4C4C;
     text-align: center;
 }
 #templatemo_events .event_box_wap {
@@ -770,12 +807,13 @@ section .comiteSection{
     position: relative;
     top: 0;
 }
-#templatemo_events .event_box_wap .event_box_caption {
+#templatemo_events .event_box_wap .event_box_caption
+
+{
     position: relative;
-    top: 0;
-    padding-bottom: 10px;
     background: #fff;
     width: 100%;
+    border-bottom: 5px solid #e5e5e5;
 }
 
 #templatemo_events .event_box_wap p {
@@ -868,6 +906,7 @@ img
     text-transform: uppercase;
     padding-right: 22%;
     padding-top: 2%;
+
 }
 
 #templatemo_events .event_box_wap p span
@@ -901,6 +940,7 @@ img
 	text-transform: capitalize;
 	display: inline-block;
 	margin: 0;
+	color:rgba(0, 0, 01, 0.6);
 }
 
 #owl-demo .item:hover a
@@ -1091,82 +1131,91 @@ img
 }
 
 @media only screen and (max-width:1440px) and (min-width:1366px) {
-	.owl-carousel {
+	.owl-carousel
+	{
 		width: 95%;
 		margin: 0 auto;
 		padding: 2%;
 	}
 }
 @media only screen and (max-width:1366px) and (min-width:1280px) {
-	.owl-carousel {
+	.owl-carousel 
+	{
 		width: 96%;
 		margin: 0 auto;
 		padding: 2%;
 	}
-	.owl-prev {
+		.owl-prev
+	{
 		top: -20%;
 		right: 2%;
 	}
-	.owl-next {
+		.owl-next 
+	{
 		top: -20%;
 		right: 0%;
 	}
 }
 @media only screen and (max-width:1280px) and (min-width:1024px) {
-	.owl-carousel {
+	.owl-carousel 
+	{
 		width: 95%;
 		margin: 0 auto;
 		padding: 2%;
 	}
-	.item h4 a{
+		.item h4 a
+	{
 		font-size: 1.2em;
 	}
-	.owl-prev {
+		.owl-prev 
+	{
 		top: -20%;
 		right: 2%;
 	}
-	.owl-next {
+		.owl-next 
+	{
 		top: -20%;
 		right: -2%;
 	}
 }
 @media only screen and (max-width:1024px) and (min-width:768px) {
-	.owl-carousel {
-		width: 95%;
-		margin: 0 auto;
-		padding: 2%;
-	}
-	.item h4 a {
-		font-size: 1em;
-	}
+	.owl-carousel 
+		
 }
 @media only screen and (max-width:800px) and (min-width:640px) {
-	.owl-carousel {
+	
+	.owl-carousel 
+	{
 		width: 95%;
 		margin: 0 auto;
 		padding: 2%;
 	}
-	.item h4 a{
+		.item h4 a
+	{
 		font-size: 1em;
 	}
-	.da-slide .da-link {
+		.da-slide .da-link 
+	{
 		margin-left:10px;
 		top: 225px;
 		padding: 10px 34px 8px;
 	}
 }
 @media only screen and (max-width:640px) and (min-width:480px) {
-	.owl-carousel {
+	.owl-carousel 
+	{
 		width: 95%;
 		margin: 0 auto;
 		padding: 2%;
 	}
-	.da-slide .da-link {
+		.da-slide .da-link 
+	{
 		margin-left:10px;
 		top: 200px;
 		padding: 10px 34px 8px;
 	}
-	.da-slide {
+		.da-slide 
+	{
 		padding: 0 5%;
 		width: 80%;
 	}
@@ -1210,15 +1259,195 @@ img
 	}
 }
 
+
+/* 11. INTERBLOCK FOOTER SETTINGS ================================================== */
+
+
+/* Section */
+
+.footer_2{
+	position: relative !important;
+}
+
+#interblock_footer , #contact_info{
+	margin: 0;
+}
+
+#interblock_footer
+{ 
+	padding: 100px 0; 
+	background: #F17C71; 
+	color:#FFF;
+	width:100%;
+
+}
+
+/* Blockquote */
+
+.footer_row{display: inline-block;}
+
+#interblock_footer h2
+{
+	font-size:1.75rem; 
+	font-family: 'latobold', sans-serif;
+	text-transform:uppercase;
+	margin-top: 0.33em;	
+}
+
+/* Text under blockquote */
+
+#interblock_footer p {
+	font-size:1.3rem; 
+	font-family: 'latolight', sans-serif;}
+
+/* Padding top for well displayed Icon */
+
+#interblock_footer ul {
+
+	position: absolute;
+	right: 20.3%;
+	top: 30%;}
+	
+/* Styling Icon  And display Inline*/
+
+#interblock_footer li{ 
+	display:inline-block;
+	padding:40px  0px ;
+	font-style: normal; 
+	font-size: 50px; }
+
+#interblock_footer li a {
+	color: #fff;
+}
+
+/* Icon Hover */
+
+#interblock_footer li:hover {
+	opacity:0.7;}
+
+@media screen and (max-width: 1350px){
+
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 20%;
+	left: 17%;
+	top: 37%;}
+
+	.footer_row
+	{
+		position: absolute;
+		bottom: 50%;
+		right: 11%;
+		left: 11%;
+	}
+
+	.footer_row p 
+		{
+			text-align: center;
+			margin: 0;
+		}
+	.footer_row h2{margin-bottom: 0.2px;}
+}
+
+@media screen and (max-width: 854px){
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 8%;
+	left: 3%;
+	top: 37%;}
+
+	.footer_row
+	{
+		position: absolute;
+		bottom: 37%;
+		right: 11%;
+		left: 11%;
+	}
+
+	#interblock_footer p 
+		{
+			text-align: center;
+			margin: 1.5px 0;
+			font-size: 20px ;
+		}
+
+	#interblock_footer h2
+		{
+			margin-bottom: 0.2px;
+			font-size: 24px ;
+		}
+
+	}
+
+@media screen and (max-width: 483px){
+
+	#interblock_footer p 
+			{
+				text-align: center;
+				margin: 1.5px 0;
+				font-size: 18px ;
+			}
+
+		#interblock_footer h2
+			{
+				font-size: 18px;
+			}
+
+		#interblock_footer ul
+
+		{
+
+			position: absolute;
+			right: 0%;
+			left: -16%;
+			top: 35%;
+		}
+}
+
+
+@media screen and (min-width: 380px) and (max-width: 853px){
+
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 4%;
+	left: 0%;
+	top: 35%;}
+}
+
+
+@media screen and (max-width: 320px){
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 0%;
+	left: -15%;
+	top: 35%;}
+
+	#interblock_footer p 
+			{
+				text-align: center;
+				margin: 1.5px 0;
+				font-size: 16px ;
+			}
+
+		#interblock_footer h2
+			{
+				margin-bottom: 0.2px;
+				font-size: 16px ;
+			}
+}
+
 /* 12 Footer ==================================================*/
 
 footer
 {
  	text-align: center !important; 	
 	color: rgba(255,255,255,0.7);
- 	background: #22BCE0;
+ 	background: #e95855;
  	padding: 1em;
-
 }
 
 footer p:first-child{margin-bottom: 0;}
@@ -1229,23 +1458,28 @@ footer p:last-child:after{content: " -";}
 footer p:last-child:before{content: "- ";}
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
-.mobile-menu {
-	display:none;
-	background: #FFF;
-	width:100%;
-	z-index: 99999999;
-	position: absolute;
-	top:0;
-	border-bottom: 1px solid #BBB;}
+
+	.mobile-menu
+	 {
+		display:none;
+		background: #FFF;
+		width:100%;
+		z-index: 99999999;
+		position: absolute;
+		top:0;
+		border-bottom: 1px solid #BBB;
+	}
 	
 
-.mobile-menu .row {
-	background: #F5F5F5;
-	padding-top:10px;
-	padding-bottom: 10px;}
-	
+	.mobile-menu .row 
+	{
+		background: #F5F5F5;
+		padding-top:10px;
+		padding-bottom: 10px;
+	}	
 
-.mobile-menu-inner .nav-mobile li {
+	.mobile-menu-inner .nav-mobile li
+ 	{
 	color: #4D4C4C;
 	display: block;
 	cursor: pointer;
@@ -1257,19 +1491,25 @@ footer p:last-child:before{content: "- ";}
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;	}
+	transition: all 0.2s ease-in-out;
+	}
 	
 
-.mobile-menu-inner .nav-mobile li:hover {
+	.mobile-menu-inner .nav-mobile li:hover
+	 {
 	background: #F17C71;
-	border-bottom: 4px solid #E95855;	}
+	border-bottom: 4px solid #E95855;
+	 }
 	
 
-.mobile-menu-inner .nav-mobile li:hover a {
-	color: #fFF;	}
+	.mobile-menu-inner .nav-mobile li:hover a
+	 {
+	color: #fFF;
+	 }
 	
 
-.mobile-menu-inner .nav-mobile li a {
+	.mobile-menu-inner .nav-mobile li a 
+	 {
 	display: block;
 	width:100%;
 	color: #4D4C4C;
@@ -1279,14 +1519,14 @@ footer p:last-child:before{content: "- ";}
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;	}
-	
+	transition: all 0.2s ease-in-out;	
+	 }	
 
-#collapse {
-	display:none;}
+	#collapse {display:none;}
 
 
-.mobile-menu h3 {
+	.mobile-menu h3 
+	 {
 	background: url("../img/line.gif") no-repeat scroll center 21px transparent;
 	color: #4D4C4C;
 	font: 16px 'Lato', sans-serif;
@@ -1294,34 +1534,23 @@ footer p:last-child:before{content: "- ";}
 	font-weight: 700;
 	padding-bottom: 5px;
 	text-align: center;
-	text-transform: uppercase;}
+	text-transform: uppercase;
+ 	}
 
+	/* Styling for mobile devices */
 
-/* Styling for mobile devices */
-
-
-@media screen and (max-width: 768px) {
-
+	@media screen and (max-width: 768px) {
 	/* Display the mobile menu */
 	
 	.mobile-menu {display:block;}	
-
-	form  { overflow:hidden; }
 	
-	/* Header Lower height & Color*/
-	
-	#header { margin-top: 0px; padding:150px 0 100px 0; background: #353847; }
+	#header {margin-top: 0px; padding:150px 0 100px 0; background: #353847; }
 	
 	/* Not Showing the Navigation */
-
 	.cbp-af-header {display: none;}
-
-	.callbacks img {padding-top: 56px;}
-	    
-   
-    #team .row {width:100%;}
-    
-}
+	.callbacks img {padding-top: 56px;} 
+    #team .row {width:100%;}    
+	}
 
 /* 14. MEDIA QUERIES PARA TABLETS (EN SU MAYORIA PARA EL HEADER RESPONSIVE) ================================================== */
 
