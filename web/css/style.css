@@ -11,6 +11,11 @@ p{text-align: justify;}
 
 table, th, td {border: 1px solid black; border-color: #CCC}
 
+.container-fluid {
+    max-width: 1600px;
+}
+
+
 /* 03. NAVIGATION ================================================== */
 
 nav #Logo {	
@@ -315,11 +320,16 @@ nav {
   .callbacks_nav {
     top: 74%;
     }
+
+.callbacks_container {
+	margin-bottom: 0px;
   }
+}
 
 /* 05. INFO WHAT'S RNR ... ================================================== */
 
-.WhatsRNR{
+.WhatsRNR
+{
 	min-height: 500px;
 	clear: both;
 }
@@ -708,48 +718,193 @@ display: inline-block; width: 6rem;
 }
 }
 
-/* 11 Sponsonrs ================================================== */
+/*10. organizing committee ================================================== */
 
-/* start caursel */
+#templatemo_events .columnas { width: 102.40426%; }
+
+section .comiteSection{
+   background:#12A89D;
+   margin:10px auto;
+   overflow:hidden;
+   padding:10px 0;
+   text-align:center;
+   width:1000px;
+}
+
+.comiteSection .comitefila1 , .comiteSection .comitefila2
+{
+   padding-right: 4.5%;
+}
+
+.comiteSection .comitefila3
+
+{
+   float: right;
+}
+
+#templatemo_events 
+{
+    float: left;
+    overflow: hidden;
+}
+
+#templatemo_events h1
+{
+    color: #fff;
+    text-align: center;
+}
+#templatemo_events .event_box_wap {
+    overflow:hidden;
+    position: relative;
+}
+
+#templatemo_events .event_box_wap .event_box_img {
+    position: relative;
+    top: 0;
+}
+#templatemo_events .event_box_wap .event_box_caption {
+    position: relative;
+    top: 0;
+    padding-bottom: 10px;
+    background: #fff;
+    width: 100%;
+}
+
+#templatemo_events .event_box_wap p {
+    margin: 0;
+    color: #000000;
+    text-align: justify;
+}
+
+#templatemo_events .event_box_wap h1
+{
+    color:  black ;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+p+span+p 
+{
+	text-align: right !important;
+}
+
+#templatemo_events .event_box_wap p span /*CAMBIAR COLORES ICONS*/
+{
+	color: yellow;
+	left: 0;
+	position: absolute;
+	top:33%;
+	left: 4%;
+}
+
+#templatemo_events .event_box_wap p {
+	margin: 0px 36px;
+    padding: 2px 0px 2px 19px;
+}
+
+@media screen and (max-width:1120px){
+
+   .comitefila2{width: 100%}
+
+	.comiteSection   
+   {
+		width: 100% !important;
+   }
+
+   article .comiteSection .comitefila2 , .comiteSection .comitefila1, .comiteSection .comitefila3
+   {
+      width:100%;
+   }
+
+
+}
+
+@media screen and (max-width: 320px){
+
+.container-fluid{width: 100%;}
+
+article .comiteSection .comitefila2 , .comiteSection .comitefila1, .comiteSection .comitefila3
+   {
+      width:100%;
+   }
+
+section .comiteSection
+{
+	 padding: 0 0;
+	 height: auto !important;
+
+}  
+
+img
+{
+	left: -12%;
+	position: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+#templatemo_events .event_box_wap h1
+{
+    color:  black ;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#templatemo_events h1{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-right: 22%;
+    padding-top: 2%;
+}
+
+#templatemo_events .event_box_wap p span
+{	
+	visibility: hidden;
+}
+
+#templatemo_events .event_box_wap p
+{
+	margin: 0;
+	max-width: 320px;
+    padding:0;
+    text-align: center;
+}
+
+.comiteSection .comitefila1, .comiteSection .comitefila2
+{
+	padding-right: 0;
+}
+
+}
+/* 11 Sponsonrs ================================================== */
 
 .Sponsors_Color
 {	
-	background: #F3F3F3 !important; 
+	background: #F3F3F3 ; 
 }
 
-.Sponsorsh4{
-	position: relative;
-}
 .Sponsorsh4 h4{
-	padding-top: 2%;
 	font-size: 24px;
 	text-transform: capitalize;
 	display: inline-block;
 	margin: 0;
 }
 
+#owl-demo .item:hover a
+{
+   	color:#EA6060;
+}
 
-/*
-* 	Owl Carousel Owl Demo Theme 
-*	v1.24
-*/
-
- #owl-demo, .Sponsorsh4 , .owl-carousel , .owl-theme{background: #F3f3f3;}
-    #owl-demo .item{
-       margin: 0.5em;
-		transition: 0.5s all;
-		-webkit-transition: 0.5s all;
-		-moz-transition: 0.5s all;
-		-o-transition: 0.5s all;
-		cursor:pointer;
-    }
-    #owl-demo .item:hover a{
-    		color:#EA6060;
-    }
-    #owl-demo .item img{
-        display: block;
-        height: auto;
-    }
+#owl-demo .item img
+{
+    display: block;
+    height: auto;
+}
 .item img,.item a,.item p{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -846,7 +1001,6 @@ display: inline-block; width: 6rem;
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
 	opacity: 1;
 }
 
@@ -913,7 +1067,6 @@ display: inline-block; width: 6rem;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -938,7 +1091,7 @@ display: inline-block; width: 6rem;
 }
 @media only screen and (max-width:1366px) and (min-width:1280px) {
 	.owl-carousel {
-		width: 95%;
+		width: 96%;
 		margin: 0 auto;
 		padding: 2%;
 	}
