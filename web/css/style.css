@@ -1446,58 +1446,72 @@ footer
 {
  	color: rgba(255,255,255,0.7);
  	background: #e95855;
- 	padding: 50px 0;
- 	display: inline-block;
-
+ 	padding: 40px 0;
 }
 
-footer p:first-child{margin-bottom: 0;}
-footer p:last-child{margin-top: 0;}
-footer p {text-align: center; margin-top: 0;}
-
-footer p:last-child:after{content: " -";}
-footer p:last-child:before{content: "- ";}
-
-#footer_logos
-{
-	width: 100%;
-	position: relative;
+#footer_2 ul {
+  position: relative;
+  margin: 0;
+  text-align: center;
 }
 
-
-#footer_logos #fot_logo1 img{width: 90%;}
-
-#footer_logos #fot_logo1
-
+#fot_p p
 {
+	text-align: center;
+}
+
+#fot_p #fot_p_1
+{
+	padding-bottom: 0;
+}
+
+#fot_p + p + #fot_p_2
+{
+	padding-top: 0;
+}
+
+#fot_logo1 img
+{
+	width: 11%;
 	position: absolute;
-	right: 26%;
-	bottom: 42%;
+	bottom: 5%;
+	left: 8%;
 }
 
-#footer_logos #fot_logo2 img{width: 45%;}
-
-#footer_logos #fot_logo2
-{	position: absolute;
-	right: 56%;
-	bottom: 25%;
+#fot_logo2 img
+{
+	width: 6%;
+	position: absolute;
+	bottom: -2%;
+	left:29%;
 }
 
-#footer_logos #fot_logo3 img{width: 70%;}
-#footer_logos #fot_logo3
-{	position: absolute;	
-
+#fot_logo3 img
+{
+	width: 7%;
+	position: absolute;
+	top: 16%;
+	right: 30%;
 }
 
-#footer_logos #fot_logo4 img{width: 100%;}
-#footer_logos #fot_logo4
-{	position: absolute;
-	right: 9%;
-	bottom: 8%;
-	margin: -1%;
+#fot_logo4 img
+{
+	width: 12%;
+	position: absolute;
+	bottom: -11%;
+	right: 10%
 }
 
+#footer_2 li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 3%;
+}
 
+#footer_2 a:hover {
+  color: #5fa9c5;
+  border: 1px solid #5fa9c5;
+}
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
 
