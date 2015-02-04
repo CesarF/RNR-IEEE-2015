@@ -1486,8 +1486,7 @@ footer p:last-child:before{content: "- ";}
 #footer_logos #fot_logo3 img{width: 70%;}
 #footer_logos #fot_logo3
 {	position: absolute;	
-	left: 9%;
-	bottom: -1%;
+
 }
 
 #footer_logos #fot_logo4 img{width: 100%;}
