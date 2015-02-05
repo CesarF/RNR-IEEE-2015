@@ -1455,6 +1455,8 @@ footer
   text-align: center;
 }
 
+#footer_2 img{opacity: 0.4;}
+
 #fot_p p
 {
 	text-align: center;
@@ -1499,7 +1501,8 @@ footer
 	width: 12%;
 	position: absolute;
 	bottom: -11%;
-	right: 10%
+	right: 10%;
+  	
 }
 
 #footer_2 li {
