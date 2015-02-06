@@ -508,7 +508,7 @@ section article p{
 
 	.arrow-white:after
 	{
-		border-color: #E9D2FF rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
+		border-color: #76C7C0 rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
 	}
 
 /*07 Agenda ========================================================================*/
@@ -522,7 +522,7 @@ section article p{
    width:100%;
    color: #fff;
    min-height:548px;
-   background: url("agenda.jpg") no-repeat;
+   background: #76C7C0;
 }
 
 .Agendafila1
@@ -547,32 +547,54 @@ section article p{
 
 .AgendaArt1
 {
-background:#14937a;
+background:#0DA867;
 width: 200px;
 height: 200px;
+-webkit-border-radius: 5px;
+-webkit-border-top-left-radius: 90px;
+-webkit-border-bottom-right-radius: 90px;
+-moz-border-radius: 5px;
+-moz-border-radius-topleft: 90px;
+-moz-border-radius-bottomright: 90px;
+border-radius: 5px;
+border-top-left-radius: 90px;
+border-bottom-right-radius: 90px;
 }
-
 
 .AgendaArt2
 {
-background: #f4cc00;
+background: #F5D42B;
 color: black;
 width: 200px;
 height: 200px;
+
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
 }
 
 .AgendaArt3
 {
-background: #f4002f;
+background: #E85A5A;
 width: 200px;
 height: 200px;
+
+-webkit-border-radius: 5px;
+-webkit-border-top-right-radius: 90px; 
+-webkit-border-bottom-left-radius: 90px;
+-moz-border-radius: 5px;
+-moz-border-radius-topright: 90px; 
+-moz-border-radius-bottomleft: 90px;
+border-radius: 5px;
+border-top-right-radius: 90px;  	
+border-bottom-left-radius: 90px;
 }
 
 .Agendah4{
 	text-align: center;
 	font-size:40px;
-	color:#000;
-	font-weight: 700;
+	color:#fff;
+	font-family: 'latolight';
 	margin: 0.7em 0;
 	text-transform:uppercase;
 	padding: 5%;
@@ -596,6 +618,8 @@ height: 200px;
 }
 }
 @media screen and (max-width:700px){
+
+	.AgendaArt3 , .AgendaArt1 , .AgendaArt2{border-radius: 0;}
    
  .AgendaArt1 , .Agendafila1 
  {
@@ -756,13 +780,28 @@ content: attr(data-th); font-weight: bold;
 display: inline-block; width: 6rem;
 }
 }
+/*09 ================================================== */
+
+.google-maps {
+        position: relative;
+        padding-bottom: 29.6%; /*This is the aspect ratio*/
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        min-height: 400px !important;
+    }
 
 /*10. organizing committee ================================================== */
 
 #templatemo_events .columnas { width: 102.40426%; }
 
 section .comiteSection{
-   background:#12A89D;
+   background:#fbfbfb;
    margin:10px auto;
    overflow:hidden;
    padding:10px 0;
@@ -789,7 +828,7 @@ section .comiteSection{
 
 #templatemo_events 
 {
-    background: #f1f1f1;
+    background: #e4e4e4;
     overflow: hidden;
 }
 
@@ -928,11 +967,18 @@ img
 }
 
 }
+
+
+#Patrocinadores , #Comite
+{
+	margin: 0;
+	padding: 0;
+}
 /* 11 Sponsonrs ================================================== */
 
 .Sponsors_Color
 {	
-	background: #F3F3F3 ; 
+	background: #1D5A74 ; 
 }
 
 .Sponsorsh4 h4{
@@ -940,7 +986,7 @@ img
 	text-transform: capitalize;
 	display: inline-block;
 	margin: 0;
-	color:rgba(0, 0, 01, 0.6);
+	color: white;
 }
 
 #owl-demo .item:hover a
