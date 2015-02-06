@@ -111,13 +111,13 @@ nav {
 		.cbp-af-header ul li a,
 		.cbp-af-header ul li a:focus {	
 		    background: repeat-x url("../img/banner_bg.jpg") 0 -94px ;
-		    transition-duration: .5s !important;
+		    transition-duration: .2s !important;
 		}
 
 		.cbp-af-header ul li:nth-child(2n+1) a,
 		.cbp-af-header ul li a:focus{
 			background: repeat-x url("../img/banner_bg2.jpg") 0 -94px ;
-		    transition-duration: .5s !important;
+		    transition-duration: .2s !important;
 		}
 
 		.cbp-af-header ul li a:hover ,
