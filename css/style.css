@@ -511,7 +511,15 @@ section article p{
 		border-color: #76C7C0 rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
 	}
 
-/*07 Agenda ========================================================================*/
+	.arrow-green:after
+	{
+		border-color: #15945F rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
+	}
+
+/*07 ========================================================================*/
+
+#Agenda{margin: 0;
+padding: 0;}
 
 .AgendaSect{
 
@@ -781,6 +789,8 @@ display: inline-block; width: 6rem;
 }
 }
 /*09 ================================================== */
+#Lugar{margin: 0;
+padding: 0;}
 
 .google-maps {
         position: relative;
@@ -796,21 +806,13 @@ display: inline-block; width: 6rem;
         min-height: 400px !important;
     }
 
-    .Sombra_Borde_Mapa	
-
-{
-    position: relative;
-    background: #fff;
-    width: 100%;
-}
-
-
 .Mapa_Img
 {
+
+	background: rgba(15, 178, 128, 0.8);
 	width: 100%;
 	padding-top: 2.2%;
-    border-bottom: 2px solid #a8a8a8;
-}
+    }
 
 .Mapa_Container
 {
