@@ -217,3 +217,4 @@ $(document).scroll(function(){
             $("#templatemo_events .event_animate_right").css({'left':0,'opacity':1});
         }
     }); 
+

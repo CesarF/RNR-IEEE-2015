@@ -216,13 +216,14 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: url("banner.png") #fff no-repeat;
+	background: #fff;
 	z-index: 10000;
 	height: 120px;
 	overflow: hidden;
 	-webkit-transition: height 0.3s;
 	-moz-transition: height 0.3s;
 	transition: height 0.3s;}
+
 
 /* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
 
@@ -245,8 +246,11 @@ nav {
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;}
 
-.cbp-af-header.cbp-af-header-shrink {
-	height: 80px;}
+.cbp-af-header.cbp-af-header-shrink 
+{
+	height: 80px;
+    opacity:0.7;
+}
 
 .cbp-af-header.cbp-af-header-shrink #nav a {
 	line-height: 86px;}
@@ -818,6 +822,83 @@ padding: 0;}
 {
 	width: 1200px;
 	margin: 0 auto;
+	position: relative;
+}
+
+
+
+.image-lightbox {
+	/* Position absolutely so we can zoom it out later */	
+	/* Transitions to provide some eye candy */
+	-webkit-transition: all ease-in 0.5s;
+	-moz-transition: all ease-in 0.5s;
+	-ms-transition: all ease-in 0.5s;
+	-o-transition: all ease-in 0.5s;
+}
+
+.image-lightbox span {
+	display: none;
+}
+
+.imag-wrapper {
+    display: inline-block;
+    overflow: hidden;
+}
+
+. Mapa_Container img:hover {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+}
+
+
+.image-lightbox .expand {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 4000;
+	background: rgba(0,0,0,0); /* Fixes an IE bug */
+	left: 0;
+}
+
+.image-lightbox .close {
+	position: absolute;
+	width: 20px; height: 20px;
+	right: 20px; top: 20px;
+}
+
+.image-lightbox .close a {
+	height: auto; width: auto;
+	padding: 5px 10px;
+	color: #fff;
+	text-decoration: none;
+	background: #22272c;
+	box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 30px rgba(255,255,255,0.4);
+	border-radius: 5px;
+	font-weight: bold;
+	float: right;
+}
+
+.image-lightbox .close a:hover {
+	box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 20px rgba(255,255,255,0.4);
+}
+
+div[id^=image]:target {
+	width: 450px;
+	height: 300px;
+	z-index: 5000;
+	top: 50px;
+	left: 200px;
+}
+li[id^=image]:target .close {
+	display: block;
+}
+
+li[id^=image]:target .expand {
+	display: none;
 }
 
 /* ----- Image grids ----- */
@@ -838,7 +919,7 @@ ul.rig li
 	font-size: 16px;
 	font-size: 1rem;
 	vertical-align: top;
-	box-shadow: 0 0 5px #ddd;
+	box-shadow: 0 0 5px #1A1515;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
