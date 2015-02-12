@@ -8,9 +8,9 @@ html {
 }
 
 p{text-align: justify;}
-
+a:link{text-decoration: none !important;}
+#RNR{padding: 0;}
 table, th, td {border: 1px solid black; border-color: #CCC}
-
 .container-fluid {
     max-width: 1600px;
 }
@@ -97,7 +97,6 @@ nav {
 	font-size: 16px;
 	color: #000;
 	text-transform: uppercase;
-	text-decoration: none;
 	font-weight: bold;
 	
 	/* Transitions */
@@ -193,7 +192,6 @@ nav {
 	/* Typography */
 	font-family: 'latolight', sans-serif;
 	font-size: 16px;
-	text-decoration: none;
 	color: #aaa;
 	
 	/* Background & effects */
@@ -249,7 +247,7 @@ nav {
 .cbp-af-header.cbp-af-header-shrink 
 {
 	height: 80px;
-    opacity:0.7;
+    opacity:0.9;
 }
 
 .cbp-af-header.cbp-af-header-shrink #nav a {
@@ -282,7 +280,6 @@ nav {
   }
 
 .callbacks_container {
-  margin-bottom: 50px;
   position: relative;
   float: left;
   width: 100%;
@@ -340,7 +337,6 @@ nav {
   z-index: 3;
   text-indent: -9999px;
   overflow: hidden;
-  text-decoration: none;
   height: 61px;
   width: 38px;
   background: transparent url("themes.gif") no-repeat left top;
@@ -367,12 +363,46 @@ nav {
   }
 }
 
+/*06 concurso ================================================================= */
+
+#concurso
+{  /*padre*/
+	width: 100%;
+}
+
+
+#concurso .div1, #concurso .div2{  /*hijos*/
+	display: table-cell;
+	float: left;
+	text-align: center;
+	padding: 1.4% 0;
+	font-size: 22px;
+	color: white;
+	font-family: 'latolight';
+}
+
+.div1
+{
+	background: #0170ff; width: 50%;
+}
+.div2
+{
+	background: #9001ff; width: 50%;
+}
+
+@media screen and (max-width:761px){
+   #concurso .div1 , #concurso .div2{
+   	width: 100%
+   }
+}
 /* 05. INFO WHAT'S RNR ... ================================================== */
 
 .WhatsRNR
 {
 	min-height: 500px;
 	clear: both;
+	width: 100%;
+	position: relative;
 }
 
 article{
@@ -381,19 +411,15 @@ article{
 }
 
 section{
-
-   margin:10px auto;
-   overflow:hidden;
+	overflow:hidden;
    padding:8px 0;
    text-align:center;
    width:90%;
    color: #fff;
 }
 
-.fila1{padding-right: 3%;
-padding-left: 1%}
-.fila2{padding-right: 3%;}
-.fila3{padding-right: 3%;}
+.fila1{padding-right: 1%;padding-left: 4%;}
+.fila2{padding-right: 1%;}
 
 section article h4{
 	text-align: center;
@@ -415,13 +441,14 @@ section article p{
 @media screen and (max-width:1000px){
    section{
       width:100%;
-   }
+   }   
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:850px){
    article{
       width:100%;
    }
+   .fila1,.fila2,.fila3,.fila4{width: 100%;}
 }
 
 @media screen and (max-width:768px){
@@ -431,60 +458,6 @@ section article p{
 }
 
 /*06 SEPARATE ARROWS ========================================================================*/
-
-article{
-   float:left;
-   width:30%;
-}
-
-section{
-
-   margin:10px auto;
-   overflow:hidden;
-   padding:8px 0;
-   text-align:center;
-   width:90%;
-   color: #fff;
-}
-
-.fila1{padding-right: 3%;
-padding-left: 1%}
-.fila2{padding-right: 3%;}
-.fila3{padding-right: 3%;}
-
-section article h4{
-	text-align: center;
-	font-size:26px;
-	color:#FFF;
-	font-weight: 700;
-	margin: 1em 0;
-	text-transform:uppercase;
-}
-
-section article p{
-	color: #f4f4f4;
-	font-size: 16px;
-	margin:0;
-	line-height: 1.8em;
-}
-
-@media screen and (max-width:1000px){
-   section{
-      width:100%;
-   }
-}
-
-@media screen and (max-width:700px){
-   article{
-      width:100%;
-   }
-}
-
-@media screen and (max-width:768px){
-   section{
-     padding:0px 0;
-   }
-}
 
 .arrow-separator
 {
@@ -618,9 +591,7 @@ border-bottom-left-radius: 90px;
 	margin:0;
 	line-height: 2.2em;
 	text-align: center;
-	padding-left: 1%;   
-	text-decoration: none !important;
-	text-decoration: underline;
+	padding-left: 1%;
 }
 
 @media screen and (max-width:1000px){
@@ -826,79 +797,19 @@ padding: 0;}
 }
 
 
-
 .image-lightbox {
-	/* Position absolutely so we can zoom it out later */	
-	/* Transitions to provide some eye candy */
 	-webkit-transition: all ease-in 0.5s;
 	-moz-transition: all ease-in 0.5s;
 	-ms-transition: all ease-in 0.5s;
 	-o-transition: all ease-in 0.5s;
 }
 
-.image-lightbox span {
-	display: none;
-}
-
-.imag-wrapper {
-    display: inline-block;
-    overflow: hidden;
-}
-
 . Mapa_Container img:hover {
     transform:scale(1.5);
-    -ms-transform:scale(1.5); /* IE 9 */
-    -moz-transform:scale(1.5); /* Firefox */
-    -webkit-transform:scale(1.5); /* Safari and Chrome */
-    -o-transform:scale(1.5); /* Opera */
-}
-
-
-.image-lightbox .expand {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	z-index: 4000;
-	background: rgba(0,0,0,0); /* Fixes an IE bug */
-	left: 0;
-}
-
-.image-lightbox .close {
-	position: absolute;
-	width: 20px; height: 20px;
-	right: 20px; top: 20px;
-}
-
-.image-lightbox .close a {
-	height: auto; width: auto;
-	padding: 5px 10px;
-	color: #fff;
-	text-decoration: none;
-	background: #22272c;
-	box-shadow: inset 0px 24px 20px -15px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 30px rgba(255,255,255,0.4);
-	border-radius: 5px;
-	font-weight: bold;
-	float: right;
-}
-
-.image-lightbox .close a:hover {
-	box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 20px rgba(255,255,255,0.4);
-}
-
-div[id^=image]:target {
-	width: 450px;
-	height: 300px;
-	z-index: 5000;
-	top: 50px;
-	left: 200px;
-}
-li[id^=image]:target .close {
-	display: block;
-}
-
-li[id^=image]:target .expand {
-	display: none;
+    -ms-transform:scale(1.5); 
+    -moz-transform:scale(1.5); 
+    -webkit-transform:scale(1.5); 
+    -o-transform:scale(1.5); 
 }
 
 /* ----- Image grids ----- */
@@ -1229,9 +1140,6 @@ img
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	text-decoration: none;
-}
 .owl-prev {
 	position: absolute;
 	top: -22%;
@@ -1785,7 +1693,6 @@ footer
 	width:100%;
 	color: #4D4C4C;
 	text-transform:uppercase;
-	text-decoration:none;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
