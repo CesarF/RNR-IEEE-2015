@@ -942,6 +942,11 @@ section .comiteSection{
     border-bottom: 5px solid #e5e5e5;
 }
 
+.event_box_caption ul li{
+	display: inline-block;
+	color: black;
+}
+
 #templatemo_events .event_box_wap p {
     margin: 0;
     color: #000000;
