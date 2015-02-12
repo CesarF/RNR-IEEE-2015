@@ -947,6 +947,12 @@ section .comiteSection{
 	color: black;
 }
 
+.event_box_caption ul
+{
+	padding: 0;
+	margin: 3%;
+}
+
 #templatemo_events .event_box_wap p {
     margin: 0;
     color: #000000;
@@ -976,8 +982,8 @@ p+span+p
 }
 
 #templatemo_events .event_box_wap p {
-	margin: 0px 36px;
-    padding: 2px 0px 2px 19px;
+	margin: 0px 0px;
+    padding: 2px 7px 2px 7px;
 }
 
 @media screen and (max-width:1120px){
