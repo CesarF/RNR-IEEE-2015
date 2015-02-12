@@ -895,6 +895,28 @@ section .comiteSection{
    width:1000px;
 }
 
+.David h1
+{
+	font-size: 18px !important;
+	line-height: 0 !important;
+}
+
+.David p
+{
+	font-size: 14px;
+}
+
+.Mateo h1
+{
+	font-size: 18px !important;
+	line-height: 0 !important;
+}
+
+.Mateo p
+{
+	font-size: 14px;
+}
+
 .comiteSection .comitefila1 , .comiteSection .comitefila2
 {
    padding-right: 4.5%;
