@@ -383,7 +383,7 @@ nav {
 
 .div1
 {
-	background: #0170ff; width: 50%;
+	background: #0185ff; width: 50%;
 }
 .div2
 {
@@ -394,6 +394,7 @@ nav {
    #concurso .div1 , #concurso .div2{
    	width: 100%
    }
+   .div2{padding: 4.8% 0 !important;}
 }
 /* 05. INFO WHAT'S RNR ... ================================================== */
 
@@ -412,7 +413,7 @@ article{
 
 section{
 	overflow:hidden;
-   padding:8px 0;
+   padding:3% 0;
    text-align:center;
    width:90%;
    color: #fff;
@@ -780,6 +781,10 @@ padding: 0;}
         width: 100% !important;
         min-height: 400px !important;
     }
+@media screen and (max-width: 720px){
+
+	.google-maps{height: 98px;}
+}
 
 .Mapa_Img
 {
