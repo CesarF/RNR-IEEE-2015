@@ -924,6 +924,19 @@ section .comiteSection{
 	font-size: 14px;
 }
 
+.Angelo h1
+{
+	font-size: 16px !important;
+	line-height: 0 !important;
+}
+
+.Aldo h1
+{
+	font-size: 16px !important;
+	line-height: 0 !important;
+}
+
+
 .comiteSection .comitefila1 , .comiteSection .comitefila2
 {
    padding-right: 4.5%;
