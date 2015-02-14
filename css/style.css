@@ -9,6 +9,7 @@ html {
 
 p{text-align: justify;}
 a:link{text-decoration: none !important;}
+ul li{list-style: none !important;}
 #RNR{padding: 0;}
 table, th, td {border: 1px solid black; border-color: #CCC}
 .container-fluid {
@@ -881,6 +882,40 @@ ul.rig.columns-4 li
 		width: 100% !important; /* over-ride all li styles */
 		margin: 0 0 20px;
 	}
+}
+
+
+
+/*06 Organizadores ================================================================= */
+
+#Organizadores
+{  /*padre*/
+	width: 100%;
+}
+
+
+#Organizadores .div_org1
+{  /*hijos*/
+	display: inline-block;
+	margin: 0;
+	padding:0;
+}
+
+#Organizadores .div_org1 li {float: left;}
+
+#Organizadores .div_org2{width: 100%}
+
+#img_org1 img {width: 90px;}
+#img_org2 img {width: 110px;}
+#img_org3 img {width: 80px;}
+#img_org4 img {width: 60px;}
+#img_org5 img {width: 60px;}
+
+@media screen and (max-width:761px){
+   #Organizadores .div_org1 , #Organizadores .div_org2{
+   	width: 100%
+   }
+   .div_org{padding: 4.8% 0 !important;}
 }
 
 /*10. organizing committee ================================================== */
