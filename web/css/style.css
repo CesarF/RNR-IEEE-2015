@@ -405,6 +405,7 @@ nav {
 	clear: both;
 	width: 100%;
 	position: relative;
+	padding: 13% 0%;
 }
 
 article{
@@ -441,16 +442,35 @@ section article p{
 }
 
 @media screen and (max-width:1000px){
-   section{
+   section
+   {
       width:100%;
    }   
+
+   .fila1,.fila2,.fila3{padding-top: 3%;}
 }
 
 @media screen and (max-width:850px){
    article{
       width:100%;
    }
-   .fila1,.fila2,.fila3,.fila4{width: 100%;}
+   .fila1,.fila2,.fila3{width: 100%;}
+   .fila3{padding-top: 5%;}
+}
+
+@media screen and (max-width: 768px){
+	.WhatsRNR
+	{
+		padding-top: 21%;
+
+	}
+	.fila1,.fila2,.fila3
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.fila3{padding-top: 5%;}
+
 }
 
 @media screen and (max-width:768px){
@@ -1727,6 +1747,68 @@ footer
 #footer_2 a:hover {
   color: #5fa9c5;
   border: 1px solid #5fa9c5;
+}
+
+@media screen and (max-width: 1050px){
+
+	#fot_logo1 img
+{
+	width: 12%;
+	position: absolute;
+	bottom: 20%;
+	left: 7%;
+}
+
+#fot_logo2 img
+{
+	width: 7%;
+	position: absolute;
+	bottom: 14%;
+	left:28%;
+}
+
+	#fot_logo3 img
+{
+	width: 8%;
+	position: absolute;
+	top: 13%;
+	right: 27%;
+}
+
+		#fot_logo4 img
+	{
+		width: 14%;
+		position: absolute;
+		bottom: 0%;
+		right: 8%;
+	  	
+	}
+
+}
+
+@media screen and (max-width: 800px){
+
+#fot_logo1 img{width: 13%;}
+
+#fot_logo2 img{left:26%;}
+
+#fot_logo3 img{top: 32%; right: 25%;}
+
+#fot_logo4 img{bottom: 3%;right: 7%;}
+
+}
+
+@media screen and (max-width: 675px){
+
+#fot_logo1 img{width: 14%;bottom: 40%;left: 3%;}
+
+#fot_logo2 img{width: 7%;bottom: 38%;left:22%;}
+
+#fot_logo3 img{top: 21%; right: 18%;}
+
+#fot_logo4 img{bottom: 30%;right: 1%;}
+
+#fot_p #fot_p_1, #fot_p #fot_p_2{font-size: 12px;}
 }
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
