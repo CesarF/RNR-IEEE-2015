@@ -397,7 +397,9 @@ nav {
    }
    .div2{padding: 4.8% 0 !important;}
 }
-/* 05. INFO WHAT'S RNR ... ================================================== */
+
+
+/* 05. INFO WHAT'S RNR OWN PAGE ... ================================================== */
 
 .WhatsRNR
 {
@@ -785,9 +787,13 @@ content: attr(data-th); font-weight: bold;
 display: inline-block; width: 6rem;
 }
 }
-/*09 ================================================== */
-#Lugar{margin: 0;
-padding: 0;}
+/*09  LUGAR ================================================== */
+
+#Lugar
+{
+	margin: 0;
+	padding: 0;
+}
 
 .google-maps {
         position: relative;
@@ -1682,134 +1688,37 @@ img
 
 footer
 {
- 	color: rgba(255,255,255,0.7);
- 	background: #e95855;
- 	padding: 40px 0;
+ 	background: white;
+ 	width: 100%;
+ 	padding: 1%;
 }
 
-#footer_2 ul {
-  position: relative;
-  margin: 0;
-  text-align: center;
-}
+#fot_logo1,#fot_logo2,#fot_logo4 {padding-right:5%;}
+#fot_logo2{padding-left: 2%;}
+#fot_logo3{padding-right: 8%; padding-left: 3%;}
+#fot_logo3 img{ width: 80%;}
 
-#footer_2 img{opacity: 0.4;}
 
-#fot_p p
+#footer_2 li 
 {
-	text-align: center;
+	display: inline-block;
 }
 
-#fot_p #fot_p_1
+ul.der 
 {
-	padding-bottom: 0;
+	font-size: 0px;
 }
 
-#fot_logo1 img
-{
-	width: 11%;
-	position: absolute;
-	bottom: 5%;
-	left: 8%;
-}
 
-#fot_logo2 img
-{
-	width: 6%;
-	position: absolute;
-	bottom: -2%;
-	left:29%;
-}
-
-#fot_logo3 img
-{
-	width: 7%;
-	position: absolute;
-	top: 16%;
-	right: 30%;
-}
-
-#fot_logo4 img
-{
-	width: 12%;
-	position: absolute;
-	bottom: -11%;
-	right: 10%;
-  	
-}
-
-#footer_2 li {
-  display: inline-block;
-  list-style: none;
-  padding-right: 3%;
-}
-
-#footer_2 a:hover {
-  color: #5fa9c5;
-  border: 1px solid #5fa9c5;
-}
-
-@media screen and (max-width: 1050px){
-
-	#fot_logo1 img
-{
-	width: 12%;
-	position: absolute;
-	bottom: 20%;
-	left: 7%;
-}
-
-#fot_logo2 img
-{
-	width: 7%;
-	position: absolute;
-	bottom: 14%;
-	left:28%;
-}
-
-	#fot_logo3 img
-{
-	width: 8%;
-	position: absolute;
-	top: 13%;
-	right: 27%;
-}
-
-		#fot_logo4 img
+@media (max-width: 1199px) {
+	.footer_2_Container 
 	{
-		width: 14%;
-		position: absolute;
-		bottom: 0%;
-		right: 8%;
-	  	
+		width: auto;
+		padding: 0 0px;
 	}
-
+	ul {padding: 0; margin: 0;}
 }
 
-@media screen and (max-width: 800px){
-
-#fot_logo1 img{width: 13%;}
-
-#fot_logo2 img{left:26%;}
-
-#fot_logo3 img{top: 32%; right: 25%;}
-
-#fot_logo4 img{bottom: 3%;right: 7%;}
-
-}
-
-@media screen and (max-width: 675px){
-
-#fot_logo1 img{width: 14%;bottom: 40%;left: 3%;}
-
-#fot_logo2 img{width: 7%;bottom: 38%;left:22%;}
-
-#fot_logo3 img{top: 21%; right: 18%;}
-
-#fot_logo4 img{bottom: 30%;right: 1%;}
-
-#fot_p #fot_p_1, #fot_p #fot_p_2{font-size: 12px;}
-}
 
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
 
