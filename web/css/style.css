@@ -306,7 +306,7 @@ nav {
   display: block;
   position: relative;
   z-index: 1;
-  height: auto;
+  max-height: 470px;
   width: 100%;
   border: 0;
   padding-top: 120px;
@@ -358,10 +358,13 @@ nav {
   .callbacks_nav {
     top: 74%;
     }
+ }
 
-.callbacks_container {
-	margin-bottom: 0px;
-  }
+@media only screen and (min-width : 319px) and (max-width : 320px)  {  
+  .callbacks{
+    padding-left: 12%;
+    }
+
 }
 
 /*06 concurso ================================================================= */
@@ -479,6 +482,43 @@ section article p{
    section{
      padding:0px 0;
    }
+}
+
+
+/* 05.1. INFO WHAT'S RNR INDEX ... ================================================== */
+
+.WhatsRNR_index
+{
+	min-height: 500px;
+	clear: both;
+	width: 100%;
+	position: relative;
+	padding: 7% 0%;
+}
+
+.fila1_index{padding-right: 1%;padding-left: 4%;}
+
+@media screen and (max-width:1000px){
+   
+   .fila1_index{padding-top: 3%;}
+}
+
+@media screen and (max-width:850px){
+   
+   .fila1_index{width: 100%;}
+   }
+
+@media screen and (max-width: 768px){
+	.WhatsRNR_index
+	{
+		padding-top: 2%;
+	}
+
+	.fila1_index
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 /*06 SEPARATE ARROWS ========================================================================*/
@@ -1283,7 +1323,6 @@ img
 	width: 12px;
 	height: 12px;
 	margin: 5px 7px;
-	filter: Alpha(Opacity=50);
 	opacity: 0.5;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -1667,8 +1706,8 @@ img
 
 	position: absolute;
 	right: 0%;
-	left: -15%;
-	top: 35%;}
+	left: -2%;
+	top: 42%;}
 
 	#interblock_footer p 
 			{
@@ -1689,8 +1728,7 @@ img
 footer
 {
  	background: white;
- 	width: 100%;
- 	padding: 1%;
+ 	padding: 1% 0% 1% 11%;
 }
 
 #fot_logo1,#fot_logo2,#fot_logo4 {padding-right:5%;}
@@ -1711,12 +1749,14 @@ ul.der
 
 
 @media (max-width: 1199px) {
-	.footer_2_Container 
-	{
-		width: auto;
-		padding: 0 0px;
-	}
-	ul {padding: 0; margin: 0;}
+	footer{padding:0;}
+	
+	ul {padding: 0; margin: 0; text-align: center;}
+
+	#fot_logo1,#fot_logo2,#fot_logo4 {padding:3% 0;}	
+	#fot_logo3 img{ width: 80%;}
+	#fot_logo2 img {width: 100%;}
+	#fot_logo3 {padding-top: 3%; padding-left:4%;}
 }
 
 

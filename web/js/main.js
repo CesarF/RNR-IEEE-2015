@@ -1,5 +1,5 @@
 $(document).ready(function() {        
-        $(".cbp-af-header").load('head.html');
+        $(".cbp-af-header").load('head.html .row');
       });
 
 $(document).ready(function() {        
