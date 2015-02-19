@@ -492,11 +492,35 @@ section article p{
 	min-height: 500px;
 	clear: both;
 	width: 100%;
-	position: relative;
-	padding: 7% 0%;
+	position: relative;	
+	background: white;
 }
 
-.fila1_index{padding-right: 1%;padding-left: 4%;}
+.WhatsRNR_index .fa-question
+{
+	color: #524D4D;
+	font-size: 7em;
+}
+
+#WhatsRNR_h4
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	text-transform:uppercase;
+}
+
+#WhatsRNR_p
+{
+	color: #555555;
+	font-size: 16px;
+	margin:0;
+	line-height: 1.8em;
+}
+
+.fila1_index{width: 100%;}
 
 @media screen and (max-width:1000px){
    
@@ -542,21 +566,10 @@ section article p{
 		z-index: 11;
 	}
 	
-	.arrow-black:after
-	{
-		border-color: #111111 rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
-	}
-
 	.arrow-white:after
 	{
-		border-color: #76C7C0 rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
+		border-color: white rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
 	}
-
-	.arrow-green:after
-	{
-		border-color: #15945F rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
-	}
-
 /*07 ========================================================================*/
 
 #Agenda{margin: 0;
@@ -1220,6 +1233,7 @@ img
 .Sponsors_Color
 {	
 	background: #1D5A74 ; 
+	display: none;
 }
 
 .Sponsorsh4 h4{
@@ -1614,7 +1628,7 @@ img
 
 	position: absolute;
 	right: 20%;
-	left: 17%;
+	left: 19%;
 	top: 37%;}
 
 	.footer_row
@@ -1695,9 +1709,9 @@ img
 	#interblock_footer ul {
 
 	position: absolute;
-	right: 4%;
+	right: 1%;
 	left: 0%;
-	top: 35%;}
+	top: 44%;}
 }
 
 
@@ -1736,6 +1750,8 @@ footer
 #fot_logo3{padding-right: 8%; padding-left: 3%;}
 #fot_logo3 img{ width: 80%;}
 
+#fot_logo1 img,#fot_logo2 img,#fot_logo4 img{ width: 200px;}
+#fot_logo3 img{width:100px;}
 
 #footer_2 li 
 {
@@ -1753,10 +1769,26 @@ ul.der
 	
 	ul {padding: 0; margin: 0; text-align: center;}
 
-	#fot_logo1,#fot_logo2,#fot_logo4 {padding:3% 0;}	
-	#fot_logo3 img{ width: 80%;}
-	#fot_logo2 img {width: 100%;}
-	#fot_logo3 {padding-top: 3%; padding-left:4%;}
+	#fot_ramas1,#fot_ramas2,#fot_ramas4 {padding:3% 0;}	
+	#fot_ramas3 {padding-top: 3%; padding-left:4%;}
+}
+
+#fot_ramas1,#fot_ramas2,#fot_ramas4 {padding-right:5%;}
+#fot_ramas2{padding-left: 2%;}
+#fot_ramas3{padding-right: 8%; padding-left: 3%;}
+#fot_ramas3 img{ width: 80%;}
+
+#fot_ramas2 img,#fot_ramas4 img{ width: 200px;}
+#fot_ramas1 img{width:150px; padding-top: 3%;}
+#fot_ramas3 img{width:100px;}
+
+@media (max-width: 1199px) {
+	footer{padding:0;}
+	
+	ul {padding: 0; margin: 0; text-align: center;}
+
+	#fot_ramas1,#fot_ramas2,#fot_ramas4 {padding:3% 0;}	
+	#fot_ramas3 {padding-top: 3%; padding-left:4%;}
 }
 
 
