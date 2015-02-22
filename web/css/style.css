@@ -410,12 +410,20 @@ nav {
 	clear: both;
 	width: 100%;
 	position: relative;
+	background: white;
 	padding: 13% 0%;
+}
+
+
+.WhatsRNR .fa-question,.WhatsRNR .fa-check, .WhatsRNR .fa-th-list
+{
+	color: #524D4D;
+	font-size: 6em;
 }
 
 article{
    float:left;
-   width:30%;
+   width:28%;
 }
 
 section{
@@ -426,21 +434,24 @@ section{
    color: #fff;
 }
 
-.fila1{padding-right: 1%;padding-left: 4%;}
-.fila2{padding-right: 1%;}
+.fila1{padding-right: 3%;padding-left: 5%;}
+.fila2{padding-right: 3%;}
 
-section article h4{
+section article h4
+
+{
+
 	text-align: center;
-	color: #FFF;
+	color: #524D4D;
 	font-size:26px;
-	color:#FFF;
 	font-weight: 700;
 	margin: 1em 0;
 	text-transform:uppercase;
 }
 
-section article p{
-	color: #f4f4f4;
+section article p
+{
+	color: #555555;
 	font-size: 16px;
 	margin:0;
 	line-height: 1.8em;
@@ -451,9 +462,9 @@ section article p{
    {
       width:100%;
    }   
-
-   .fila1,.fila2,.fila3{padding-top: 3%;}
-}
+   
+   .fila1,.fila2,.fila3{padding-top: 10%;}
+w}
 
 @media screen and (max-width:850px){
    article{
@@ -466,32 +477,38 @@ section article p{
 @media screen and (max-width: 768px){
 	.WhatsRNR
 	{
-		padding-top: 21%;
+		padding-top: 9%;
 
 	}
 	.fila1,.fila2,.fila3
 	{
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 	.fila3{padding-top: 5%;}
 
 }
 
-@media screen and (max-width:768px){
-   section{
-     padding:0px 0;
-   }
+@media screen and (max-width:866px){
+	.fila1,.fila2, .fila3
+	{
+	 width: 100%;
+	}
 }
 
-
+@media screen and (min-width:769px) and (max-width:866px){
+	.fila1,.fila2, .fila3
+	{
+	 width: 95%;
+	 padding-left: 2%;
+	}
+}
 /* 05.1. INFO WHAT'S RNR INDEX ... ================================================== */
 
 .WhatsRNR_index
 {
-	min-height: 500px;
+	min-height: 597px;
 	clear: both;
-	width: 100%;
 	position: relative;	
 	background: white;
 }
@@ -499,7 +516,9 @@ section article p{
 .WhatsRNR_index .fa-question
 {
 	color: #524D4D;
-	font-size: 7em;
+	font-size: 5em;
+	padding-top: 3%;
+	padding-left: 47%;
 }
 
 #WhatsRNR_h4
@@ -516,11 +535,12 @@ section article p{
 {
 	color: #555555;
 	font-size: 16px;
-	margin:0;
+	margin:0 7%;
 	line-height: 1.8em;
+	text-align: justify;
 }
 
-.fila1_index{width: 100%;}
+.fila1_index{width: 50%; padding-right: 6%;}
 
 @media screen and (max-width:1000px){
    
@@ -543,7 +563,44 @@ section article p{
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	#WhatsRNR_p
+	{
+		margin: 0;
+	}
 }
+
+@media screen and (max-width: 1199px){
+	.fila1_index
+	{
+		padding-right: 3%;		
+	}
+
+	.twitter-timeline{width: 400px !important;}
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 1030px){
+	
+	.WhatsRNR_index{min-height: 752px !important;}
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1199px){
+	
+	.WhatsRNR_index{min-height: 653px !important;}
+}
+
+@media screen and (min-width: 851px) and (max-width: 900px){
+	
+	.twitter-timeline{width: 392px !important;}
+	.WhatsRNR_index{min-height: 785px !important;}
+}
+
+@media screen and (max-width: 850px){
+	
+	.twitter-timeline{width: 100% !important;}
+}
+
 
 /*06 SEPARATE ARROWS ========================================================================*/
 
@@ -570,6 +627,7 @@ section article p{
 	{
 		border-color: white rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
 	}
+
 /*07 ========================================================================*/
 
 #Agenda{margin: 0;
@@ -997,237 +1055,6 @@ ul.rig.columns-4 li
    .div_org{padding: 4.8% 0 !important;}
 }
 
-/*10. organizing committee ================================================== */
-
-#templatemo_events .columnas { width: 102.40426%; }
-
-section .comiteSection{
-   margin:10px auto;
-   overflow:hidden;
-   padding:10px 0;
-   text-align:center;
-   width:1000px;
-}
-
-.David h1
-{
-	font-size: 18px !important;
-	line-height: 0 !important;
-}
-
-.David p
-{
-	font-size: 14px;
-}
-
-@media (max-width: 331px) {
-	.David h1
-	{
-		font-size: 16px !important;
-	}
-}
-
-.Mateo h1
-{
-	font-size: 18px !important;
-	line-height: 0 !important;
-}
-
-.Mateo p
-{
-	font-size: 14px;
-}
-
-.Angelo h1
-{
-	font-size: 16px !important;
-	line-height: 0 !important;
-}
-
-.Aldo h1
-{
-	font-size: 16px !important;
-	line-height: 0 !important;
-}
-
-
-.comiteSection .comitefila1 , .comiteSection .comitefila2
-{
-   padding-right: 4.5%;
-}
-
-.comiteSection .comitefila3
-
-{
-   float: right;
-}
-
-.comiteSection .comitefila1 , .comiteSection .comitefila2, .comiteSection .comitefila3 
-{
-	padding-top: 1%;
-}
-
-
-#templatemo_events 
-{
-    background: #fbfbfb;
-    overflow: hidden;
-}
-
-#templatemo_events h1
-{
-	color: #4D4C4C;
-    text-align: center;
-}
-#templatemo_events .event_box_wap {
-    overflow:hidden;
-    position: relative;
-}
-
-#templatemo_events .event_box_wap .event_box_img {
-    position: relative;
-    top: 0;
-}
-
-#templatemo_events .event_box_wap .event_box_caption
-
-{
-    position: relative;
-    background: #fff;
-    width: 100%;
-    border-bottom: 5px solid #e5e5e5;
-}
-
-.event_box_caption ul li{
-	display: inline-block;
-	color: black;
-}
-
-.event_box_caption ul
-{
-	padding: 0;
-	margin: 3%;
-}
-
-#templatemo_events .event_box_wap p {
-    margin: 0;
-    color: #000000;
-    text-align: justify;
-}
-
-#templatemo_events .event_box_wap h1
-{
-    color:  black ;
-    text-align: center;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-p+span+p 
-{
-	text-align: right !important;
-}
-
-#templatemo_events .event_box_wap p span /*CAMBIAR COLORES ICONS*/
-{
-	color: yellow;
-	left: 0;
-	position: absolute;
-	top:33%;
-	left: 4%;
-}
-
-#templatemo_events .event_box_wap p {
-	margin: 0px 0px;
-    padding: 2px 7px 2px 7px;
-}
-
-@media screen and (max-width:1120px){
-
-   .comitefila2{width: 100%}
-
-	.comiteSection   
-   {
-		width: 100% !important;
-   }
-
-   article .comiteSection .comitefila2 , .comiteSection .comitefila1, .comiteSection .comitefila3
-   {
-      width:100%;
-   }
-
-
-}
-
-@media screen and (max-width: 320px){
-
-.container-fluid{width: 100%;}
-
-article .comiteSection .comitefila2 , .comiteSection .comitefila1, .comiteSection .comitefila3
-   {
-      width:100%;
-   }
-
-section .comiteSection
-{
-	 padding: 0 0;
-	 height: auto !important;
-
-}  
-
-img
-{
-	left: -12%;
-	position: inherit;
-	margin: 0;
-	padding: 0;
-}
-
-#templatemo_events .event_box_wap h1
-{
-    color:  black ;
-    text-align: center;
-    font-size: 16px;
-    line-height: 16px;
-}
-
-#templatemo_events h1{
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
-    padding-right: 22%;
-    padding-top: 2%;
-
-}
-
-#templatemo_events .event_box_wap p span
-{	
-	visibility: hidden;
-}
-
-#templatemo_events .event_box_wap p
-{
-	margin: 0;
-	max-width: 320px;
-    padding:0;
-    text-align: center;
-}
-
-.comiteSection .comitefila1, .comiteSection .comitefila2
-{
-	padding-right: 0;
-}
-
-}
-
-
-#Patrocinadores , #Comite
-{
-	margin: 0;
-	padding: 0;
-}
 /* 11 Sponsonrs ================================================== */
 
 .Sponsors_Color
@@ -1557,6 +1384,55 @@ img
 }
 
 
+/*10 PAGUEN !! ================================================================= */
+
+#contenedor_pago {
+background: white;
+}
+
+#btn_pago .div_pago2
+{  
+	/*hijos*/	
+	display: table-cell;
+	float: right;
+	text-align: center;
+	padding: 1.41% 0;
+	font-size: 26px;
+	color: white;
+	font-family: 'latolight';
+}
+
+#btn_pago .div_pago1
+{
+	display: table-cell;
+	float: left;
+	padding: 2.44% 0;
+}
+
+
+.div_pago1
+{
+	background: white; width: 50%; height:auto;
+}
+
+.div_pago2
+{
+	background: #FF0000; width: 50%;
+}
+
+@media screen and (max-width:1212px){  
+   #btn_pago .div_pago2
+   {
+   	width: 100%
+   }
+
+   #btn_pago .div_pago1
+{
+	display:none;
+}
+   
+}
+
 /* 11. INTERBLOCK FOOTER SETTINGS ================================================== */
 
 
@@ -1739,6 +1615,8 @@ img
 
 /* 12 Footer ==================================================*/
 
+ul.ul_ramas{padding-right: 0; padding-left: 0;}
+
 footer
 {
  	background: white;
@@ -1764,27 +1642,17 @@ ul.der
 }
 
 
-@media (max-width: 1199px) {
-	footer{padding:0;}
-	
-	ul {padding: 0; margin: 0; text-align: center;}
-
-	#fot_ramas1,#fot_ramas2,#fot_ramas4 {padding:3% 0;}	
-	#fot_ramas3 {padding-top: 3%; padding-left:4%;}
-}
-
-#fot_ramas1,#fot_ramas2,#fot_ramas4 {padding-right:5%;}
-#fot_ramas2{padding-left: 2%;}
-#fot_ramas3{padding-right: 8%; padding-left: 3%;}
 #fot_ramas3 img{ width: 80%;}
+#fot_ramas1 img{width:150px; padding-top: 3%; padding-left: 6%;}
+#fot_ramas2 img{ width: 200px; padding-bottom: 20px; padding-left: 12%;}
+#fot_ramas3 img{width:145px; padding-left: 25%;}
+#fot_ramas4 img{ width: 210px; padding-bottom: 21px; padding-left: 15%; padding-right: 8%;}
+#fot_ramas5 img{ width: 145px; padding-left: 5%;}
 
-#fot_ramas2 img,#fot_ramas4 img{ width: 200px;}
-#fot_ramas1 img{width:150px; padding-top: 3%;}
-#fot_ramas3 img{width:100px;}
 
 @media (max-width: 1199px) {
-	footer{padding:0;}
 	
+	footer{padding:0;}	
 	ul {padding: 0; margin: 0; text-align: center;}
 
 	#fot_ramas1,#fot_ramas2,#fot_ramas4 {padding:3% 0;}	
@@ -1792,6 +1660,38 @@ ul.der
 }
 
 
+@media (max-width: 360px) {
+	
+	#fot_ramas2 img
+ {	
+	padding-left: 0%;
+ }
+
+ #fot_ramas3 img 
+ {
+ 	width: 145px;
+ 	padding-left: 0%; 
+ }
+
+ #fot_ramas4 
+ {
+ 	padding:0; 
+ }
+
+ #fot_ramas4 img 
+ {
+	 width: 200px;
+	 padding-bottom: 24px;
+	 padding-left:  0%; 
+	 padding-right: 0%; 
+ }
+
+ #fot_ramas5 img 
+ {
+	width: 145px;
+ 	padding-left: 0%; 
+ }
+}
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
 
 	.mobile-menu

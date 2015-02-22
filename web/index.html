@@ -44,6 +44,8 @@
 </head>
 
 <body>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <!-- Header DESKTOP	  	  ############################################### -->
 
 	<div class="cbp-af-header"></div>
@@ -55,12 +57,13 @@
 			<div class="row">
 				<div class="mobile-menu-inner">
 					<ul class="nav-mobile">
+	                  <li><a href="index.html">Inicio</a></li>
 	                  <li><a href="rnr.html">RNR</a></li>
 	                  <li><a href="agenda.html">Agenda</a></li>
-	                  <li><a href="concursos.html">Concursos</a></li>
+	                  <!-- <li><a href="concursos.html">Concursos</a></li> -->
 	                  <li><a href="lugar.html">Lugar</a></li>
 	                  <li><a href="organizadores.html">Organizadores</a></li>
-	                  <li><a href="#">Patrocinadores</a></li>
+	                  <!-- <li><a href="#">Patrocinadores</a></li> -->
 	                  <li><a href="registro.html">Registro</a></li>
 					  <li><a href="#footer_2">Contacto</a></li>
 					</ul>
@@ -92,9 +95,9 @@
 	</div>
 <!--END CONCURSO 	  ###############################################-->
 
-<!-- What's RNR 	  ###############################################-->	
+<!-- What's RNR + Twitter Widget	  ###############################################-->	
 
-		<section class="WhatsRNR_index">
+		<div class="WhatsRNR_index">
       	<article class="fila1_index">
         <i class="fa fa-question fa-5x"></i>
 		<h4 id="WhatsRNR_h4">¿Que es La RNR?</h4>
@@ -102,13 +105,23 @@
 		</p><br>
 		<p id="WhatsRNR_p">La RNR tiene como misión integrar todas las autoridades estudiantiles de la Sección y facilitar el intercambio de conocimientos entre estudiantes y otros profesionales incentivando la generación de proyectos sostenibles que apoyen la misión de IEEE en nuestro país. Al tiempo, busca  fortalecer las organizaciones estudiantiles IEEE de la sección Colombia en habilidades propias del campo de la ingeniería, habilidades extra ingenieriles  y  temáticas IEEE, así como promocionar las actividades, objetivos y misión de IEEE, en la comunidad en general.</p>
       </article>   
-	  </section>
-<!-- END What's RNR   ###############################################-->
+	  
+	  <a class="twitter-timeline" height="565" ; href="https://twitter.com/hashtag/RNRBogot%C3%A12015" data-widget-id="553723293363355648">Tweets sobre #RNRBogotá2015</a>
 
-<!-- Arrow Separator  ###############################################-->
-	<div class="arrow-separator arrow-white">
+	  </div>	
+
+<!-- END What's RNR + Twitter Widget   ###############################################-->
+
+<!-- Btn Payment  ###############################################-->
+	<div id="contenedor_pago">
+		<div id="btn_pago">			
+			  <div class="div_pago1"></div> 
+			  <div class="div_pago2">Regístrate Ahora !!</div>
+		</div>
+		
 	</div>
-<!-- END Arrow Separator  ###############################################-->
+<!-- END Btn Payment  ###############################################-->
+
 
 <!-- Sponsors 		  ############################################### -->
 	<div class="Sponsors_Color">
@@ -188,7 +201,6 @@
 <!-- END Sponsors     ###############################################-->
 
 <!-- FOOTER INTERSECTION SECTION ############################################### -->
-
 	<section id="interblock_footer" class="footer_2">
 
 	    <div class="footer_row">
