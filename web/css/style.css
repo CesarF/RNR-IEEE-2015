@@ -573,11 +573,18 @@ w}
 @media screen and (max-width: 1199px){
 	.fila1_index
 	{
-		padding-right: 3%;		
+		padding-right: 3;		
 	}
 
 	.twitter-timeline{width: 400px !important;}
 
+}
+
+@media screen and (max-width: 360px){
+	.fila1_index
+	{
+		padding-right: 0;		
+	}	
 }
 
 @media screen and (min-width: 901px) and (max-width: 1030px){
