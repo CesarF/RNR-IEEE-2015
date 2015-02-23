@@ -926,7 +926,7 @@ display: inline-block; width: 6rem;
 
 .google-maps {
         position: relative;
-        padding-bottom: 29.6%; /*This is the aspect ratio*/
+        padding-bottom: 38.6%; /*This is the aspect ratio*/
         height: 0;
         overflow: hidden;
     }
@@ -936,6 +936,7 @@ display: inline-block; width: 6rem;
         left: 0;
         width: 100% !important;
         min-height: 400px !important;
+        padding-top: 9%;
     }
 @media screen and (max-width: 720px){
 
@@ -944,8 +945,6 @@ display: inline-block; width: 6rem;
 
 .Mapa_Img
 {
-
-	background: rgba(15, 178, 128, 0.8);
 	width: 100%;
 	padding-top: 2.2%;
     }
@@ -986,7 +985,7 @@ ul.rig li
 	display: inline-block;
 	padding: 10px;
 	margin: 0 0 2.5% 2.5%;
-	background: #fff;
+	background: black;
 	border: 1px solid #ddd;
 	font-size: 16px;
 	font-size: 1rem;
@@ -1040,6 +1039,181 @@ ul.rig.columns-4 li
 }
 
 
+/* 09.1. LUGAR MAIN DIV ... ================================================== */
+
+.Lugar_Info
+{
+	min-height: 598px;
+	clear: both;
+	position: relative;	
+	background: white;
+	padding-top: 3%;
+}
+
+.Lugar_Info .fa-question
+{
+	color: #524D4D;
+	font-size: 5em;
+	padding-top: 3%;
+	padding-left: 47%;
+}
+
+#Lugar_Info_h4
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-top: 2%;
+}
+
+#Lugar_Info_h4_1
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding: 3%;
+
+}
+
+#Lugar_Info_p
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 7%;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+#Lugar_Info_p_2
+
+{
+	color: #555555;
+	font-size: 16px;
+	margin:0 13%;
+	line-height: 1.4em;
+	text-align: justify;
+}
+
+#Lugar_Info_p_3
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 ;
+	line-height: 4.4em;
+	text-align: center;
+}
+
+
+#Lugar_Info_p_fecha
+
+{
+	color: #474747;
+	font-size: 18px;
+	margin:0 ;
+	line-height: 2.4em;
+	text-align: center;
+}
+
+#Cajica {padding-top: 6%; width: 50%; float: right; padding-left: 0;}
+#Cajica img{width: 18%; border-radius: 50%; padding-right: 1%; }
+
+#Zipaquira {width: 50%; float: right; padding-left: 0;}
+#Zipaquira img{width: 18%; border-radius: 50%; padding-right: 1%;  }
+
+.Article_Lugar{width: 45%; padding-right: 0%; padding-left: 2%;}
+
+@media screen and (max-width:1000px){
+   
+   .Article_Lugar{padding-top: 3%;}
+}
+
+@media screen and (max-width:850px){
+   
+   .Article_Lugar{width: 100%;}
+   }
+
+@media screen and (max-width: 768px){
+	.Lugar_Info
+	{
+		padding-top: 2%;
+	}
+
+	.Article_Lugar
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#Lugar_Info_p
+	{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.Article_Lugar
+	{
+		padding-right: 3;		
+	}
+}
+
+@media screen and (max-width: 360px){
+	.Article_Lugar
+	{
+		padding-right: 0;		
+	}	
+}
+
+@media screen and (min-width: 901px) and (max-width: 1030px){
+	
+	.Lugar_Info{min-height: 752px !important;}
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1199px){
+	
+	.Lugar_Info{min-height: 653px !important;}
+}
+
+@media screen and (min-width: 851px) and (max-width: 900px){	
+	.Lugar_Info{min-height: 785px !important;}
+}
+
+/*09.2 Imagenes Antes-Durantes-Despues RNR*/
+
+#Lugar_Antes_Despues{width: 100%;}
+
+#Lugar_Ant_Desp_1 , #Lugar_Ant_Desp_2 ,#Lugar_Ant_Desp_3 ,#Lugar_Ant_Desp_4
+{
+	width: 25%; float: left; margin: auto; text-align: center;
+}
+
+#Lugar_Ant_Desp_p{margin: 20px 12%;	line-height: 1.7em;}
+
+#avatar_musica img {border-radius: 50%; width: 35%;}
+
+/*Convertir un bloque o div en 3 columnas*/
+#Lugar_Eventos{
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -o-column-count: 4;
+        /*Espacio entre columnas*/
+    column-gap: 2em;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    -o-column-gap: 2em;
+    /*Agrega una barra solida de color*/
+    column-rule: 2px solid #666;
+    -webkit-column-rule: 2px solid #666;
+    -moz-column-rule: 2px solid #666;
+    -o-column-rule: 2px solid #666;
+}
 
 /*06 Organizadores ================================================================= */
 
@@ -1672,7 +1846,9 @@ ul.ul_ramas{padding-right: 0; padding-left: 0;}
 footer
 {
  	background: white;
- 	padding: 1% 0% 1% 11%;
+ 	/*padding: 1% 0% 1% 11%;*/
+ 	margin: auto;
+ 	text-align: center;
 }
 
 #fot_logo1,#fot_logo2,#fot_logo4 {padding-right:5%;}
