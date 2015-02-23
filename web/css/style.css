@@ -4,7 +4,8 @@ body
 }
 
 html {
-  background: #222 url("bg.png") repeat;
+  /*background: #222 url("bg.png") repeat;*/
+  background: white;
 }
 
 p{text-align: justify;}
@@ -1407,6 +1408,12 @@ ul.rig.columns-4 li
 background: white;
 }
 
+div#btn_pago 
+{
+	padding-right: 13%;
+	padding-bottom: 7%;
+}
+
 #btn_pago .div_pago2
 {  
 	/*hijos*/	
@@ -1429,12 +1436,12 @@ background: white;
 
 .div_pago1
 {
-	background: white; width: 50%; height:auto;
+	background: white; width: 75%; height:auto;
 }
 
 .div_pago2
 {
-	background: #FF0000; width: 50%;
+	background: #FF0000; width: 25%;
 }
 
 @media screen and (min-width:1230px) and (max-width:1298px){  
@@ -1453,10 +1460,10 @@ background: white;
 
 
 @media screen and (max-width:1212px){  
-   #btn_pago .div_pago2
+   /*#btn_pago .div_pago2
    {
    	width: 100%
-   }
+   }*/
 
    #btn_pago .div_pago1
 {
@@ -1465,6 +1472,19 @@ background: white;
    
 }
 
+@media screen and (max-width:851px){  
+   #btn_pago .div_pago2
+   {
+   	width: 100%
+   }
+
+   div#btn_pago 
+   {
+		padding-right: 0%;
+		padding-bottom: 0%;
+	}
+   
+}
 /* 11. INTERBLOCK FOOTER SETTINGS ================================================== */
 
 
