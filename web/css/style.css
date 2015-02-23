@@ -507,10 +507,11 @@ w}
 
 .WhatsRNR_index
 {
-	min-height: 597px;
+	min-height: 598px;
 	clear: both;
 	position: relative;	
 	background: white;
+	padding-top: 7%;
 }
 
 .WhatsRNR_index .fa-question
@@ -531,16 +532,25 @@ w}
 	text-transform:uppercase;
 }
 
+#WhatsRNR_h4_2
+{
+	text-align: center;
+	color: #ffAE00;
+	font-size:3em;
+	font-weight: 800;
+	margin: 1em 0;
+}
+
 #WhatsRNR_p
 {
 	color: #555555;
-	font-size: 16px;
+	font-size: 18px;
 	margin:0 7%;
 	line-height: 1.8em;
 	text-align: justify;
 }
 
-.fila1_index{width: 50%; padding-right: 6%;}
+.fila1_index{width: 45%; padding-right: 6%; padding-left: 5%;}
 
 @media screen and (max-width:1000px){
    
@@ -576,7 +586,7 @@ w}
 		padding-right: 3;		
 	}
 
-	.twitter-timeline{width: 400px !important;}
+	.twitter-timeline{width: 389px !important;}
 
 }
 
@@ -599,7 +609,7 @@ w}
 
 @media screen and (min-width: 851px) and (max-width: 900px){
 	
-	.twitter-timeline{width: 392px !important;}
+	.twitter-timeline{width: 367px !important;}
 	.WhatsRNR_index{min-height: 785px !important;}
 }
 
@@ -1413,7 +1423,7 @@ background: white;
 {
 	display: table-cell;
 	float: left;
-	padding: 2.44% 0;
+	padding: 2.58% 0;
 }
 
 
@@ -1426,6 +1436,21 @@ background: white;
 {
 	background: #FF0000; width: 50%;
 }
+
+@media screen and (min-width:1230px) and (max-width:1298px){  
+   #btn_pago .div_pago1
+   {
+   	padding: 2.52% 0;
+   }
+}
+
+@media screen and (min-width:1299px){  
+   #btn_pago .div_pago1
+   {
+   	padding: 2.45% 0;
+   }
+}
+
 
 @media screen and (max-width:1212px){  
    #btn_pago .div_pago2
