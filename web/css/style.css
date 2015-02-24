@@ -375,6 +375,7 @@ nav {
 	width: 100%;
 }
 
+a{color: white !important;}
 
 #concurso .div1, #concurso .div2{  /*hijos*/
 	display: table-cell;
@@ -1042,7 +1043,7 @@ ul.rig.columns-4 li
 
 .Lugar_Info
 {
-	min-height: 598px;
+	min-height: 500px;
 	clear: both;
 	position: relative;	
 	background: white;
