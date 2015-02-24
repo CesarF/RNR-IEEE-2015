@@ -1125,7 +1125,7 @@ ul.rig.columns-4 li
 
 {
 	color: #474747;
-	font-size: 18px;
+	font-size: 14px;
 	margin:0 ;
 	line-height: 2.4em;
 	text-align: center;
@@ -1201,10 +1201,14 @@ ul.rig.columns-4 li
 
 #Lugar_Ant_Desp_1 , #Lugar_Ant_Desp_2 ,#Lugar_Ant_Desp_3 ,#Lugar_Ant_Desp_4
 {
-	width: 25%; float: left; margin: auto; text-align: center;
+	width: 24%; float: left; margin: auto; text-align: center;
 }
 
-#Lugar_Ant_Desp_p{margin: 20px 12%;	line-height: 1.7em;}
+#Lugar_Ant_Desp_1 {padding-left: 1%;}
+#Lugar_Ant_Desp_4 {padding-right: 1%;}
+
+
+#Lugar_Ant_Desp_p{margin: 20px 12%;	line-height: 1.7em; font-size: 15px}
 
 #avatar_musica img {border-radius: 50%; width: 35%;}
 #avatar_imagineDragons img {border-radius: 50%; width: 35%; padding-top: 1%}
