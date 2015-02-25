@@ -5,6 +5,10 @@ $(document).ready(function() {
 $(document).ready(function() {        
         $(".footer_2_img").load('head.html .footer_2_Container');
       });
+
+$(document).ready(function() {        
+        $("#contenedor_pago").load('head.html #btn_pago');
+      });
 // Document ready
 $(function() {
 

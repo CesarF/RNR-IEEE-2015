@@ -375,7 +375,7 @@ nav {
 	width: 100%;
 }
 
-a{color: white !important;}
+a#color_link_btn{color: white !important;}
 
 #concurso .div1, #concurso .div2{  /*hijos*/
 	display: table-cell;
@@ -546,7 +546,7 @@ w}
 #WhatsRNR_p
 {
 	color: #555555;
-	font-size: 18px;
+	font-size: 24px;
 	margin:0 7%;
 	line-height: 1.8em;
 	text-align: justify;
@@ -797,6 +797,9 @@ padding-top: 2% !important;
 		padding-right: 5%; 
 	}
 }
+
+
+img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 7%;}
 
 /*08. Schedule ========================================================================*/
 #Schedule1, #Schedule2,#Schedule3
@@ -1232,6 +1235,77 @@ ul.rig.columns-4 li
     -o-column-rule: 2px solid #666;
 }
 
+/* Esto permite que se adapten las columnas a la pantalla, cuando hay una pantalla de 480px o menos muestra las columnas con un width=100% */
+@media only screen and (max-width: 480px){
+
+#Lugar_Ant_Desp_1 , #Lugar_Ant_Desp_2 ,#Lugar_Ant_Desp_3 ,#Lugar_Ant_Desp_4
+{
+	width: 100%; float: left; margin: auto; text-align: center;
+}
+}
+
+/*06 Comite ORganizador ========================================================= */
+
+#Comite_Organizador_Container
+{
+
+	clear: both;
+	position: relative;	
+	background: white;
+	padding-top: 1.5%;	
+}
+
+#Comite_Organizador_Titulo
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-left: 5%;
+	padding-top: 4%;
+
+}
+
+#Comite_Organizador_Titulo_p
+{
+	color: #555555;
+	font-size: 15px;
+	margin:0 7%;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+
+#Comite_Organizador_1,#Comite_Organizador_2,#Comite_Organizador_3,#Comite_Organizador_4,#Comite_Organizador_5,#Comite_Organizador_6
+{
+	width: 18%; float: left; margin: auto; text-align: center;
+}
+
+#imagen_comite_organizador_1 img, #imagen_comite_organizador_2 img, #imagen_comite_organizador_3 img, #imagen_comite_organizador_4 img,
+#imagen_comite_organizador_5 img, #imagen_comite_organizador_6 img
+{
+	width: 80px;
+	border-radius:50%;
+}
+
+#Comite_Organizador_1 {padding-left: 5%;}
+#Comite_Organizador_6 {padding-right: 1%;}
+
+#Comite_Organizador_Lista li
+{
+	text-align: left;
+	font-size: 18px;
+	color: #ccc;
+}
+
+ul#Comite_Organizador_Lista
+{
+	padding: 0 0 15% 0 !important;
+	margin: 0;
+}
+
+
 /*06 Organizadores ================================================================= */
 
 #Organizadores
@@ -1262,6 +1336,84 @@ ul.rig.columns-4 li
    	width: 100%
    }
    .div_org{padding: 4.8% 0 !important;}
+}
+
+/* 11 REGISTRO ================================================== */
+
+.Container_Registro 
+{
+	min-height: 500px;
+	clear: both;
+	position: relative;
+	padding-top: 3%;
+	background: white;
+
+}
+
+#Registro_h4_Titulo
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 800;
+	margin: 1em 0;
+	padding-top: 10%;
+}
+
+#Registro_p_1
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 14%;
+	line-height: 2em;
+	text-align: justify;
+}
+
+img#Registro_precios_img{width: 100%;}
+
+
+/*11.1 TABLA REGISTRO    =================================================*/
+
+
+table#Table_Registro {
+height: 100%;
+width: 80%;
+margin: 3% 10%;
+font-family: Helvetica; font-weight: 100;
+background: #14937a;
+color: #fff;
+text-align:center;
+}
+
+/* para las filas pares 
+table tr:nth-child(even) td {
+    background-color: #16a085 !important;
+}
+
+*/
+
+table#Table_Registro thead th { font-weight: 600; }
+table#Table_Registro thead th, table#Table_Registro tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table_Registro tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #444; background: #eee;
+}
+table#Table_Registro tbody tr:not(:last-child) {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+
+@media screen and (max-width: 600px) {
+table#Table_Registro tbody td { display: block; padding: .6rem; }
+table#Table_Registro thead { display: none; }
+table#Table_Registro tbody tr td:first-child { background: #14937a; color: #fff; }
+table#Table_Registro tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block; width: 6rem;
+}
 }
 
 /* 11 Sponsonrs ================================================== */
@@ -1867,6 +2019,8 @@ footer
  	margin: auto;
  	text-align: center;
 }
+
+
 
 #fot_logo1,#fot_logo2,#fot_logo4 {padding-right:5%;}
 #fot_logo2{padding-left: 2%;}
