@@ -1424,7 +1424,7 @@ ul#Comite_Organizador_Lista
 {
 	text-align: center;
 	margin: 1em 0;
-	padding-top: 12%;
+	padding-top: 0;
 	font-size:30px;
 	color: #524D4D;
 	font-weight: 700;
@@ -1437,7 +1437,7 @@ ul#Comite_Organizador_Lista
 	font-size:30px;
 	font-weight: 700;
 	margin: 1em 0;
-	padding-top: 3%;
+	padding-top: 0;
 }
 
 #Registro_p_1
@@ -1471,9 +1471,9 @@ ul#Comite_Organizador_Lista
 #Registro_Info_p
 
 {
-	font-size: 20px;
-	margin:2% 0;
-	line-height: 1.8em;
+	font-size: 17px;
+	margin:1% 0;
+	line-height: 1.6em;
 	text-align: center;
 }
 
@@ -1481,13 +1481,13 @@ img#Registro_precios_img{width: 100%;}
 
 #Registro_que_incluye1 , #Registro_que_incluye2,#Registro_que_incluye3,#Registro_que_incluye4
 {
-	width: 49%; float: left; margin: auto; text-align: center; padding-top: 5%;
+	width: 24%; float: left; margin: auto; text-align: center; padding-top: 5%;
 }
 
-#Registro_que_incluye1 {padding-left: 0;}
+#Registro_que_incluye1 {padding-left: 1%;}
 #Registro_que_incluye4 {padding-right: 1%;}
 
-i#Registro_Icon_que_incluye{font-size: 4em; color: #2a2a2a;}
+i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
 
 @media only screen and (max-width: 480px){
@@ -1499,7 +1499,7 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #2a2a2a;}
 	}
 
 
-	i#Registro_Icon_que_incluye{font-size: 3em; color: #2a2a2a; padding-top: 12%;}
+	i#Registro_Icon_que_incluye{font-size: 3em; color: #006699; padding-top: 12%;}
 
 
 	#Registro_h4_Titulo_3_1 ,#Registro_h4_Titulo_3,#Registro_h4_Titulo_2 
@@ -1512,15 +1512,6 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #2a2a2a;}
 		padding-top: 3%;
 	}
 
-	{
-		text-align: center;
-		color: #524D4D;
-		font-size: 26px;
-		font-weight: 700;
-		margin: 0;
-		padding-top: 5%;
-	}
-
 	#Registro_p_2 
 	{
 		font-size: 14px;
@@ -1530,9 +1521,33 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #2a2a2a;}
 	}
 
 	#Registro_p	{font-size: 14px;}
+
+	div#Registro_Carta_Invitacion ,div#Registro_Formas_De_Pago 
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
+	}
+
+	#Registro_Container_Carta_Pagos	
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+	}
+
+	#Registro_Carta_Invitacion{padding-left: 0 !important;}
+	#Registro_Formas_De_Pago {padding-right: 0 !important; border:none !important; }
+
 }
 
-#Registro_container_que_incluye{min-height: 600px;}
+#Registro_container_que_incluye{min-height: 430px;}
+
+#Registro_Container_Carta_Pagos{min-height: 346px;}
+
+#Registro_Carta_Invitacion , #Registro_Formas_De_Pago 
+{
+	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+}
+#Registro_Carta_Invitacion{padding-left: 1%;}
+#Registro_Formas_De_Pago {padding-right: 1%; border-left: 1px solid #ccc; }
+
 
 /*11.1 TABLA REGISTRO    =================================================*/
 
