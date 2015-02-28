@@ -407,6 +407,69 @@ a#color_link_btn{color: white !important;}
 }
 
 
+
+
+
+/* 06.1 SEGMENTO CONCURSOS ================================================================= */
+
+
+#Contenedor_Concursos
+{  /*padre*/
+	width: 100%;
+}
+
+a#color_link_btn{color: white !important;}
+
+
+#Concursos_h4_titulo
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:32px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-left: 5%;
+	padding-top: 10%;
+}
+
+#Concursos_p
+{
+	font-size: 18px;
+	margin:0 16%;
+	line-height: 2.2em;
+	text-align: justify;
+}
+
+p#Concursos_subTitulo {
+text-align: center;
+}
+
+#Concursos_p_subTitulo
+{
+	font-size: 14px;
+	margin:0 16%;
+	line-height: 2.1em;
+	font-family: 'latolight'
+}
+
+#Concursos_img1 img 
+
+{
+	width: 40%;
+	padding-bottom: 2%;
+}
+
+#Concursos_p_terminos_y_condiciones
+{
+	color: black;
+	font-size: 16px;
+	margin:0 10%;
+	font-family: 'latolight';
+	line-height: 2em;
+	text-align: center;
+}
+
+
 /* 05. INFO WHAT'S RNR OWN PAGE ... ================================================== */
 
 .WhatsRNR
@@ -802,7 +865,7 @@ padding-top: 2% !important;
 }
 
 
-img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 7%;}
+img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 16%;}
 
 /*08. Schedule ========================================================================*/
 #Schedule1, #Schedule2,#Schedule3
@@ -944,6 +1007,23 @@ display: inline-block; width: 6rem;
         width: 100% !important;
         min-height: 400px !important;
     }
+
+@media screen and (min-width: 1920px){
+
+	.google-maps {
+        padding-bottom: 21.6%; /*This is the aspect ratio*/ 
+    }
+
+    #Lugar_Info_h4_Titulo_Hotel {		
+		padding-top: 7% !important;
+	}
+
+	div#btn_pago{padding-right: 15% !important;}
+
+	#Lugar_Info_p_Que_Pasara {padding: 2% 3% 3% 3% !important;}
+	div#contenedor_pago {padding-top: 5% !important;}
+}
+
 @media screen and (max-width: 720px){
 
 	.google-maps{height: 100px;}
@@ -953,6 +1033,7 @@ display: inline-block; width: 6rem;
 {
 	width: 100%;
 	padding-top: 2.2%;
+	padding-bottom: 1%;
     }
 
 .Mapa_Container
@@ -1420,7 +1501,7 @@ ul#Comite_Organizador_Lista
 	padding-top: 3%;
 }
 
-#Registro_h4_Titulo_3
+#Registro_h4_Titulo_3 , #Concursos_h4_Titulo_2
 {
 	text-align: center;
 	margin: 1em 0;
@@ -1522,7 +1603,7 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
 	#Registro_p	{font-size: 14px;}
 
-	div#Registro_Carta_Invitacion ,div#Registro_Formas_De_Pago 
+	div#Registro_Carta_Invitacion ,div#Registro_Formas_De_Pago , div#
 	{
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
 	}
@@ -1570,7 +1651,6 @@ table tr:nth-child(even) td {
 */
 
 #Registro_p_terminos_y_condiciones
-
 {
 	color: black;
 	font-size: 16px;
@@ -2273,6 +2353,14 @@ ul.der
 	font-size: 0px;
 	margin-top: 1%;
 }
+
+#footer_design_by
+{
+	background: #22bce0; 
+	padding: 1px 0;
+}
+
+#footer_design_by_p{text-align: center;font-size: 14px; font-family: 'latolight'; color:white;}
 
 
 #fot_ramas3 img{ width: 80%;}

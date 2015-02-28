@@ -9,6 +9,9 @@ $(document).ready(function() {
 $(document).ready(function() {        
         $("#contenedor_pago").load('head.html #btn_pago');
       });
+$(document).ready(function() {        
+        $("#interblock_footer").load('head.html #footer_container');
+      });
 // Document ready
 $(function() {
 
