@@ -422,6 +422,7 @@ a#color_link_btn{color: white !important;}
 
 a#color_link_btn{color: white !important;}
 
+#Concursos_Container_Info{min-height: 800px;}
 
 #Concursos_h4_titulo
 {
@@ -469,6 +470,43 @@ text-align: center;
 	font-family: 'latolight';
 	line-height: 2em;
 	text-align: center;
+}
+
+
+@media only screen and (max-width: 480px){
+
+	#Concursos_Container_Info
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%; padding-left: 0; padding-right: 0;
+		font-family:'latoregular';
+	}
+
+	#Concursos_p {
+		font-size: 16px;
+		margin: 0;
+		line-height: 2.2em;
+		text-align: justify;
+		}
+	#Concursos_h4_Titulo_2 
+	{
+
+		font-size: 26px;
+		color: #524D4D;
+		font-weight: 700;
+	}
+
+	#Concursos_img1 img 
+	{
+		width: 100%;
+		padding-bottom: 2%;	
+	}
+
+	figure#Concursos_img1 
+	{
+		margin: 0;
+	}
+
+
 }
 
 
@@ -1581,9 +1619,7 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
 	}
 
-
 	i#Registro_Icon_que_incluye{font-size: 3em; color: #006699; padding-top: 12%;}
-
 
 	#Registro_h4_Titulo_3_1 ,#Registro_h4_Titulo_3,#Registro_h4_Titulo_2 
 	{
@@ -1605,15 +1641,15 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
 	#Registro_p	{font-size: 14px;}
 
-	div#Registro_Carta_Invitacion ,div#Registro_Formas_De_Pago , div#
+	div#Registro_Carta_Invitacion ,div#Registro_Formas_De_Pago
 	{
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
 	}
 
-	#Registro_Container_Carta_Pagos	, #Concursos_Container_Info
+	#Registro_Container_Carta_Pagos
 	{
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
-	}
+	}	
 
 	#Registro_Carta_Invitacion{padding-left: 0 !important;}
 	#Registro_Formas_De_Pago {padding-right: 0 !important; border:none !important; }
@@ -1623,7 +1659,6 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 #Registro_container_que_incluye{min-height: 430px;}
 
 #Registro_Container_Carta_Pagos{min-height: 346px;}
-#Concursos_Container_Info{min-height: 800px;}
 
 #Registro_Carta_Invitacion , #Registro_Formas_De_Pago 
 {
