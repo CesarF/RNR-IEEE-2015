@@ -8,6 +8,8 @@ html {
   background: white;
 }
 
+#main { max-width:1349px; min-width:320px; margin:0 auto; }
+
 p{text-align: justify;}
 a:link{text-decoration: none !important;}
 ul li{list-style: none !important;}
