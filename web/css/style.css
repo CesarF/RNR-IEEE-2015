@@ -1610,7 +1610,7 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
 	}
 
-	#Registro_Container_Carta_Pagos	
+	#Registro_Container_Carta_Pagos	, #Concursos_Container_Info
 	{
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
 	}
@@ -1622,7 +1622,8 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
 #Registro_container_que_incluye{min-height: 430px;}
 
-#Registro_Container_Carta_Pagos{min-height: 800px;}
+#Registro_Container_Carta_Pagos{min-height: 346px;}
+#Concursos_Container_Info{min-height: 800px;}
 
 #Registro_Carta_Invitacion , #Registro_Formas_De_Pago 
 {
