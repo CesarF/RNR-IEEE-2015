@@ -43,7 +43,6 @@
 	<div id="main">	
 
 <!-- Header DESKTOP	  	  ############################################### -->
-
 		<div class="cbp-af-header"></div>
 <!-- END Header DESKTOP	  ############################################### -->
 
@@ -72,31 +71,168 @@
 <!-- END Header MOVIL ############################################### -->
 
 <!-- Agenda			  ############################################### -->
-		<!-- <section class="AgendaSect">
 
-		<h4 class="Agendah4">Agenda</h4>
+		
+	<div id="Contenedor_Agenda">
 
-      	<article class="Agendafila1"> 
-     	 <a href="#Schedule" </a> <article class="AgendaArt1" onclick="javascript:mostrar1();"> 
-      		<p class="AgendaP">23</p>
-      	</article>       
-      		</article>
+		<h4 id="Agenda_h4_Titulo_1">Agenda</h4>
 
-      <article class="Agendafila2">      
-      <a href="#Schedule" </a>	<article class="AgendaArt2" onclick="javascript:mostrar2();"> 
-         <p class="AgendaP">24</p>      	
-      </article>
-      </article>
+		<div id="Agenda_Container_Info">
 
-      <article class="Agendafila3">      
-      <a href="#Schedule" </a>	<article class="AgendaArt3" onclick="javascript:mostrar3();"> 
-      	 <p class="AgendaP">25</p>
-      </article>
-		<a id= "Schedule" ></a>
-      </article>
-		<section id="Lugar"></section>
-	  </section> -->
-<!-- END Agenda 	  ###############################################-->
+			<div id="Agenda_Dias">
+				<h5 id="Agenda_h5">Pulsa sobre cada fecha y entérate de lo que la RNR tiene preparado para tí durante ese día.</h5>
+
+
+				<article class="Agendafila1"> 
+     				<a href="#Schedule" </a> 
+     				 	<article class="AgendaArt1" onclick="javascript:mostrar1();"> 
+      						<p class="AgendaP">23</p>
+      					</article>       
+      			</article>
+
+      			<article class="Agendafila2">      
+      				<a href="#Schedule" </a>
+      					<article class="AgendaArt2" onclick="javascript:mostrar2();"> 
+         					<p class="AgendaP">24</p>      	
+      					</article>
+      			</article>
+
+      			<article class="Agendafila3">      
+      				<a href="#Schedule" </a>
+      					<article class="AgendaArt3" onclick="javascript:mostrar3();"> 
+      	 					<p class="AgendaP">25</p>
+      					</article>
+					<a id= "Schedule" ></a>
+      			</article>			
+
+			</div>
+
+			<div id="Agenda_Invitados">
+				<h4 id="Concursos_h4_Titulo_2">Acá irán los Conferencistas Invitados...</h4>
+					
+			</div>
+		</div>
+	</div>
+	<!-- Schedule	  ############################################### -->
+	<div id="Schedule1" style="display:none;" >	
+
+		<table id="Table1">
+		<thead>
+		<tr><th>Hora Inicio</th><th colspan="2">Actividad </th></tr>
+		</thead>
+
+		<tbody>
+
+		<tr>				
+		<td id="Table_Color_Texto_Hora">7:30</td>
+		<td data-th="Actividad" rowspan="5" id="Table_Color_Azul_Oscuro"> Llegada y Check In </td>
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">8:00</td></tr>
+
+		<tr><td id="Table_Color_Texto_Hora">8:30</td></tr>
+
+		<tr><td id="Table_Color_Texto_Hora">9:00</td></tr>
+
+		<tr><td id="Table_Color_Texto_Hora">9:30</td></tr>
+		
+		<tr>
+		<td id="Table_Color_Texto_Hora">10:00</td>
+		<td data-th="Actividad" rowspan="1" id="Table_Color_Amarillo"> Coffe Break</td>
+		</tr>	
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">10:30</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Azul_Medio_2"> Bienvenida - Presentación Oficial de Ramas</td>	
+		</tr>
+		
+		<tr><td id="Table_Color_Texto_Hora">11:00</td></tr>
+		
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">11:30</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Naranja"> Sección Colombia - Región 9</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">12:00</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">12:30</td>		
+		<td data-th="Actividad" rowspan="3" id="Table_Color_Amarillo"> Almuerzo</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">13:00</td></tr>
+
+		<tr><td id="Table_Color_Texto_Hora">13:30</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">14:00</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Morado"> Sesión Académica 1 - Sesión Académica 2</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">14:30</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">15:00</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Morado"> Sesión Académica 3 - Sesión Académica 4</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">15:30</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">16:00</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Verde"> IEEE Academic Tools</td>
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">16:30</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">17:00</td>
+		<td data-th="Actividad" id="Table_Color_Amarillo"> Coctel de Bienvenida</td>
+		</tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">17:30</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Verde"> Workshop 1 - Workshop 2</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">18:00</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">18:30</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Verde"> Workshop 3 - Workshop 4</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">19:00</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">19:30</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Azul_Claro"> Workshop de Impacto y Networking</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">20:00</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">20:30</td>
+		<td data-th="Actividad" rowspan="2" id="Table_Color_Amarillo"> Cena</td>		
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">21:00</td></tr>
+
+		<tr>
+		<td id="Table_Color_Texto_Hora">21:15</td>
+		<td data-th="Actividad" rowspan="3" id="Table_Color_Azul_Medio"> Exposición Universitaria de Ramas Estudiantiles</td>
+		</tr>
+
+		<tr><td id="Table_Color_Texto_Hora">21:30</td></tr>
+
+		<tr><td id="Table_Color_Texto_Hora">22:00</td></tr>
+
+		</tbody>
+		</table>
+	</div>
+	
+<!-- END Agenda 	  ###############################################
 
 <!-- Schedule	  ############################################### -->
 	<!-- <div id="Schedule1" style="display:none;" >	
@@ -645,7 +781,7 @@
 	<!-- </div> -->
 <!-- END Schedule  ###############################################-->
 
-<img id="Agenda_img_oficial" src="img/RNRAgenda.png" alt="Agenda Oficial">
+<!-- <img id="Agenda_img_oficial" src="img/RNRAgenda.png" alt="Agenda Oficial"> -->
 
 
 <!-- Btn Payment  ###############################################-->

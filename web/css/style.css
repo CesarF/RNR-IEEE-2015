@@ -422,7 +422,7 @@ a#color_link_btn{color: white !important;}
 
 a#color_link_btn{color: white !important;}
 
-#Concursos_Container_Info{min-height: 800px;}
+#Concursos_Container_Info , #Agenda_Container_Info {min-height: 375px;}
 
 #Concursos_h4_titulo
 {
@@ -475,7 +475,7 @@ text-align: center;
 
 @media only screen and (max-width: 480px){
 
-	#Concursos_Container_Info
+	#Concursos_Container_Info , #Agenda_Container_Info
 	{
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%; padding-left: 0; padding-right: 0;
 		font-family:'latoregular';
@@ -753,116 +753,117 @@ w}
 		border-color: white rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
 	}
 
-/*07 ========================================================================*/
+/*07 AGENDA ========================================================================*/
 
-#Agenda{margin: 0;
-padding: 0;}
+#Contenedor_Agenda{margin: 0;padding: 0; width: 100%;min-height: 550px; overflow: hidden;}
 
-.AgendaSect{
+#Agenda_h4_Titulo_1
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:32px;
+	font-weight: 700;
+	margin:0;
+	padding-top: 12%;
+}
 
-   margin:0px auto;
-   overflow:hidden;
-   padding:8px 0;
-   text-align:center;
-   width:100%;
-   color: #fff;
-   min-height:548px;
-   background: #76C7C0;
+.AgendaP 
+{
+	color: #f4f4f4;
+	font-size: 5em;
+	margin: 0;
+	line-height: 1.9em;
+	text-align: center;
+}
+
+#Agenda_h5
+{
+	font-size: 18px;
+	margin:0;
+	line-height: 2.2em;
+	text-align: center;
+	color: #524D4D;	
+	font-family: 'latoregular';
+	/*padding: 0 17%;*/
+	padding: 0px 18% 8% 18%;
 }
 
 .Agendafila1
 {
-	padding-left: 15%;
-	width: 28%
+	padding-left: 8%;
+	width: 30%
 }
 
 .Agendafila2
 {
-	padding-right: 0%;
-	vertical-align: middle;
-	width: 28%
+	vertical-align: middle;	
 }
 
 .Agendafila3
 {
 	padding-right: 0%;
 	float: right;
-	width: 28%
+	width: 33%
 }
 
 .AgendaArt1
 {
 background:#0DA867;
-width: 200px;
-height: 200px;
--webkit-border-radius: 5px;
--webkit-border-top-left-radius: 90px;
--webkit-border-bottom-right-radius: 90px;
--moz-border-radius: 5px;
--moz-border-radius-topleft: 90px;
--moz-border-radius-bottomright: 90px;
-border-radius: 5px;
-border-top-left-radius: 90px;
-border-bottom-right-radius: 90px;
+width: 150px;
+height: 150px;
+border-radius: 50%;
 }
 
 .AgendaArt2
 {
 background: #F5D42B;
 color: black;
-width: 200px;
-height: 200px;
-
--webkit-border-radius: 30px;
--moz-border-radius: 30px;
-border-radius: 30px;
+width: 150px;
+height: 150px;
+border-radius: 50%;
 }
 
 .AgendaArt3
 {
 background: #E85A5A;
-width: 200px;
-height: 200px;
-
--webkit-border-radius: 5px;
--webkit-border-top-right-radius: 90px; 
--webkit-border-bottom-left-radius: 90px;
--moz-border-radius: 5px;
--moz-border-radius-topright: 90px; 
--moz-border-radius-bottomleft: 90px;
-border-radius: 5px;
-border-top-right-radius: 90px;  	
-border-bottom-left-radius: 90px;
+width: 150px;
+height: 150px;
+border-radius: 50%;
 }
 
-.Agendah4{
-	text-align: center;
-	font-size:40px;
-	color:#fff;
-	font-family: 'latolight';
-	margin: 0.7em 0;
-	text-transform:uppercase;
-	padding: 5%;
+#Agenda_Dias , #Agenda_Invitados
+{
+	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
 }
 
-.AgendaP{
-	color: #f4f4f4;
-	font-size: 6em;
-	margin:0;
-	line-height: 2.2em;
-	text-align: center;
-	padding-left: 1%;
+#Agenda_Invitados {padding-right: 1%; border-left: 1px solid #ccc; }
+
+
+@media screen and (max-width: 480px){
+
+	div#Agenda_Dias ,div#Agenda_Invitados
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
+	}	
+
+	#Agenda_Dias{padding-left: 0 !important;}
+	#Agenda_Invitados {padding-right: 0 !important; border:none !important; }
+
+	#Agenda_h4_Titulo_1{padding: 23% 0 3% 0;}
+
+	#Agenda_h5{padding:0;}
 }
 
 @media screen and (max-width:1000px){
-.Agendafila1{
-	padding-left: 8% ;
-	padding-right: 4%; 
+.Agendafila1
+	{
+		padding-left: 8% ;
+		padding-right: 4%; 
+	}
 }
-}
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px){
 
-	.AgendaArt3 , .AgendaArt1 , .AgendaArt2{border-radius: 0;}
+ .AgendaArt3 , .AgendaArt1 , .AgendaArt2{border-radius: 0;}
    
  .AgendaArt1 , .Agendafila1 
  {
@@ -882,7 +883,7 @@ border-bottom-left-radius: 90px;
 .Agendafila2
   {
    	padding-left: 0 !important;
-padding-top: 2% !important;	
+	padding-top: 2% !important;	
   }
 
   .AgendaArt3 , .Agendafila3 
@@ -893,17 +894,17 @@ padding-top: 2% !important;
 .Agendafila3
   {
    	padding-left: 0 !important;
-padding-top: 2% !important;
+	padding-top: 2% !important;
   }
 }
 
 @media screen and (max-width:768px){
-	.Agendafila1{
+	.Agendafila1
+	{
 		padding-left: 6% ;
 		padding-right: 5%; 
 	}
 }
-
 
 img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 16%;}
 
@@ -911,11 +912,13 @@ img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 16%;}
 #Schedule1, #Schedule2,#Schedule3
 {
 	
-	width: 100%;
+	width: 50%;
 	min-height: 500px;
 	vertical-align: middle;
 	cursor:auto;
 }
+
+#Table_Color_Texto_Hora{background:white !important;color: #006699 !important; font-weight: 700;}
 
 /*TABLA 1*/
 
@@ -928,6 +931,7 @@ color: #fff;
 border-radius: 5px;
 text-align:center;
 }
+td, th, table{border:none; border-color: white;}
 
 /* para las filas pares 
 table tr:nth-child(even) td {
@@ -941,22 +945,32 @@ table#Table1 thead th, table#Table1 tbody td {
 padding: .8rem; font-size: 1.4rem;}
 table#Table1 tbody td {
 padding: .8rem; font-size: 1.4rem;
-color: #444; background: #eee;
+color: #fff;
 }
-table#Table1 tbody tr:not(:last-child) {
-border-top: 1px solid #ddd;
-border-bottom: 1px solid #ddd;
-}
-
 
 @media screen and (max-width: 600px) {
 table#Table1 tbody td { display: block; padding: .6rem; }
 table#Table1 thead { display: none; }
-table#Table1 tbody tr td:first-child { background: #14937a; color: #fff; }
 table#Table1 tbody td:before {
 content: attr(data-th); font-weight: bold;
-display: inline-block; width: 6rem;
+display: inline-block;
 }
+table#Table1 tbody tr td:first-child { background: #14937a; color: #fff; }
+
+
+#Schedule1, #Schedule2, #Schedule3 {
+width: 100%;
+min-height: 500px;
+vertical-align: middle;
+cursor: auto;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+td {
+border: none;}
+
 }
 
 /*TABLA2*/
@@ -975,13 +989,8 @@ table#Table2 thead th, table#Table2 tbody td {
 padding: .8rem; font-size: 1.4rem;}
 table#Table2 tbody td {
 padding: .8rem; font-size: 1.4rem;
-color: #444; background: #eee;
+color: #fff;
 }
-table#Table2 tbody tr:not(:last-child) {
-border-top: 1px solid #ddd;
-border-bottom: 1px solid #ddd;
-}
-
 
 @media screen and (max-width: 600px) {
 table#Table2 tbody td { display: block; padding: .6rem; }
@@ -989,7 +998,7 @@ table#Table2 thead { display: none; }
 table#Table2 tbody tr td:first-child { background: #f4cc00; color: #fff; }
 table#Table2 tbody td:before {
 content: attr(data-th); font-weight: bold;
-display: inline-block; width: 6rem;
+display: inline-block;
 }
 }
 
@@ -1009,13 +1018,8 @@ table#Table3 thead th, table#Table3 tbody td {
 padding: .8rem; font-size: 1.4rem;}
 table#Table3 tbody td {
 padding: .8rem; font-size: 1.4rem;
-color: #444; background: #eee;
+color: #fff;
 }
-table#Table3 tbody tr:not(:last-child) {
-border-top: 1px solid #ddd;
-border-bottom: 1px solid #ddd;
-}
-
 
 @media screen and (max-width: 600px) {
 table#Table3 tbody td { display: block; padding: .6rem; }
@@ -1023,9 +1027,22 @@ table#Table3 thead { display: none; }
 table#Table3 tbody tr td:first-child { background: #f4002f; color: #fff; }
 table#Table3 tbody td:before {
 content: attr(data-th); font-weight: bold;
-display: inline-block; width: 6rem;
+display: inline-block;
 }
 }
+
+/*COLORES DE LOS ESPACIOS EN LAS TABLAS */
+
+#Table_Color_Azul_Oscuro{background: #003366 !important;}
+#Table_Color_Azul_Medio{background: #215967 !important;}
+#Table_Color_Azul_Medio_2{background: #366092 !important;}
+#Table_Color_Azul_Claro{background: #339999 !important;}
+#Table_Color_Amarillo{background: #ffc000 !important;}
+#Table_Color_Naranja{background: #e26b0a !important;}
+#Table_Color_VinoTinto{background: #800000 !important;}
+#Table_Color_Verde{background: #339933 !important;}
+#Table_Color_Morado{background: #60497a !important;}
+
 /*09  LUGAR ================================================== */
 
 #Lugar
@@ -1581,7 +1598,6 @@ ul#Comite_Organizador_Lista
 }
 
 #Registro_p_3
-
 {
 	font-size: 18px;
 	margin:0;
@@ -1610,6 +1626,16 @@ img#Registro_precios_img{width: 100%;}
 
 i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
+#Registro_container_que_incluye{min-height: 430px;}
+
+#Registro_Container_Carta_Pagos{min-height: 346px;}
+
+#Registro_Carta_Invitacion , #Registro_Formas_De_Pago 
+{
+	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+}
+#Registro_Carta_Invitacion{padding-left: 1%;}
+#Registro_Formas_De_Pago {padding-right: 1%; border-left: 1px solid #ccc; }
 
 @media only screen and (max-width: 480px){
 
@@ -1653,20 +1679,7 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
 	#Registro_Carta_Invitacion{padding-left: 0 !important;}
 	#Registro_Formas_De_Pago {padding-right: 0 !important; border:none !important; }
-
 }
-
-#Registro_container_que_incluye{min-height: 430px;}
-
-#Registro_Container_Carta_Pagos{min-height: 346px;}
-
-#Registro_Carta_Invitacion , #Registro_Formas_De_Pago 
-{
-	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
-}
-#Registro_Carta_Invitacion{padding-left: 1%;}
-#Registro_Formas_De_Pago {padding-right: 1%; border-left: 1px solid #ccc; }
-
 
 /*11.1 TABLA REGISTRO    =================================================*/
 
