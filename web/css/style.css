@@ -912,7 +912,7 @@ img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 16%;}
 #Schedule1, #Schedule2,#Schedule3
 {
 	
-	width: 50%;
+	width: 48%;
 	min-height: 500px;
 	vertical-align: middle;
 	cursor:auto;
@@ -1033,16 +1033,58 @@ display: inline-block;
 
 /*COLORES DE LOS ESPACIOS EN LAS TABLAS */
 
-#Table_Color_Azul_Oscuro{background: #003366 !important;}
-#Table_Color_Azul_Medio{background: #215967 !important;}
-#Table_Color_Azul_Medio_2{background: #366092 !important;}
-#Table_Color_Azul_Claro{background: #339999 !important;}
-#Table_Color_Amarillo{background: #ffc000 !important;}
-#Table_Color_Naranja{background: #e26b0a !important;}
-#Table_Color_VinoTinto{background: #800000 !important;}
-#Table_Color_Verde{background: #339933 !important;}
-#Table_Color_Morado{background: #60497a !important;}
+#Table_Color_Azul_Oscuro_Movil{background: #003366 !important;}
+#Table_Color_Azul_Oscuro_Desktop{background: #003366 !important;}
+#Table_Color_Azul_Medio_Movil{background: #215967 !important;}
+#Table_Color_Azul_Medio_Desktop{background: #215967 !important;}
+#Table_Color_Azul_Medio_2_Movil{background: #366092 !important;}
+#Table_Color_Azul_Medio_2_Desktop{background: #366092 !important;}
+#Table_Color_Azul_Claro_Movil{background: #339999 !important;}
+#Table_Color_Azul_Claro_Desktop{background: #339999 !important;}
+#Table_Color_Amarillo_Movil{background: #ffc000 !important;}
+#Table_Color_Amarillo_Desktop{background: #ffc000 !important;}
+#Table_Color_Naranja_Movil{background: #e26b0a !important;}
+#Table_Color_Naranja_Desktop{background: #e26b0a !important;}
+#Table_Color_VinoTinto_Movil{background: #800000 !important;}
+#Table_Color_VinoTinto_Desktop{background: #800000 !important;}
+#Table_Color_Verde_Movil{background: #339933 !important;}
+#Table_Color_Verde_Desktop{background: #339933 !important;}
+#Table_Color_Morado_Movil{background: #60497a !important;}
+#Table_Color_Morado_Desktop{background: #60497a !important;}
 
+
+@media (min-width:600px){
+
+
+	td#Table_Color_Azul_Oscuro_Movil{display: none !important;}	
+	td#Table_Color_Azul_Oscuro_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Azul_Medio_Movil{display: none !important;}	
+	td#Table_Color_Azul_Medio_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Azul_Medio_2_Movil{display: none !important;}	
+	td#Table_Color_Azul_Medio_2_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Azul_Claro_Movil{display: none !important;}	
+	td#Table_Color_Azul_Claro_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Amarillo_Movil{display: none !important;}
+	td#Table_Color_Amarillo_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Naranja_Movil{display: none !important;}	
+	td#Table_Color_Naranja_Desktop{display: table-cell !important;}
+
+	td#Table_Color_VinoTinto_Movil{display: none !important;}	
+	td#Table_Color_VinoTinto_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Verde_Movil{display: none !important;}	
+	td#Table_Color_Verde_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Morado_Movil{display: none !important;}	
+	td#Table_Color_Morado_Desktop{display: table-cell !important;}
+
+
+ }
 /*09  LUGAR ================================================== */
 
 #Lugar
