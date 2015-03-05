@@ -926,7 +926,7 @@ table#Table1 {
 height: 100%;
 width: 100%;
 font-family: Helvetica; font-weight: 100;
-background: #14937a;
+background: #0DA867;
 color: #fff;
 border-radius: 5px;
 text-align:center;
@@ -1679,6 +1679,11 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 #Registro_Carta_Invitacion{padding-left: 1%;}
 #Registro_Formas_De_Pago {padding-right: 1%; border-left: 1px solid #ccc; }
 
+#Registro_Btn_Pago
+{
+	margin:0 auto 0 auto; width:390px; text-align:center; padding: 2%; background: red; font-size: 2em; font-family: 'latolight';
+}
+
 @media only screen and (max-width: 480px){
 
 	#Registro_que_incluye1 , #Registro_que_incluye2 ,#Registro_que_incluye3 ,#Registro_que_incluye4
@@ -2189,7 +2194,7 @@ div#btn_pago
 
 .div_pago2
 {
-	background: #FF0000; width: 25%;
+	background: #FF7E00; width: 25%;
 }
 
 @media screen and (min-width:1230px) and (max-width:1298px){  
