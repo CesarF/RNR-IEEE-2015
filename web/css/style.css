@@ -572,7 +572,7 @@ section article p
    }   
    
    .fila1,.fila2,.fila3{padding-top: 10%;}
-w}
+}
 
 @media screen and (max-width:850px){
    article{
@@ -776,16 +776,46 @@ w}
 	text-align: center;
 }
 
+#Agenda_p 
+{
+	color: #524D4D;
+	font-size: 18px;
+	margin: 0;
+	line-height: 1.9em;
+	text-align: center;
+}
+
+#Agenda_h4
+{
+	font-size: 20px;
+	margin:0;
+	line-height: 2.3em;
+	text-align: center;
+	color: #524D4D;	
+	font-family: 'latoregular';
+	padding: 1% 0 2% 0;
+}
+
 #Agenda_h5
 {
-	font-size: 18px;
+	font-size: 20px;
 	margin:0;
 	line-height: 2.2em;
 	text-align: center;
 	color: #524D4D;	
 	font-family: 'latoregular';
-	/*padding: 0 17%;*/
 	padding: 0px 18% 8% 18%;
+}
+
+#Agenda_h5_Titulo_Conferencista
+{
+	font-size: 20px;
+	margin:0;
+	line-height: 2.2em;
+	text-align: center;
+	color: #524D4D;	
+	font-family: 'latoregular';
+	padding: 0px 18% 5% 18%;
 }
 
 .Agendafila1
@@ -838,6 +868,13 @@ border-radius: 50%;
 
 #Agenda_Invitados {padding-right: 1%; border-left: 1px solid #ccc; }
 
+#Agenda_Conferencistas_img img 
+
+{
+	width: 35%;
+	border-radius: 50%;
+	padding-bottom: 2%;
+}
 
 @media screen and (max-width: 480px){
 
@@ -852,6 +889,13 @@ border-radius: 50%;
 	#Agenda_h4_Titulo_1{padding: 23% 0 3% 0;}
 
 	#Agenda_h5{padding:0;}
+
+	#Agenda_Conferencistas_img img 
+
+	{
+	width: 100%;
+	padding-bottom: 2%;
+	}
 }
 
 @media screen and (max-width:1000px){
@@ -911,11 +955,11 @@ img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 16%;}
 /*08. Schedule ========================================================================*/
 #Schedule1, #Schedule2,#Schedule3
 {
-	
-	width: 48%;
+	float: left;	
 	min-height: 500px;
 	vertical-align: middle;
 	cursor:auto;
+	padding-top: 8%;
 }
 
 #Table_Color_Texto_Hora{background:white !important;color: #006699 !important; font-weight: 700;}
@@ -1656,6 +1700,17 @@ ul#Comite_Organizador_Lista
 	text-align: center;
 }
 
+#Registro_p_terminos_y_condiciones_btn_pago
+{
+	color: black;
+	font-size: 16px;
+	margin: 0 5% 2% 5%;
+	font-family: 'latolight';
+	line-height: 2em;
+	text-align: center;
+}
+
+
 img#Registro_precios_img{width: 100%;}
 
 #Registro_que_incluye1 , #Registro_que_incluye2,#Registro_que_incluye3,#Registro_que_incluye4
@@ -1681,7 +1736,7 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 
 #Registro_Btn_Pago
 {
-	margin:0 auto 0 auto; width:390px; text-align:center; padding: 2%; background: red; font-size: 2em; font-family: 'latolight';
+	margin:0 auto 2% auto; width:390px; text-align:center; padding: 2%; background: red; font-size: 2em; font-family: 'latolight';
 }
 
 @media only screen and (max-width: 480px){
@@ -1723,6 +1778,13 @@ i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
 	{
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
 	}	
+
+	#Registro_Btn_Pago
+	{
+	margin:0; width:100%; text-align:center; padding:4% 0; background: red; font-size: 2em; font-family: 'latolight';
+	}
+
+	#Registro_p_terminos_y_condiciones_btn_pago{margin: 0;padding: 0;}
 
 	#Registro_Carta_Invitacion{padding-left: 0 !important;}
 	#Registro_Formas_De_Pago {padding-right: 0 !important; border:none !important; }
