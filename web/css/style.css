@@ -785,6 +785,16 @@ section article p
 	text-align: center;
 }
 
+#Agenda_p_Descrpicion
+{
+	color: #524D4D;
+	font-size: 18px;
+	margin: 0 10%;
+	line-height: 1.9em;
+	font-family: 'latobold';
+	text-align: justify;
+}
+
 #Agenda_h4
 {
 	font-size: 20px;
@@ -866,7 +876,7 @@ border-radius: 50%;
 	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
 }
 
-#Agenda_Invitados {padding-right: 1%; border-left: 1px solid #ccc; }
+#Agenda_Invitados {padding-left: 2.5%; border-left: 1px solid #ccc; }
 
 #Agenda_Conferencistas_img img 
 
@@ -1890,10 +1900,10 @@ display: inline-block; width: 6rem;
 
 /* 11 Sponsonrs ================================================== */
 
+
 .Sponsors_Color
 {	
-	background: #1D5A74 ; 
-	display: none;
+	
 }
 
 .Sponsorsh4 h4{
@@ -1901,7 +1911,7 @@ display: inline-block; width: 6rem;
 	text-transform: capitalize;
 	display: inline-block;
 	margin: 0;
-	color: white;
+	color: #524D4D;
 }
 
 #owl-demo .item:hover a
@@ -2215,6 +2225,7 @@ display: inline-block; width: 6rem;
 		right: 14%;
 	}
 }
+
 
 
 /*10 PAGUEN !! ================================================================= */
