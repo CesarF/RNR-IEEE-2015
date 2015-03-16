@@ -43,7 +43,9 @@
 	<div id="main">	
 
 <!-- Header DESKTOP	  	  ############################################### -->
-		<div class="cbp-af-header"></div>
+		<div class="cbp-af-header">
+			
+		</div>
 <!-- END Header DESKTOP	  ############################################### -->
 
 <!-- Header MOVIL 	  ############################################### -->
@@ -59,7 +61,7 @@
 	                  <li><a href="concursos.html">Concursos</a></li>
 	                  <li><a href="lugar.html">Lugar</a></li>
 	                  <!-- <li><a href="organizadores.html">Organizadores</a></li> -->
-	                  <!-- <li><a href="#patrocinadores">Patrocinadores</a></li> -->
+	                  <li><a href="#patrocinadores">Patrocinadores</a></li>
 	                  <li><a href="registro.html">Registro</a></li>
 					  <li><a href="#footer_2">Contacto</a></li>
 					</ul>
@@ -72,8 +74,8 @@
 
 <!-- Agenda			  ############################################### -->
 
-		
-	<div id="Contenedor_Agenda">
+	<!-- Agenda	DIAS		  ############################################### -->		
+		<div id="Contenedor_Agenda">
 
 		<h4 id="Agenda_h4_Titulo_1">Agenda</h4>
 
@@ -84,877 +86,681 @@
 
 
 				<article class="Agendafila1"> 
-     				<a href="#Schedule" </a> 
+     				<a href="#Schedule1" </a> 
      				 	<article class="AgendaArt1" onclick="javascript:mostrar1();"> 
-      						<p class="AgendaP">23</p>
+      						<p class="AgendaP">24</p>
       					</article>       
       			</article>
 
       			<article class="Agendafila2">      
-      				<a href="#Schedule" </a>
+      				<a href="#Schedule2" </a>
       					<article class="AgendaArt2" onclick="javascript:mostrar2();"> 
-         					<p class="AgendaP">24</p>      	
+         					<p class="AgendaP">25</p>      	
       					</article>
       			</article>
 
       			<article class="Agendafila3">      
-      				<a href="#Schedule" </a>
+      				<a href="#Schedule3" </a>
       					<article class="AgendaArt3" onclick="javascript:mostrar3();"> 
-      	 					<p class="AgendaP">25</p>
-      					</article>
-					<a id= "Schedule" ></a>
+      	 					<p class="AgendaP">26</p>
+      					</article>					
       			</article>	
+	<!-- END  Agenda	DIAS	  ############################################### -->
 
-		<!-- Schedule	  ############################################### -->
-	<div id="Schedule1" style="display:block;" >	
 
-		<table id="Table1">
-		<thead>
-		<tr><th>Hora Inicio</th><th colspan="2">Actividad </th></tr>
-		</thead>
+	<!-- Schedule	Container  ############################################### -->
 
-		<tbody>
-		<tr>			
-		<td  
-			style="display:block;" id="Table_Color_Azul_Oscuro_Movil" data-th="Actividad: Llegada y Check In">
-		</td>				
-		</tr>
-		
-		<tr>			
-		<td id="Table_Color_Texto_Hora">7:30</td>
-		<td rowspan="5" style="display:none;" id="Table_Color_Azul_Oscuro_Desktop">Llegada y Check In</td>
-		</tr>		
-	
-		<tr><td id="Table_Color_Texto_Hora">8:00</td></tr>
+		<!-- Schedule	1  ############################################### -->
+			<div id="Schedule1" style="display:block;" >	
 
-		<tr><td id="Table_Color_Texto_Hora">8:30</td></tr>
+				<table id="Table1">
+				<thead>
+				<tr><th>Hora Inicio</th><th colspan="2">Actividad </th></tr>
+				</thead>
 
-		<tr><td id="Table_Color_Texto_Hora">9:00</td></tr>
+				<tbody id="Schedule_Table_Style" >
+				<tr>			
+				<td  
+					style="display:block;" id="Table_Color_Azul_Oscuro_Movil" data-th="Actividad: Llegada y Check In">
+				</td>				
+				</tr>
+				
+				<tr>			
+				<td id="Table_Color_Texto_Hora">7:30</td>
+				<td rowspan="5" style="display:none;" id="Table_Color_Azul_Oscuro_Desktop">Llegada y Check In</td>
+				</tr>		
+			
+				<tr><td id="Table_Color_Texto_Hora">8:00</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">9:30</td></tr>
+				<tr><td id="Table_Color_Texto_Hora">8:30</td></tr>
 
-		<tr>			
-		<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Coffe Break" ></td>				
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">9:00</td></tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">10:00</td>
-		<td style="display:none;" rowspan="1" id="Table_Color_Amarillo_Desktop">Coffe Break</td>
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">9:30</td></tr>
 
-		<tr>			
-		<td  id="Table_Color_Azul_Medio_2_Movil" style="display:block;"
-			 data-th="Actividad: Bienvenida - Presentación Oficial de Ramas"></td>				
-		</tr>	
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Coffe Break" ></td>				
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">10:30</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Azul_Medio_2_Desktop"> Bienvenida - Presentación Oficial de Ramas</td>	
-		</tr>
-		
-		<tr><td id="Table_Color_Texto_Hora">11:00</td></tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">10:00</td>
+				<td style="display:none;" rowspan="1" id="Table_Color_Amarillo_Desktop">Coffe Break</td>
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Naranja_Movil" style="display:block;" data-th="Actividad: Sección Colombia - Región 9"></td>			
-		</tr>		
+				<tr>			
+				<td  id="Table_Color_Azul_Medio_2_Movil" style="display:block;"
+					 data-th="Actividad: Bienvenida - Presentación Oficial de Ramas"></td>				
+				</tr>	
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">11:30</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Naranja_Desktop"> Sección Colombia - Región 9</td>		
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">10:30</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Azul_Medio_2_Desktop"> Bienvenida - Presentación Oficial de Ramas</td>	
+				</tr>
+				
+				<tr><td id="Table_Color_Texto_Hora">11:00</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">12:00</td></tr>
+				<tr>			
+				<td  id="Table_Color_Naranja_Movil" style="display:block;" data-th="Actividad: Sección Colombia - Región 9"></td>			
+				</tr>		
 
-		<tr>			
-		<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Almuerzo"></td>			
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">11:30</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Naranja_Desktop"> Sección Colombia - Región 9</td>		
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">12:30</td>		
-		<td style="display:none;" rowspan="3" id="Table_Color_Amarillo_Desktop"> Almuerzo</td>		
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">12:00</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">13:00</td></tr>
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Almuerzo"></td>			
+				</tr>
 
-		<tr><td id="Table_Color_Texto_Hora">13:30</td></tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">12:30</td>		
+				<td style="display:none;" rowspan="3" id="Table_Color_Amarillo_Desktop"> Almuerzo</td>		
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Morado_Movil" style="display:block;" data-th="Actividad: Sesión Académica 1 - Sesión Académica 2"></td>	
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">13:00</td></tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">14:00</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Morado_Desktop"> Sesión Académica 1 - Sesión Académica 2</td>		
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">13:30</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">14:30</td></tr>
+				<tr>			
+				<td  id="Table_Color_Morado_Movil" style="display:block;" data-th="Actividad: Sesión Académica 1 - Sesión Académica 2"></td>	
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Morado_Movil" style="display:block;" data-th="Actividad: Sesión Académica 3 - Sesión Académica 4"></td>	
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">14:00</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Morado_Desktop"> Sesión Académica 1 - Sesión Académica 2</td>		
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">15:00</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Morado_Desktop"> Sesión Académica 3 - Sesión Académica 4</td>		
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">14:30</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">15:30</td></tr>
+				<tr>			
+				<td  id="Table_Color_Morado_Movil" style="display:block;" data-th="Actividad: Sesión Académica 3 - Sesión Académica 4"></td>	
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: IEEE Academic Tools"></td>	
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">15:00</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Morado_Desktop"> Sesión Académica 3 - Sesión Académica 4</td>		
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">16:00</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Verde_Desktop"> IEEE Academic Tools</td>
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">15:30</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">16:30</td></tr>
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: IEEE Academic Tools"></td>	
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Coctel de Bienvenida"></td>	
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">16:00</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Verde_Desktop"> IEEE Academic Tools</td>
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">17:00</td>
-		<td style="display:none;" id="Table_Color_Amarillo_Desktop"> Coctel de Bienvenida</td>
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">16:30</td></tr>
 
-		<tr>			
-		<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Workshop 1 - Workshop 2"></td>	
-		</tr>
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Coctel de Bienvenida"></td>	
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">17:30</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Verde_Desktop"> Workshop 1 - Workshop 2</td>		
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">17:00</td>
+				<td style="display:none;" id="Table_Color_Amarillo_Desktop"> Coctel de Bienvenida</td>
+				</tr>
 
-		<tr><td id="Table_Color_Texto_Hora">18:00</td></tr>
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Workshop 1 - Workshop 2"></td>	
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Workshop 3 - Workshop 4"></td>	
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">17:30</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Verde_Desktop"> Workshop 1 - Workshop 2</td>		
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">18:30</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Verde_Desktop"> Workshop 3 - Workshop 4</td>		
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">18:00</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">19:00</td></tr>
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Workshop 3 - Workshop 4"></td>	
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Azul_Claro_Movil" style="display:block;" data-th="Actividad: Workshop de Impacto y Networking"></td>	
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">18:30</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Verde_Desktop"> Workshop 3 - Workshop 4</td>		
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">19:30</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Azul_Claro_Desktop"> Workshop de Impacto y Networking</td>		
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">19:00</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">20:00</td></tr>
+				<tr>			
+				<td  id="Table_Color_Azul_Claro_Movil" style="display:block;" data-th="Actividad: Workshop de Impacto y Networking"></td>	
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Cena"></td>	
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">19:30</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Azul_Claro_Desktop"> Workshop de Impacto y Networking</td>		
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">20:30</td>
-		<td style="display:none;" rowspan="2" id="Table_Color_Amarillo_Desktop"> Cena</td>		
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">20:00</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">21:00</td></tr>
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Cena"></td>	
+				</tr>
 
-		<tr>			
-		<td  id="Table_Color_Azul_Medio_Movil" style="display:block;" data-th="Exposición Universitaria de Ramas Estudiantiles"></td>	
-		</tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">20:30</td>
+				<td style="display:none;" rowspan="2" id="Table_Color_Amarillo_Desktop"> Cena</td>		
+				</tr>
 
-		<tr>
-		<td id="Table_Color_Texto_Hora">21:15</td>
-		<td style="display:none;" rowspan="3" id="Table_Color_Azul_Medio_Desktop"> Exposición Universitaria de Ramas Estudiantiles</td>
-		</tr>
+				<tr><td id="Table_Color_Texto_Hora">21:00</td></tr>
 
-		<tr><td id="Table_Color_Texto_Hora">21:30</td></tr>
+				<tr>			
+				<td  id="Table_Color_Azul_Medio_Movil" style="display:block;" data-th="Exposición Universitaria de Ramas Estudiantiles"></td>	
+				</tr>
 
-		<tr><td id="Table_Color_Texto_Hora">22:00</td></tr>
+				<tr>
+				<td id="Table_Color_Texto_Hora">21:15</td>
+				<td style="display:none;" rowspan="3" id="Table_Color_Azul_Medio_Desktop"> Exposición Universitaria de Ramas Estudiantiles</td>
+				</tr>
 
-		</tbody>
-		</table>
-	</div>	
+				<tr><td id="Table_Color_Texto_Hora">21:30</td></tr>
+
+				<tr><td id="Table_Color_Texto_Hora">22:00</td></tr>
+
+				</tbody>
+				</table>
+			</div>
+		<!-- END Schedule 1	  ############################################### -->
+
+		<!-- Schedule	2  ############################################### -->
+			<div id="Schedule2" style="display:none;" >	
+
+				<table id="Table2">
+				<thead>
+				<tr><th>Hora Inicio</th><th colspan="3">Actividad </th></tr>
+				</thead>
+
+				<tbody>
+				<tr>			
+				<td  
+					style="display:block;" id="Table_Color_Amarillo_Movil" data-th="Actividad: Desayuno">
+				</td>				
+				</tr>
+				
+				<tr>			
+				<td id="Table_Color_Texto_Hora">7:30</td>
+				<td rowspan="2" colspan="3" style="display:none;" id="Table_Color_Amarillo_Desktop">Desayuno</td>
+				</tr>		
+			
+				<tr><td id="Table_Color_Texto_Hora">8:00</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_VinoTinto_Movil" style="display:block;" data-th="Actividad: Casos de Exito" ></td>				
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Formación Integral" ></td>				
+				<td  id="Table_Color_VinoTinto_Movil" style="display:block;" data-th="Actividad: Concurso de Ética" ></td>				
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">8:30</td>
+
+				<td rowspan="3"  style="display:none;" id="Table_Color_VinoTinto_Desktop">Casos de Exito</td>
+				<td rowspan="3"  style="display:none;" id="Table_Color_Verde_Desktop">Formación Integral</td>
+				<td rowspan="3"  style="display:none;" id="Table_Color_VinoTinto_Desktop">Concurso de Ética</td>
+
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">9:00</td></tr>
+
+				<tr><td id="Table_Color_Texto_Hora">9:30</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Coffe Break" ></td>				
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">10:00</td>
+				<td style="display:none;" colspan="3" rowspan="1" id="Table_Color_Amarillo_Desktop">Coffe Break</td>
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Morado_Movil" style="display:block;"
+					 data-th="Actividad: Metodología para Proyectos"></td>				
+				</tr>	
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">10:30</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_Morado_Desktop">Metodología para Proyectos</td>	
+				</tr>
+				
+				<tr><td id="Table_Color_Texto_Hora">11:00</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Workshop de Planeación y desarrollo  de Proyectos"></td>			
+				</tr>		
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">11:30</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_Verde_Desktop">Workshop de Planeación y desarrollo  de Proyectos</td>		
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">12:00</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Almuerzo"></td>			
+				<td  id="Table_Color_VinoTinto_Movil" style="display:block;" data-th="Actividad: Reunión de Presidentes"></td>			
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">12:30</td>		
+				<td style="display:none;" colspan="2" rowspan="3" id="Table_Color_Amarillo_Desktop">Almuerzo</td>		
+				<td style="display:none;" colspan="2" rowspan="3" id="Table_Color_VinoTinto_Desktop">Reunión de Presidentes</td>		
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">13:00</td></tr>
+
+				<tr><td id="Table_Color_Texto_Hora">13:30</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Proyectos Educativos en Organizaciones Estudiantiles"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">14:00</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_Verde_Desktop">Proyectos Educativos en Organizaciones Estudiantiles</td>		
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">14:30</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Teacher In-Service Program Workshop"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">15:00</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_Verde_Desktop">Teacher In-Service Program Workshop</td>		
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">15:30</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_Morado_Movil" style="display:block;" data-th="Actividad: IEEE Projects Resources"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">16:00</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_Morado_Desktop">IEEE Projects Resources</td>
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">16:30</td></tr>
+
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Coffe Break"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">17:00</td>
+				<td style="display:none;" colspan="3" id="Table_Color_Amarillo_Desktop">Coffe Break</td>
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Proyectos Humanitarios"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">17:30</td>
+				<td style="display:none;" colspan="3" rowspan="1" id="Table_Color_Verde_Desktop">Proyectos Humanitarios</td>		
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: Taller de Proyectos Humanitarios"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">18:00</td>
+				<td style="display:none;" colspan="3" rowspan="1" id="Table_Color_Verde_Desktop">Taller de Proyectos Humanitarios</td>		
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Verde_Movil" style="display:block;" data-th="Actividad: HCC"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">18:30</td>
+				<td style="display:none;" colspan="3" rowspan="1" id="Table_Color_Verde_Desktop">HCC</td>		
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_VinoTinto_Movil" style="display:block;" data-th="Actividad: Panel IEEE"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">19:00</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_VinoTinto_Desktop">Panel IEEE</td>
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">19:30</td>					
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Preparación para Cena de Gala"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">20:00</td>
+				<td style="display:none;" colspan="3" rowspan="1" id="Table_Color_Amarillo_Desktop">Preparación para Cena de Gala</td>		
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Cena de Gala"></td>	
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">20:30</td>
+				<td style="display:none;" colspan="3" rowspan="1" id="Table_Color_Amarillo_Desktop">Cena de Gala</td>		
+				</tr>
+
+				<tr>			
+				<td id="Table_Color_VinoTinto_Movil" style="display:block;" data-th="Premiación Oficial"></td>
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">21:00</td>
+				<td style="display:none;" colspan="3" rowspan="1" id="Table_Color_VinoTinto_Desktop">Premiación Oficial</td>	
+				</tr>
+
+				<tr>			
+				<td id="Table_Color_VinoTinto_Movil" style="display:block;" data-th="Postulación de sede RNR 2016"></td>
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">21:15</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_VinoTinto_Desktop">Postulación de sede RNR 2016</td>
+				</tr>
+
+				<tr>			
+				<td id="Table_Color_Azul_Medio_Movil" style="display:block;" data-th="Muestra Cultural y de Talentos"></td>
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">21:30</td>
+				<td style="display:none;" colspan="3" rowspan="2" id="Table_Color_Azul_Medio_Desktop">Muestra Cultural y de Talentos</td>
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">22:00</td></tr>
+
+				</tbody>
+				</table>
+			</div>	
+		<!-- Schedule	2  ############################################### -->
+
+		<!-- Schedule	3  ############################################### -->
+			<div id="Schedule3" style="display:none;" >	
+
+				<table id="Table3">
+				<thead>
+				<tr><th>Hora Inicio</th><th colspan="2">Actividad </th></tr>
+				</thead>
+
+				<tbody>
+				<tr>			
+				<td style="display:block;" id="Table_Color_Amarillo_Movil" data-th="Actividad: Desayuno"></td>				
+				</tr>
+				
+				<tr>			
+				<td id="Table_Color_Texto_Hora">7:30</td>
+				<td rowspan="2" colspan="3" style="display:none;" id="Table_Color_Amarillo_Desktop">Desayuno</td>
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">8:00</td></tr>
+
+				<tr>
+				<td style="display:block;" id="Table_Color_Morado_Movil" data-th="Actividad: Administración de Ramas"></td>				
+				</tr>	
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">8:30</td>
+				<td rowspan="2" colspan="3" style="display:none;" id="Table_Color_Morado_Desktop">Administración de Ramas</td>
+				</tr>
+
+				<tr>
+				<td style="display:block;" id="Table_Color_Morado_Movil" data-th="Actividad: Planeación de Actividades"></td>				
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">9:00</td>
+				<td rowspan="2" colspan="3" style="display:none;" id="Table_Color_Morado_Desktop">Planeación de Actividades</td>
+				</tr>
+
+				<tr>
+				<td style="display:block;" id="Table_Color_Morado_Movil" data-th="Actividad: Estrategias de Continuidad de Ramas"></td>		
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">9:30</td>
+				<td rowspan="2" colspan="3" style="display:none;" id="Table_Color_Morado_Desktop"> &nbsp; &nbsp; &nbsp; &nbsp; Estrategias de Continuidad de Ramas &nbsp; &nbsp; &nbsp; &nbsp; </td>
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_VinoTinto_Movil" style="display:block;" data-th="Actividad: Foro de Ramas" ></td>				
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">10:00</td>
+				<td style="display:none;" rowspan="1" id="Table_Color_VinoTinto_Desktop">Foro de Ramas</td>
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Amarillo_Movil" style="display:block;" data-th="Actividad: Coffe Break" ></td>				
+				</tr>
+
+				<tr>
+				<td id="Table_Color_Texto_Hora">10:30</td>
+				<td style="display:none;" rowspan="1" id="Table_Color_Amarillo_Desktop">Coffe Break</td>
+				</tr>
+
+				<tr>			
+				<td  id="Table_Color_Azul_Oscuro_Movil" style="display:block;" data-th="Actividad: Regreso a Casa"></td>			
+				</tr>	
+				
+				<tr>
+				<td id="Table_Color_Texto_Hora">11:00</td>
+				<td style="display:none;" rowspan="3" id="Table_Color_Azul_Oscuro_Desktop"> Regreso a Casa</td>		
+				</tr>
+
+				<tr><td id="Table_Color_Texto_Hora">11:30</td></tr>
+				<tr><td id="Table_Color_Texto_Hora">12:00</td></tr>
+
+				</tbody>
+				</table>
+			</div>	
+		<!-- END Schedule 3 	  ############################################### -->		
+			</div>
 <!-- END Agenda 	  ############################################### -->
 
-			</div>
+<!-- Agenda Invitados 	  ############################################### -->
 
 			<div id="Agenda_Invitados">
 				<h5 id="Agenda_h5_Titulo_Conferencista">Conferencistas Invitados:</h5>
 
 
 					<figure id="Agenda_Conferencistas_img">
-						<img src="img/comite8.jpg" alt="">
+						<img src="img/Augusto_Conferencista_IEEE.jpg" alt="">
 					</figure>
 
-					<h4 id="Agenda_h4">César Forero:</h4>
+					<h4 id="Agenda_h4">Augusto Jose Herrera <br>SAC Region 9 <br> Argentina</h4>
 
-					<P id="Agenda_p">Titulo 1 Obtenido.</P>
+					<P id="Agenda_p">Ingeniero Electrónico en la Universidad Nacional de Córdoba.</P>
 
-					<P id="Agenda_p">Titulo 2 Obtenido.</P><br>
+					<P id="Agenda_p">candidato a Máster en Ciencias de Ingeniería, Mención Telecomunicaciones.</P><br>
 
-					<p id="Agenda_p_Descrpicion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quam dolorum non fugit dolorem illum cupiditate maxime quo aperiam aut quae sunt laborum distinctio, pariatur et fugiat aspernatur quis est. </p>
+					<button id="biografia_1_btn">Conoce más sobre Augusto</button>
 
-					<p id="Agenda_h4"><strong>Conferencia.. o Charla: Inserte Conferencia Aquí.</strong></p><br>
+					<div id="bigrafia_1_div" style="display:none">				
 
+					<p id="Agenda_p_Descrpicion">
+
+					Ing. Augusto Herrera, actual presidente del Comité de Actividades Estudiantiles de IEEE Región 9 Latinoamérica y el Caribe. Augusto nació en La Plata, Argentina, obtuvo su título de Ingeniero Electrónico en la Universidad Nacional de Córdoba y es candidato a Máster en Ciencias de Ingeniería, Mención Telecomunicaciones. <br> <br>
+
+					Se unió como voluntario a IEEE desde el año 2005 y gracias a sus destacados aportes ha alcanzado notables posiciones tanto en IEEE Sección Argentina como en IEEE Región 9. En su Sección ha fungido como S-SAC, Coordinador GOLD, entre otros cargos. En Región 9 se ha desempeñado también como Coordinador GOLD y actualmente como R-SAC. En 2012 recibió el premio IEEE Theodore W. Hissey de la Región 9, por sus actividades como GOLD SAC. <br> <br>
+					</p>
+
+					<p id="Agenda_h4_Conferencia"><strong>Augusto compartirá con todos nosotros su amplio conocimiento y experiencia en el Instituto, y nos enseñara como lograr que una Rama Estudiantil sea un ejemplo para toda la región.</strong></p><br>
+
+					</div>
 
 					<figure id="Agenda_Conferencistas_img">
-						<img src="img/comite5.jpg" alt="">
+						<img src="img/Antonio_Conferencista_IEEE.jpg" alt="">
 					</figure>
 
-					<h4 id="Agenda_h4">Fabian Stevens Varón Valencia</h4>
+					<h4 id="Agenda_h4">Antonio García Rozo <br> Vicepresidente ACIEM Colombia <br> Vicepresidente IEEE Sección Colombia  </h4>
 
-					<P id="Agenda_p">Tecnologo en Desarrollo de Software - Universidad Surcolombiana</P>
-					<P id="Agenda_p">Estudiante de Ingeniería de Software - Universidad Surcolombiana</P><br>
-					<P id="Agenda_p"></P>
+					<P id="Agenda_p">Ingeniero Electrónico de la Universidad Javeriana <br> <br></P>
 
-					<p id="Agenda_p_Descrpicion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nobis veniam magni! Quaerat nesciunt, quam magni enim. Consequuntur cupiditate, eaque sapiente maiores, dolorum nulla a velit sequi quae! Sit, repudiandae!</p>
+					<button id="biografia_2_btn">Conoce más sobre Antonio</button>
 
-					<p id="Agenda_h4"><strong>Conferencia.. o Charla: Inserte Conferencia Aquí.</strong></p><br>
+					<div id="bigrafia_2_div" style="display:none">				
+					
+					<p id="Agenda_p_Descrpicion">
 
-								
+					Ingeniero Electrónico de la Universidad Javeriana. Ha sido Decano y Vicedecano de la Facultad de Ingeniería (1982-1989) de la Universidad de Los Andes, Jefe del Departamento de Ingeniería Eléctrica (1979-1982) y Director del CMUA (1990-2014), de la misma universidad. Ha sido Presidente de ACIEM Cundinamarca y Vice-presidente nacional de ACIEM. <br> <br> Se ha despeñado como representante del Presidente de la República en la Junta Directiva del ICEL y como  representante de las universidades privadas ante el Consejo Profesional de Ingeniería. <br> <br> Es Miembro Distinguido de la Asociación Colombiana de Ingeniería, ACIEM y Miembro Correspondiente de la Academia Colombiana de Historia de la Ingeniería y las Obras Publica. <br> <br> Inició en IEEE como miembro profesional desde el año 1981 y ha sido presidente de la Sección Colombia (1990) y fundador del capítulo profesional de Circuits and Systems Colombia, fue nombrado Senior Member de IEEE (1997) e Ingeniero Emérito de IEEE Región 9 (2013).
+
+					</p>
+
+					<p id="Agenda_h4_Conferencia"><strong>
+					Antonio compartirá con nosotros las experiencias que ha tenido con el Instituto en cada una de sus facetas y nos comunicará cómo las ramas estudiantiles deben trabajar y formar alianzas con sus universidades para ser organizaciones exitosas.
+					</strong></p><br>	
+
+					</div>							
 			</div>
-		</div>
-	</div>
-
-	<!-- <div id="Schedule1" style="display:none;" >	
-
-		<table id="Table1">
-		<thead>
-		<tr><th>Hora Inicio</th> <th>Hora Fin</th> <th colspan="8">Actividad: </th></tr>
-		</thead>
-
-		<tbody>
-
-		<tr>
-		<td data-th="Hora Inicio">8:00</td>
-		<td data-th="Hora Fin">8:30</td> --><!-- 
-		<td data-th="Actividad" rowspan="8" colspan="">Registro Al Evento</td>
-		<td data-th="Actividad" rowspan="3" colspan="7">Desayuno </td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">8:30</td>
-		<td data-th="Hora Fin">9:00</td>
-	
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">9:00</td>
-		<td data-th="Hora Fin">9:30</td>		
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">9:30</td>
-		<td data-th="Hora Fin">10:00</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="7">Competencia TISP</td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">10:00</td>
-		<td data-th="Hora Fin">10:30</td>
-		
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">10:30</td>
-		<td data-th="Hora Fin">11:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">11:00</td>
-		<td data-th="Hora Fin">11:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.1</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.2</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.3</td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">11:30</td>
-		<td data-th="Hora Fin">12:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">12:00</td>
-		<td data-th="Hora Fin">12:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="8">PICNIC IEEE</td>		 -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">12:30</td>
-		<td data-th="Hora Fin">13:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:00</td>
-		<td data-th="Hora Fin">13:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:30</td>
-		<td data-th="Hora Fin">14:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">14:00</td>
-		<td data-th="Hora Fin">14:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">14:30</td>
-		<td data-th="Hora Fin">15:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">15:00</td>
-		<td data-th="Hora Fin">15:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">15:30</td>
-		<td data-th="Hora Fin">16:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">16:00</td>
-		<td data-th="Hora Fin">16:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">16:30</td>
-		<td data-th="Hora Fin">17:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">17:00</td>
-		<td data-th="Hora Fin">17:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">17:30</td>
-		<td data-th="Hora Fin">18:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">18:00</td>
-		<td data-th="Hora Fin">18:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">18:30</td>
-		<td data-th="Hora Fin">19:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">19:00</td>
-		<td data-th="Hora Fin">19:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">19:30</td>
-		<td data-th="Hora Fin">20:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:00</td>
-		<td data-th="Hora Fin">20:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">20:30</td>
-		<td data-th="Hora Fin">21:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">21:00</td>
-		<td data-th="Hora Fin">21:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">21:30</td>
-		<td data-th="Hora Fin">22:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">22:00</td>
-		<td data-th="Hora Fin">22:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">22:30</td>
-		<td data-th="Hora Fin">23:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">23:00</td>
-		<td data-th="Hora Fin">23:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">23:30</td>
-		<td data-th="Hora Fin">00:00</td>
-		</tr>
-
-		</tbody>
-		</table>
-	</div>
-
-	<div id="Schedule2" style="display:none;" >	
-
-		<table id="Table2">
-		<thead>
-		<tr><th>Hora Inicio</th> <th>Hora Fin</th> <th colspan="8">Actividad</th></tr>
-		</thead>
-
-		<tbody> -->
-
-		<!-- <tr>
-		<td data-th="Hora Inicio">8:00</td>
-		<td data-th="Hora Fin">8:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="8" colspan="">Registro Al Evento</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="7">Desayuno </td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">8:30</td>
-		<td data-th="Hora Fin">9:00</td>
-	
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">9:00</td>
-		<td data-th="Hora Fin">9:30</td>		
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">9:30</td>
-		<td data-th="Hora Fin">10:00</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="7">Competencia TISP</td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">10:00</td>
-		<td data-th="Hora Fin">10:30</td>
-		
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">10:30</td>
-		<td data-th="Hora Fin">11:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">11:00</td>
-		<td data-th="Hora Fin">11:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.1</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.2</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.3</td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">11:30</td>
-		<td data-th="Hora Fin">12:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">12:00</td>
-		<td data-th="Hora Fin">12:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="8">PICNIC IEEE</td>		 -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">12:30</td>
-		<td data-th="Hora Fin">13:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:00</td>
-		<td data-th="Hora Fin">13:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:30</td>
-		<td data-th="Hora Fin">14:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">14:00</td>
-		<td data-th="Hora Fin">14:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">14:30</td>
-		<td data-th="Hora Fin">15:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">15:00</td>
-		<td data-th="Hora Fin">15:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">15:30</td>
-		<td data-th="Hora Fin">16:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">16:00</td>
-		<td data-th="Hora Fin">16:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">16:30</td>
-		<td data-th="Hora Fin">17:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">17:00</td>
-		<td data-th="Hora Fin">17:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">17:30</td>
-		<td data-th="Hora Fin">18:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">18:00</td>
-		<td data-th="Hora Fin">18:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">18:30</td>
-		<td data-th="Hora Fin">19:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">19:00</td>
-		<td data-th="Hora Fin">19:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">19:30</td>
-		<td data-th="Hora Fin">20:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:00</td>
-		<td data-th="Hora Fin">20:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">20:30</td>
-		<td data-th="Hora Fin">21:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">21:00</td>
-		<td data-th="Hora Fin">21:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">21:30</td>
-		<td data-th="Hora Fin">22:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">22:00</td>
-		<td data-th="Hora Fin">22:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">22:30</td>
-		<td data-th="Hora Fin">23:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">23:00</td>
-		<td data-th="Hora Fin">23:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">23:30</td>
-		<td data-th="Hora Fin">00:00</td>
-		</tr>
-
-		</tbody>
-		</table>
-	</div>
-
-	<div id="Schedule3" style="display:none;" >	
-		<table id="Table3">
-		<thead>
-		<tr><th>Hora Inicio</th> <th>Hora Fin</th> <th colspan="8">Actividad</th></tr>
-		</thead>
-
-		<tbody>
-
-		<tr>
-		<td data-th="Hora Inicio">8:00</td>
-		<td data-th="Hora Fin">8:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="8" colspan="">Registro Al Evento</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="7">Desayuno </td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">8:30</td>
-		<td data-th="Hora Fin">9:00</td>
-	
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">9:00</td>
-		<td data-th="Hora Fin">9:30</td>		
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">9:30</td>
-		<td data-th="Hora Fin">10:00</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="7">Competencia TISP</td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">10:00</td>
-		<td data-th="Hora Fin">10:30</td>
-		
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">10:30</td>
-		<td data-th="Hora Fin">11:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">11:00</td>
-		<td data-th="Hora Fin">11:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.1</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.2</td> -->
-		<!-- <td data-th="Actividad" rowspan="2" colspan="3">IEEE Colombian chapter's meeting 1.3</td> -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">11:30</td>
-		<td data-th="Hora Fin">12:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">12:00</td>
-		<td data-th="Hora Fin">12:30</td> -->
-		<!-- <td data-th="Actividad" rowspan="3" colspan="8">PICNIC IEEE</td>		 -->
-		<!-- </tr>
-
-		<tr>
-		<td data-th="Hora Inicio">12:30</td>
-		<td data-th="Hora Fin">13:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:00</td>
-		<td data-th="Hora Fin">13:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:30</td>
-		<td data-th="Hora Fin">14:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">14:00</td>
-		<td data-th="Hora Fin">14:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">14:30</td>
-		<td data-th="Hora Fin">15:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">15:00</td>
-		<td data-th="Hora Fin">15:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">15:30</td>
-		<td data-th="Hora Fin">16:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">16:00</td>
-		<td data-th="Hora Fin">16:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">16:30</td>
-		<td data-th="Hora Fin">17:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">17:00</td>
-		<td data-th="Hora Fin">17:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">17:30</td>
-		<td data-th="Hora Fin">18:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">18:00</td>
-		<td data-th="Hora Fin">18:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">18:30</td>
-		<td data-th="Hora Fin">19:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">19:00</td>
-		<td data-th="Hora Fin">19:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">19:30</td>
-		<td data-th="Hora Fin">20:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">13:00</td>
-		<td data-th="Hora Fin">20:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">20:30</td>
-		<td data-th="Hora Fin">21:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">21:00</td>
-		<td data-th="Hora Fin">21:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">21:30</td>
-		<td data-th="Hora Fin">22:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">22:00</td>
-		<td data-th="Hora Fin">22:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">22:30</td>
-		<td data-th="Hora Fin">23:00</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">23:00</td>
-		<td data-th="Hora Fin">23:30</td>
-		</tr>
-
-		<tr>
-		<td data-th="Hora Inicio">23:30</td>
-		<td data-th="Hora Fin">00:00</td>
-		</tr>
-
-		</tbody>
-		</table> -->
-	<!-- </div> -->
-<!-- END Schedule  ###############################################-->
-
-<!-- <img id="Agenda_img_oficial" src="img/RNRAgenda.png" alt="Agenda Oficial"> -->
-
+			</div>
+			</div>
+<!-- END Agenda Invitados 	  ############################################### -->
 
 <!-- Btn Payment  ###############################################-->
 	<div id="contenedor_pago">
 				
 	</div>
 <!-- END Btn Payment  ###############################################-->
+
 <!-- Sponsors 		  ############################################### -->
-	<div class="Sponsors_Color">
+	<div id="patrocinadores" class="Sponsors_Color">
 	<div class="Sponsorsh4">
 		<h4>La XIV RNR IEEE Colombia es patrocinada por: </h4>
 	</div>
 	<div id="owl-demo" class="owl-carousel"><!--start-img-cursual-->
 		<div class="item">
 			<div class="cau_left">
-				<a href="http://vehement.co">
-					<img class="lazyOwl" data-src="img/sp1.png" alt="Lazy Owl Image">
+				<a target="_blank" href="http://vehement.co">
+					<img class="lazyOwl"  src="img/sp1.png" alt="Lazy Owl Image">
 				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp2.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://ieee-cas.org/">
+				<img class="lazyOwl"  src="img/sp2.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp3.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://vehement.co">
+				<img class="lazyOwl"  src="img/sp3.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp4.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://ieee-cas.org/">
+				<img class="lazyOwl"  src="img/sp4.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp5.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://vehement.co">
+				<img class="lazyOwl"  src="img/sp5.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp6.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://ieee-cas.org/">
+				<img class="lazyOwl"  src="img/sp6.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp1.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://vehement.co">
+				<img class="lazyOwl"  src="img/sp1.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>	
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp2.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://ieee-cas.org/">
+				<img class="lazyOwl"  src="img/sp2.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>	
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp3.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://vehement.co">
+				<img class="lazyOwl"  src="img/sp3.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp4.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://ieee-cas.org/">
+				<img class="lazyOwl"  src="img/sp4.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp5.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://vehement.co">
+				<img class="lazyOwl"  src="img/sp5.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp6.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://ieee-cas.org/">
+				<img class="lazyOwl"  src="img/sp6.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 		<div class="item">
 			<div class="cau_left">
-				<img class="lazyOwl" data-src="img/sp1.png" alt="Lazy Owl Image">
+			<a target="_blank" href="http://vehement.co">
+				<img class="lazyOwl"  src="img/sp1.png" alt="Lazy Owl Image">
+				</a>
 			</div>
 		</div>
 	</div>
 	</div>
 <!-- END Sponsors     ###############################################-->
 
-<!-- FOOTER INTERSECTION SECTION ############################################### -->
 	</div>
+
+<!-- FOOTER INTERSECTION SECTION ############################################### -->
 
 	<section id="interblock_footer" class="footer_2">
 	    
