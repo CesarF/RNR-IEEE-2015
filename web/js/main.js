@@ -275,8 +275,10 @@ function mostrar3() {
  		$(document).ready(function(){ 
    $('#biografia_1_btn').on('click',function(){
       $('#bigrafia_1_div').toggle('slow');
+      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Augusto' : 'Ocultar información');
    });
    $('#biografia_2_btn').on('click',function(){
       $('#bigrafia_2_div').toggle('slow');
+      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Antonio' : 'Ocultar información');
    });
-});
+ });

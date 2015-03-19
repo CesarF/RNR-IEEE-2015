@@ -469,7 +469,11 @@ a#color_link_btn{color: white !important;}
 
 p#Concursos_subTitulo {
 text-align: center;
+font-size: 20px;
 }
+
+#Concursos_Color_Link{color: #006699;}
+
 
 #Concursos_p_subTitulo
 {
@@ -548,12 +552,7 @@ text-align: center;
 	{
 		margin: 0;
 	}
-
-
 }
-
-#Concursos_Color_Link{color: black !important;}
-
 
 /* 05. INFO WHAT'S RNR OWN PAGE ... ================================================== */
 
@@ -861,7 +860,7 @@ section article p
 	text-align: justify;
 	color: #524D4D;	
 	font-family: 'latoregular';
-	padding: 1% 0 2% 6%;
+	padding: 1% 0 2% 5%;
 }
 
 #Agenda_h5
@@ -1571,7 +1570,7 @@ ul.rig.columns-4 li
 
 #Lugar_Que_Pasara_Despues, #Contenedor_Concursos
 {
-	min-height: 1025px;	
+	min-height: 2000px;	
 	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
 }
 
@@ -1877,6 +1876,8 @@ ul#Comite_Organizador_Lista
 	line-height: 2.2em;
 	text-align: center;
 }
+
+#Registro_p_a{color: #006699 !important;}
 
 #Registro_p_3
 {
