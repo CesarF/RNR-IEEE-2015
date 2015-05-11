@@ -59,6 +59,99 @@ strong#Color_Registro_Strong{color: red;}
 
 }
 
+/*404 ERROR */
+
+#error_texto{
+  color: #0BADB3 !important;
+  font-size: 11em;
+  line-height: 100%;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+  display: block;
+  font-weight: 300;
+  font-family: 'latolight';
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fullwidth
+{
+	width: 100%;	
+	min-width: 280px;
+}
+
+.fullwidth .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1000px;
+		text-align: center;
+	}
+
+#topcontainer h1
+	{
+		padding: 0 0 10px 0;
+		margin-bottom: 0;
+		margin-top: 0;
+		letter-spacing: -1.5px;
+		color: #848484;
+		font-weight: 400;
+	}
+
+#revisa_h1
+	{
+		padding: 5% 0 !important;
+		font-size: 20px;
+	}
+		#topcontainer h1 span
+		{
+			font-size: 50px;
+			line-height: 70px;
+			letter-spacing: -1.4px;
+			font-weight: 300;
+		}
+
+	#topcontainer p
+	{
+		margin-bottom: 0;
+		color: #999;
+	}
+
+	#topcontainer p span
+	{
+		font-size: 90px;
+		line-height: 90px;
+		color: #ED1B24;
+	}
+
+	#logo_error img
+	{
+
+		display: flex;
+  		margin: 0 auto;  
+		width: 524px;
+	 	height:247px;
+	 }
+@media screen and (max-width:549px){
+
+	#logo_error img
+	{
+		display: flex;
+  		margin: 0 auto;  
+		width: 75%;
+	 	height:75%;
+	 }
+
+	#error_texto{font-size: 6.5em;}
+
+	#topcontainer h1 span
+		{
+			font-size: 30px;
+			line-height: 0;
+		}
+
+
+}
 
 
 /* 03. NAVIGATION ================================================== */
@@ -504,8 +597,10 @@ font-size: 20px;
 #biografia_1_btn:hover{background: #07C57C;}
 #biografia_2_btn{background: #be054c;}
 #biografia_2_btn:hover{background: #D00754;}
+#biografia_3_btn{background: #29A8A8;}
+#biografia_3_btn:hover{background: #2BC3C3;}
 
-#biografia_1_btn, #biografia_2_btn
+#biografia_1_btn, #biografia_2_btn, #biografia_3_btn
 {	
 	border-radius: 3px;	
 	-webkit-border-radius: 3px;
@@ -951,9 +1046,13 @@ border-radius: 50%;
 {
 	width: 35%;
 	border-radius: 50%;
-	padding-bottom: 2%;
 }
 
+#hr_agenda_conferencistas
+{
+  margin: 2% 0 7% 6%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
 @media screen and (max-width: 480px){
 
 	div#Agenda_Dias ,div#Agenda_Invitados
@@ -2089,7 +2188,7 @@ display: inline-block; width: 6rem;
 
 .Sponsors_Color
 {	
-	height: 240px;	
+	height: 280px;	
 }
 
 .Sponsorsh4{width: 100%;}
@@ -2112,7 +2211,10 @@ display: inline-block; width: 6rem;
 {
     display: block;
     height: auto;
+    height: 50%;
+  	width: 50%;
 }
+
 .item img,.item a,.item p{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
