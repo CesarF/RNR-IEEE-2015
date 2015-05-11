@@ -599,8 +599,12 @@ font-size: 20px;
 #biografia_2_btn:hover{background: #D00754;}
 #biografia_3_btn{background: #29A8A8;}
 #biografia_3_btn:hover{background: #2BC3C3;}
+#biografia_4_btn{background: #5812A6;}
+#biografia_4_btn:hover{background: #671FB6;}
+#index_1_btn{background: #29A8A8;}
+#index_1_btn:hover{background: #2BC3C3;}
 
-#biografia_1_btn, #biografia_2_btn, #biografia_3_btn
+#biografia_1_btn, #biografia_2_btn, #biografia_3_btn,#biografia_4_btn ,#index_1_btn
 {	
 	border-radius: 3px;	
 	-webkit-border-radius: 3px;
@@ -615,6 +619,13 @@ font-size: 20px;
 	margin-bottom: 5%;
 }
 
+#index_1_btn
+{
+	text-align: center;
+	padding: 3%;
+	margin: 0 0 6% 32%;
+}
+
 @media only screen and (max-width: 480px){
 
 	#Concursos_Container_Info , #Agenda_Container_Info
@@ -622,6 +633,13 @@ font-size: 20px;
 		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%; padding-left: 0; padding-right: 0;
 		font-family:'latoregular';
 	}
+
+	#index_1_btn
+{
+	text-align: center;
+	padding: 3%;
+	margin: 0 0 6% 15%;
+}
 
 	#Concursos_p {
 		font-size: 16px;
@@ -754,7 +772,16 @@ section article p
 
 .WhatsRNR_index
 {
-	min-height: 598px;
+	min-height: 3380px !important;
+	clear: both;
+	position: relative;	
+	background: white;
+	padding-top: 7%;
+}
+
+.WhatsRNR_index_2
+{
+	min-height: 1250px;
 	clear: both;
 	position: relative;	
 	background: white;
@@ -792,6 +819,15 @@ section article p
 {
 	color: #555555;
 	font-size: 24px;
+	margin:0 7%;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+#WhatsRNR_p2
+{
+	color: #555555;
+	font-size: 20px;
 	margin:0 7%;
 	line-height: 1.8em;
 	text-align: justify;
@@ -1048,6 +1084,8 @@ border-radius: 50%;
 	border-radius: 50%;
 }
 
+img#Agradecimientos_Cesar_img {width: 100%; padding-bottom: 6%;}
+
 #hr_agenda_conferencistas
 {
   margin: 2% 0 7% 6%;
@@ -1273,6 +1311,10 @@ display: inline-block;
 #Table_Color_Verde_Desktop{background: #339933 !important;}
 #Table_Color_Morado_Movil{background: #60497a !important;}
 #Table_Color_Morado_Desktop{background: #60497a !important;}
+#Table_Color_Rosa_Movil{background: #D36262 !important;}
+#Table_Color_Rosa_Desktop{background: #D36262 !important;}
+#Table_Color_Rojo_Movil{background: #B30A03 !important;}
+#Table_Color_Rojo_Desktop{background: #B30A03 !important;}
 
 
 @media (min-width:600px){
@@ -1304,6 +1346,15 @@ display: inline-block;
 
 	td#Table_Color_Morado_Movil{display: none !important;}	
 	td#Table_Color_Morado_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Morado_Movil{display: none !important;}	
+	td#Table_Color_Morado_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Rosa_Movil{display: none !important;}
+	td#Table_Color_Rosa_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Rojo_Movil{display: none !important;}
+	td#Table_Color_Rojo_Desktop{display: table-cell !important;}
 
 
  }

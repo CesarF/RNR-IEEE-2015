@@ -275,14 +275,23 @@ function mostrar3() {
  		$(document).ready(function(){ 
    $('#biografia_1_btn').on('click',function(){
       $('#bigrafia_1_div').toggle('slow');
-      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Antonio' : 'Ocultar información');
+      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Lorena' : 'Ocultar información');
    });
    $('#biografia_2_btn').on('click',function(){
       $('#bigrafia_2_div').toggle('slow');
-      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Augusto' : 'Ocultar información');
+      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Antonio' : 'Ocultar información');
    });
    $('#biografia_3_btn').on('click',function(){
       $('#bigrafia_3_div').toggle('slow');
+      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Augusto' : 'Ocultar información');
+   });
+   $('#biografia_4_btn').on('click',function(){
+      $('#bigrafia_4_div').toggle('slow');
       $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Marinara' : 'Ocultar información');
+   });
+   $('#index_1_btn').on('click',function(){
+      $('#index_1_div').toggle('slow');
+      $(this).html($(this).html() == 'Ocultar Agradecimiento' ? 'Leer Agradecimiento' : 'Ocultar Agradecimiento');
+      $(".WhatsRNR_index_2").toggleClass("WhatsRNR_index");
    });
  });
