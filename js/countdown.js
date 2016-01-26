@@ -1,10 +1,11 @@
 (function($) {
+	
 	$.fn.countdown = function(options, callback) {
 		//custom 'this' selector
 		thisEl = $(this);
 		//array of custom settings
 		var settings = { 
-			'date': null,
+			'date': 'March 31, 2017',
 			'format': null
 		};
 		//append the settings array to options
@@ -13,7 +14,7 @@
 		}
 		//main countdown function
 		function countdown_proc() {
-			eventDate = Date.parse(settings['date']) / 1000;
+			eventDate = Date.parse('January 31, 2016') / 1000;
 			currentDate = Math.floor($.now() / 1000);
 			if(eventDate <= currentDate) {
 				callback.call(this);

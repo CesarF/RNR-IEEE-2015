@@ -8,7 +8,7 @@ html {
   background: white;
 }
 
-#main { /* max-width:1349px; */ min-width:320px; margin:0 auto; min-height: 500px;}
+#main { max-width:1349px; min-width:320px; margin:0 auto; min-height: 500px;}
 
 p{text-align: justify;}
 a:link{text-decoration: none !important; color: white;}
@@ -189,15 +189,8 @@ img#logo_oficial {
 
 }
 
-img#logo_oficial_2 {
-  width: 140px !important;
-  padding-top: 5%;
-  padding-left: 9%;  
-
-}
-
 img#logo_evento {
-	width: 150px !important;
+	width: 170px !important;
 }
 
 
@@ -221,7 +214,7 @@ img#logo_evento {
 #nav>li>a {
 	/* Layout */
 	display: block;
-	padding: 3px 15px 0 15px;
+	padding: 3px 0px 0 28px;
 
 	/* Typography */
 	font-family: 'latobold', sans-serif;
@@ -259,7 +252,7 @@ img#logo_evento {
 	#nav>li>a:hover{color:#fff ;}
 
 /* The hover state of the links */
-#nav >li:hover a, #nav>li .selected {
+#nav li:hover a, #nav li .selected {
 	color: #fff;}
 
 #nav>li.dropdown>a {
@@ -436,7 +429,7 @@ img#logo_evento {
   display: block;
   position: relative;
   z-index: 1;
-  /* max-height: 470px; */
+  max-height: 470px;
   width: 100%;
   border: 0;
   padding-top: 120px;
@@ -497,6 +490,418 @@ img#logo_evento {
 
 }
 
+/*06 concurso ================================================================= */
+
+#concurso
+{  /*padre*/
+	width: 100%;
+}
+
+a#color_link_btn{color: white !important;}
+
+#concurso .div1, #concurso .div2{  /*hijos*/
+	display: table-cell;
+	float: left;
+	text-align: center;
+	padding: 1.4% 0;
+	font-size: 22px;
+	color: white;
+	font-family: 'latolight';
+}
+
+.div1
+{
+	background: #0185ff; width: 50%;
+}
+.div2
+{
+	background: #9001ff; width: 50%;
+}
+
+@media screen and (max-width:761px){
+   #concurso .div1 , #concurso .div2{
+   	width: 100%
+   }
+   .div2{padding: 4.8% 0 !important;}
+}
+
+
+
+
+
+/* 06.1 SEGMENTO CONCURSOS ================================================================= */
+
+
+#Contenedor_Concursos
+{  /*padre*/
+	width: 100%;
+}
+
+a#color_link_btn{color: white !important;}
+
+#Concursos_Container_Info , #Agenda_Container_Info {min-height: 375px;}
+
+#Concursos_h4_titulo
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:32px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-left: 5%;
+	padding-top: 10%;
+}
+
+#Concursos_p
+{
+	font-size: 18px;
+	margin:0 16%;
+	line-height: 2.2em;
+	text-align: justify;
+}
+
+p#Concursos_subTitulo {
+text-align: center;
+font-size: 20px;
+}
+
+#Concursos_Color_Link{color: #006699;}
+
+
+#Concursos_p_subTitulo
+{
+	font-size: 14px;
+	margin:0 16%;
+	line-height: 2.1em;
+	font-family: 'latolight'
+}
+
+#Concursos_img1 img 
+
+{
+	width: 40%;
+	padding-bottom: 2%;
+}
+
+#Concursos_p_terminos_y_condiciones
+{
+	color: black;
+	font-size: 16px;
+	margin:0 10%;
+	font-family: 'latolight';
+	line-height: 2em;
+	text-align: center;
+}
+	
+#biografia_1_btn{background: #05BE77;}
+#biografia_1_btn:hover{background: #07C57C;}
+#biografia_2_btn{background: #be054c;}
+#biografia_2_btn:hover{background: #D00754;}
+#biografia_3_btn{background: #29A8A8;}
+#biografia_3_btn:hover{background: #2BC3C3;}
+#biografia_4_btn{background: #5812A6;}
+#biografia_4_btn:hover{background: #671FB6;}
+#index_1_btn{background: #29A8A8;}
+#index_1_btn:hover{background: #2BC3C3;}
+
+#biografia_1_btn, #biografia_2_btn, #biografia_3_btn,#biografia_4_btn ,#index_1_btn
+{	
+	border-radius: 3px;	
+	-webkit-border-radius: 3px;
+	color: white;
+  	font-family: 'latolight';
+	font-weight: bold;
+	font-size: 22px;
+	box-sizing: border-box;
+	width: 250px;
+	border:0;
+	padding: 1%;
+	margin-bottom: 5%;
+}
+
+#index_1_btn
+{
+	text-align: center;
+	padding: 3%;
+	margin: 0 0 6% 32%;
+}
+
+@media only screen and (max-width: 480px){
+
+	#Concursos_Container_Info , #Agenda_Container_Info
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%; padding-left: 0; padding-right: 0;
+		font-family:'latoregular';
+	}
+
+	#index_1_btn
+{
+	text-align: center;
+	padding: 3%;
+	margin: 0 0 6% 15%;
+}
+
+	#Concursos_p {
+		font-size: 16px;
+		margin: 0;
+		line-height: 2.2em;
+		text-align: justify;
+		}
+	#Concursos_h4_Titulo_2 
+	{
+
+		font-size: 26px;
+		color: #524D4D;
+		font-weight: 700;
+	}
+
+	#Concursos_img1 img 
+	{
+		width: 100%;
+		padding-bottom: 2%;	
+	}
+
+	figure#Concursos_img1 
+	{
+		margin: 0;
+	}
+}
+
+/* 05. INFO WHAT'S RNR OWN PAGE ... ================================================== */
+
+.WhatsRNR
+{
+	min-height: 500px;
+	clear: both;
+	width: 100%;
+	position: relative;
+	background: white;
+	padding: 13% 0%;
+}
+
+
+.WhatsRNR .fa-question,.WhatsRNR .fa-check, .WhatsRNR .fa-th-list
+{
+	color: #524D4D;
+	font-size: 6em;
+}
+
+article{
+   float:left;
+   width:28%;
+}
+
+section{
+	overflow:hidden;
+   padding:3% 0;
+   text-align:center;
+   width:90%;
+   color: #fff;
+}
+
+.fila1{padding-right: 3%;padding-left: 5%;}
+.fila2{padding-right: 3%;}
+
+section article h4
+
+{
+
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	text-transform:uppercase;
+}
+
+section article p
+{
+	color: #555555;
+	font-size: 16px;
+	margin:0;
+	line-height: 1.8em;
+}
+
+@media screen and (max-width:1000px){
+   section
+   {
+      width:100%;
+   }   
+   
+   .fila1,.fila2,.fila3{padding-top: 10%;}
+}
+
+@media screen and (max-width:850px){
+   article{
+      width:100%;
+   }
+   .fila1,.fila2,.fila3{width: 100%;}
+   .fila3{padding-top: 5%;}
+}
+
+@media screen and (max-width: 768px){
+	.WhatsRNR
+	{
+		padding-top: 9%;
+
+	}
+	.fila1,.fila2,.fila3
+	{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.fila3{padding-top: 5%;}
+
+}
+
+@media screen and (max-width:866px){
+	.fila1,.fila2, .fila3
+	{
+	 width: 100%;
+	}
+}
+
+@media screen and (min-width:769px) and (max-width:866px){
+	.fila1,.fila2, .fila3
+	{
+	 width: 95%;
+	 padding-left: 2%;
+	}
+}
+/* 05.1. INFO WHAT'S RNR INDEX ... ================================================== */
+
+.WhatsRNR_index
+{
+	min-height: 3380px !important;
+	clear: both;
+	position: relative;	
+	background: white;
+	padding-top: 7%;
+}
+
+.WhatsRNR_index_2
+{
+	min-height: 1250px;
+	clear: both;
+	position: relative;	
+	background: white;
+	padding-top: 7%;
+}
+
+.WhatsRNR_index .fa-question
+{
+	color: #524D4D;
+	font-size: 5em;
+	padding-top: 3%;
+	padding-left: 47%;
+}
+
+#WhatsRNR_h4
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	text-transform:uppercase;
+}
+
+#WhatsRNR_h4_2
+{
+	text-align: center;
+	color: #ffAE00;
+	font-size:3em;
+	font-weight: 800;
+	margin: 1em 0;
+}
+
+#WhatsRNR_p
+{
+	color: #555555;
+	font-size: 24px;
+	margin:0 7%;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+#WhatsRNR_p2
+{
+	color: #555555;
+	font-size: 20px;
+	margin:0 7%;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+.fila1_index{width: 45%; padding-right: 6%; padding-left: 5%;}
+
+@media screen and (max-width:1000px){
+   
+   .fila1_index{padding-top: 3%;}
+}
+
+@media screen and (max-width:850px){
+   
+   .fila1_index{width: 100%;}
+   }
+
+@media screen and (max-width: 768px){
+	.WhatsRNR_index
+	{
+		padding-top: 2%;
+	}
+
+	.fila1_index
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#WhatsRNR_p
+	{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.fila1_index
+	{
+		padding-right: 3;		
+	}
+
+	.twitter-timeline{width: 389px !important;}
+
+}
+
+@media screen and (max-width: 360px){
+	.fila1_index
+	{
+		padding-right: 0;		
+	}	
+}
+
+@media screen and (min-width: 901px) and (max-width: 1030px){
+	
+	.WhatsRNR_index{min-height: 752px !important;}
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1199px){
+	
+	.WhatsRNR_index{min-height: 653px !important;}
+}
+
+@media screen and (min-width: 851px) and (max-width: 900px){
+	
+	.twitter-timeline{width: 367px !important;}
+	.WhatsRNR_index{min-height: 785px !important;}
+}
+
+@media screen and (max-width: 850px){
+	
+	.twitter-timeline{width: 100% !important;}
+}
+
+
 /*06 SEPARATE ARROWS ========================================================================*/
 
 .arrow-separator
@@ -523,7 +928,1889 @@ img#logo_evento {
 		border-color: white rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0); /** Using RGB to remove dark line in Firefox **/
 	}
 
+/*07 AGENDA ========================================================================*/
 
+#Contenedor_Agenda{margin: 0;padding: 0; width: 100%;min-height: 550px; overflow: hidden;}
+
+#Agenda_h4_Titulo_1
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:32px;
+	font-weight: 700;
+	margin:0;
+	padding-top: 12%;
+}
+
+.AgendaP 
+{
+	color: #f4f4f4;
+	font-size: 5em;
+	margin: 0;
+	line-height: 1.9em;
+	text-align: center;
+}
+
+#Agenda_p 
+{
+	color: #524D4D;
+	font-size: 18px;
+	margin: 0;
+	line-height: 1.9em;
+	text-align: center;
+	padding-left: 4%;
+}
+
+#Agenda_p_Descrpicion
+{
+	color: #524D4D;
+	font-size: 18px;
+	margin: 0 10%;
+	line-height: 1.9em;
+	font-family: 'latobold';
+	text-align: justify;
+	padding-left: 4%;
+}
+
+#Agenda_h4
+{
+	font-size: 20px;
+	margin:0;
+	line-height: 2.3em;
+	text-align: center;
+	color: #524D4D;	
+	font-family: 'latoregular';
+	padding: 1% 0 2% 0;
+}
+
+#Agenda_h4_Conferencia
+{
+	font-size: 20px;
+	margin:0;
+	line-height: 2.3em;
+	text-align: justify;
+	color: #524D4D;	
+	font-family: 'latoregular';
+	padding: 1% 0 2% 5%;
+}
+
+#Agenda_h5
+{
+	font-size: 20px;
+	margin:0;
+	line-height: 2.2em;
+	text-align: center;
+	color: #524D4D;	
+	font-family: 'latoregular';
+	padding: 0px 18% 8% 18%;
+}
+
+#Agenda_h5_Titulo_Conferencista
+{
+	font-size: 20px;
+	margin:0;
+	line-height: 2.2em;
+	text-align: center;
+	color: #524D4D;	
+	font-family: 'latoregular';
+	padding: 0px 18% 5% 18%;
+}
+
+.Agendafila1
+{
+	padding-left: 8%;
+	width: 30%
+}
+
+.Agendafila2
+{
+	vertical-align: middle;	
+}
+
+.Agendafila3
+{
+	padding-right: 0%;
+	float: right;
+	width: 33%
+}
+
+.AgendaArt1
+{
+background:#0DA867;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+article.AgendaArt1_Gris:hover {background:#0DA867;}
+article.AgendaArt2_Gris:hover {background:#F5D42B;}
+article.AgendaArt3_Gris:hover {background:#f4002f;}
+
+.AgendaArt2
+{
+background: #F5D42B;
+color: black;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+.AgendaArt3
+{
+background: #f4002f;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+
+.AgendaArt1_Gris, .AgendaArt2_Gris, .AgendaArt3_Gris 
+{
+background:#6E6B6B;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+#Agenda_Dias , #Agenda_Invitados
+{
+	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+}
+
+#Agenda_Conferencistas_img img 
+
+{
+	width: 35%;
+	border-radius: 50%;
+}
+
+img#Agradecimientos_Cesar_img {width: 100%; padding-bottom: 6%;}
+
+#hr_agenda_conferencistas
+{
+  margin: 2% 0 7% 6%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+@media screen and (max-width: 480px){
+
+	div#Agenda_Dias ,div#Agenda_Invitados
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
+	}	
+
+	#Agenda_Dias{padding-left: 0 !important;}
+	#Agenda_Invitados {padding-right: 0 !important; border:none !important; }
+
+	#Agenda_h4_Titulo_1{padding: 23% 0 3% 0;}
+
+	#Agenda_h5{padding:0;}
+
+	#Agenda_Conferencistas_img img 
+
+	{
+	width: 50%;
+	padding-bottom: 2%;
+	}
+}
+
+@media screen and (max-width:1000px){
+.Agendafila1
+	{
+		padding-left: 8% ;
+		padding-right: 4%; 
+	}
+}
+@media screen and (max-width:1024px){
+
+ .AgendaArt3 , .AgendaArt1 , .AgendaArt2, .AgendaArt1_Gris, .AgendaArt2_Gris, .AgendaArt3_Gris {border-radius: 0;}
+   
+ .AgendaArt1 , .Agendafila1 
+ {
+   	width: 100%;
+ }
+
+.Agendafila1
+  {
+   	padding-left: 0 !important;
+  }
+
+ .AgendaArt2 , .Agendafila2, .AgendaArt1_Gris, .AgendaArt2_Gris, .AgendaArt3_Gris
+ {
+   	width: 100%;
+ }
+
+.Agendafila2
+  {
+   	padding-left: 0 !important;
+	padding-top: 2% !important;	
+  }
+
+  .AgendaArt3 , .Agendafila3 
+ {
+   	width: 100%;
+ }
+
+.Agendafila3
+  {
+   	padding-left: 0 !important;
+	padding-top: 2% !important;
+  }
+}
+
+@media screen and (max-width:768px){
+	.Agendafila1
+	{
+		padding-left: 6% ;
+		padding-right: 5%; 
+	}
+}
+
+img#Agenda_img_oficial{width: 100%; padding-bottom: 0; padding-top: 16%;}
+
+/*08. Schedule ========================================================================*/
+#Schedule1, #Schedule2,#Schedule3
+{
+	float: left;	
+	min-height: 500px;
+	vertical-align: middle;
+	cursor:auto;
+	padding-top: 8%;
+}
+
+#Table_Color_Texto_Hora{background:white !important;color: #006699 !important; font-weight: 700;}
+tbody#Schedule_Table_Style{border-bottom: 1px solid #ccc;}
+
+/*TABLA 1*/
+
+table#Table1 {
+height: 100%;
+width: 100%;
+font-family: Helvetica; font-weight: 100;
+background: #0DA867;
+color: #fff;
+border-radius: 5px;
+text-align:center;
+}
+td, th, table{border:none; border-color: white;}
+
+/* para las filas pares 
+table tr:nth-child(even) td {
+    background-color: #16a085 !important;
+}
+
+*/
+
+table#Table1 thead th { font-weight: 600; }
+table#Table1 thead th, table#Table1 tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table1 tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+table#Table1 tbody td { display: block; padding: .6rem; }
+table#Table1 thead { display: none; }
+table#Table1 tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block;
+}
+table#Table1 tbody tr td:first-child { background: #14937a; color: #fff; }
+
+
+#Schedule1, #Schedule2, #Schedule3 {
+width: 100%;
+min-height: 500px;
+vertical-align: middle;
+cursor: auto;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+td {
+border: none;}
+
+}
+
+/*TABLA2*/
+
+table#Table2 {
+height: 100%;
+width: 100%;
+font-family: Helvetica; font-weight: 100;
+background: #f4cc00; color: #fff;
+border-radius: 5px;
+text-align:center;
+}
+
+table#Table2 thead th { font-weight: 600; }
+table#Table2 thead th, table#Table2 tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table2 tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+table#Table2 tbody td { display: block; padding: .6rem; }
+table#Table2 thead { display: none; }
+table#Table2 tbody tr td:first-child { background: #f4cc00; color: #fff; }
+table#Table2 tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block;
+}
+}
+
+/*TABLA3*/
+
+table#Table3 {
+height: 100%;
+width: 100%;
+font-family: Helvetica; font-weight: 100;
+background: #f4002f; color: #fff;
+border-radius: 5px;
+text-align:center;
+}
+
+table#Table3 thead th { font-weight: 600; }
+table#Table3 thead th, table#Table3 tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table3 tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+table#Table3 tbody td { display: block; padding: .6rem; }
+table#Table3 thead { display: none; }
+table#Table3 tbody tr td:first-child { background: #f4002f; color: #fff; }
+table#Table3 tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block;
+}
+}
+
+/*COLORES DE LOS ESPACIOS EN LAS TABLAS */
+
+#Table_Color_Azul_Oscuro_Movil{background: #003366 !important;}
+#Table_Color_Azul_Oscuro_Desktop{background: #003366 !important;}
+#Table_Color_Azul_Medio_Movil{background: #215967 !important;}
+#Table_Color_Azul_Medio_Desktop{background: #215967 !important;}
+#Table_Color_Azul_Medio_2_Movil{background: #366092 !important;}
+#Table_Color_Azul_Medio_2_Desktop{background: #366092 !important;}
+#Table_Color_Azul_Claro_Movil{background: #339999 !important;}
+#Table_Color_Azul_Claro_Desktop{background: #339999 !important;}
+#Table_Color_Amarillo_Movil{background: #ffc000 !important;}
+#Table_Color_Amarillo_Desktop{background: #ffc000 !important;}
+#Table_Color_Naranja_Movil{background: #e26b0a !important;}
+#Table_Color_Naranja_Desktop{background: #e26b0a !important;}
+#Table_Color_VinoTinto_Movil{background: #800000 !important;}
+#Table_Color_VinoTinto_Desktop{background: #800000 !important;}
+#Table_Color_Verde_Movil{background: #339933 !important;}
+#Table_Color_Verde_Desktop{background: #339933 !important;}
+#Table_Color_Morado_Movil{background: #60497a !important;}
+#Table_Color_Morado_Desktop{background: #60497a !important;}
+#Table_Color_Rosa_Movil{background: #D36262 !important;}
+#Table_Color_Rosa_Desktop{background: #D36262 !important;}
+#Table_Color_Rojo_Movil{background: #B30A03 !important;}
+#Table_Color_Rojo_Desktop{background: #B30A03 !important;}
+
+
+@media (min-width:600px){
+
+
+	td#Table_Color_Azul_Oscuro_Movil{display: none !important;}	
+	td#Table_Color_Azul_Oscuro_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Azul_Medio_Movil{display: none !important;}	
+	td#Table_Color_Azul_Medio_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Azul_Medio_2_Movil{display: none !important;}	
+	td#Table_Color_Azul_Medio_2_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Azul_Claro_Movil{display: none !important;}	
+	td#Table_Color_Azul_Claro_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Amarillo_Movil{display: none !important;}
+	td#Table_Color_Amarillo_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Naranja_Movil{display: none !important;}	
+	td#Table_Color_Naranja_Desktop{display: table-cell !important;}
+
+	td#Table_Color_VinoTinto_Movil{display: none !important;}	
+	td#Table_Color_VinoTinto_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Verde_Movil{display: none !important;}	
+	td#Table_Color_Verde_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Morado_Movil{display: none !important;}	
+	td#Table_Color_Morado_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Morado_Movil{display: none !important;}	
+	td#Table_Color_Morado_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Rosa_Movil{display: none !important;}
+	td#Table_Color_Rosa_Desktop{display: table-cell !important;}
+
+	td#Table_Color_Rojo_Movil{display: none !important;}
+	td#Table_Color_Rojo_Desktop{display: table-cell !important;}
+
+
+ }
+/*09  LUGAR ================================================== */
+
+#Lugar
+{
+	margin: 0;
+	padding: 0;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 29.6%; /*This is the aspect ratio*/
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        min-height: 400px !important;
+    }
+
+@media screen and (min-width: 1920px){
+
+	.google-maps {
+        padding-bottom: 21.6%; /*This is the aspect ratio*/ 
+    }
+
+    #Lugar_Info_h4_Titulo_Hotel {		
+		padding-top: 7% !important;
+	}
+
+	div#btn_pago{padding-right: 15% !important;}
+
+	#Lugar_Info_p_Que_Pasara {padding: 2% 3% 3% 3% !important;}
+	div#contenedor_pago {padding-top: 5% !important;}
+	div#contenedor_pago_lugar {padding-top: 5% !important;}
+}
+
+@media screen and (max-width: 720px){
+
+	.google-maps{height: 100px;}
+}
+
+.Mapa_Img
+{
+	width: 100%;
+	padding-top: 2.2%;
+	padding-bottom: 1%;
+    }
+
+.Mapa_Container
+{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+.image-lightbox {
+	-webkit-transition: all ease-in 0.5s;
+	-moz-transition: all ease-in 0.5s;
+	-ms-transition: all ease-in 0.5s;
+	-o-transition: all ease-in 0.5s;
+}
+
+. Mapa_Container img:hover {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); 
+    -moz-transform:scale(1.5); 
+    -webkit-transform:scale(1.5); 
+    -o-transform:scale(1.5); 
+}
+
+/* ----- Image grids ----- */
+ul.rig 
+{
+	list-style: none;
+	font-size: 0px;
+	margin-left: -5.5%; /* should match li left margin */
+}
+
+ul.rig li 
+{
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: black;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #1A1515;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+ul.rig li img 
+{
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+
+/* class for 4 columns */
+ul.rig.columns-4 li 
+{
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+@media (max-width: 1199px) {
+	.Mapa_Container 
+	{
+		width: auto;
+		padding: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	ul.grid-nav li 
+	{
+		display: block;
+		margin:0;
+		padding: 0;
+	}
+	ul.grid-nav li a 
+	{
+		display: block;
+	}
+	ul.rig 
+	{
+		margin-left: 0;
+	}
+	ul.rig li 
+	{
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+
+
+/* 09.1. LUGAR MAIN DIV ... ================================================== */
+
+.Lugar_Info
+{
+	min-height: 500px;
+	clear: both;
+	position: relative;	
+	background: white;
+	padding-top: 3%;
+}
+
+.Lugar_Info .fa-question
+{
+	color: #524D4D;
+	font-size: 5em;
+	padding-top: 3%;
+	padding-left: 47%;
+}
+
+#Lugar_Info_h4
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-top: 2%;
+}
+
+#Lugar_Info_h4_1
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding: 3%;
+}
+
+#Lugar_Info_p_Que_Pasara
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:26px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding: 8% 3% 3% 3%;
+}
+
+#Lugar_Info_h4_Titulo_Hotel
+{
+	text-align: left;
+	color: #524D4D;
+	font-size:32px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-left: 5%;
+	padding-top: 10%;
+
+}
+
+#Lugar_Info_p
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 7%;
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+#Lugar_Info_Como_Llegar
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 5%;
+	line-height: 1.8em;
+	text-align: left;
+}
+
+#Lugar_Info_p_2
+
+{
+	color: #555555;
+	font-size: 16px;
+	margin:0 13%;
+	line-height: 1.4em;
+	text-align: justify;
+}
+
+#Lugar_Info_p_3
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 ;
+	line-height: 4.4em;
+	text-align: center;
+}
+
+
+#Lugar_Info_p_fecha
+
+{
+	color: #474747;
+	font-size: 14px;
+	margin:0 ;
+	line-height: 2.4em;
+	text-align: center;
+}
+
+@media screen and (max-width:480px){
+
+	#Lugar_Info_h4_Titulo_Hotel {
+	text-align: center;
+	font-size: 20px;
+	margin:0;
+	padding: 23% 0 4% 0 ;	
+	}
+
+	#Lugar_Info_p_Que_Pasara {
+
+	width: 100%; float: left; margin:0; text-align: center;	
+	font-size: 18px;	
+	padding: 8% 0 0 0;
+	}
+
+	#Lugar_Ant_Desp_1 {padding-left: 0 !important;}
+    #Lugar_Ant_Desp_4 {padding-right: 0 !important;}
+
+}
+
+
+
+#Cajica {padding-top: 9%; width: 50%; float: right; padding-left: 0;}
+#Cajica img{width: 18%; border-radius: 50%; padding-right: 1%; }
+
+#Zipaquira {width: 50%; float: right; padding-left: 0;}
+#Zipaquira img{width: 18%; border-radius: 50%; padding-right: 1%;  }
+
+.Article_Lugar{width: 45%; padding-right: 0%; padding-left: 2%;}
+
+@media screen and (max-width:1000px){
+   
+   .Article_Lugar{padding-top: 3%;}
+}
+
+@media screen and (max-width:850px){
+   
+   .Article_Lugar{width: 100%;}
+   }
+
+@media screen and (max-width: 768px){
+	.Lugar_Info
+	{
+		padding-top: 2%;
+	}
+
+	.Article_Lugar
+	{
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0;
+	}
+
+	#Lugar_Info_p
+	{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.Article_Lugar
+	{
+		padding-right: 3;		
+	}
+}
+
+@media screen and (max-width: 360px){
+	.Article_Lugar
+	{
+		padding-right: 0;		
+	}	
+}
+
+@media screen and (min-width: 901px) and (max-width: 1030px){
+	
+	.Lugar_Info{min-height: 752px !important;}
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1199px){
+	
+	.Lugar_Info{min-height: 653px !important;}
+}
+
+@media screen and (min-width: 851px) and (max-width: 900px){	
+	.Lugar_Info{min-height: 785px !important;}
+}
+
+/*09.2 Imagenes Antes-Durantes-Despues RNR*/
+
+#Lugar_Antes_Despues{width: 100%;}
+
+#Lugar_Ant_Desp_1 , #Lugar_Ant_Desp_2 ,#Lugar_Ant_Desp_3 ,#Lugar_Ant_Desp_4
+{
+	width: 24%; float: left; margin: auto; text-align: center;
+}
+
+#Lugar_Ant_Desp_1 {padding-left: 1%;}
+#Lugar_Ant_Desp_4 {padding-right: 1%;}
+
+
+#Lugar_Ant_Desp_p{margin: 20px 12%;	line-height: 1.7em; font-size: 15px}
+
+#avatar_musica img {border-radius: 50%; width: 35%;}
+#avatar_imagineDragons img {border-radius: 50%; width: 35%; padding-top: 1%}
+
+#Lugar_Que_Pasara_Despues, #Contenedor_Concursos
+{
+	min-height: 2000px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+
+/*Convertir un bloque o div en 3 columnas*/
+#Lugar_Eventos{
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -o-column-count: 4;
+        /*Espacio entre columnas*/
+    column-gap: 2em;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    -o-column-gap: 2em;
+    /*Agrega una barra solida de color*/
+    column-rule: 2px solid #666;
+    -webkit-column-rule: 2px solid #666;
+    -moz-column-rule: 2px solid #666;
+    -o-column-rule: 2px solid #666;
+}
+
+@media only screen and (min-width: 989px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 1030px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (max-width: 852px){
+	
+#Contenedor_Concursos
+{
+	min-height: 1025px;	
+	box-shadow: none !important;
+}
+
+.div_pago2 {box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;}
+}
+
+@media only screen and (min-width: 838px) and ( max-width: 979px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 1115px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (min-width: 671px) and ( max-width: 837px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 1570px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (min-width: 546px) and ( max-width: 670px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 1900px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (min-width: 501px) and ( max-width: 545px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 2060px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+
+
+@media only screen and (min-width: 468px) and ( max-width: 500px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 2270px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (min-width: 401px) and ( max-width: 466px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 3660px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (min-width: 455px) and ( max-width: 467px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 3610px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (min-width: 361px) and ( max-width: 400px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 3830px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+@media only screen and (min-width: 351px) and ( max-width: 360px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 3920px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+
+@media only screen and (min-width: 320px) and ( max-width: 350px){
+	#Lugar_Que_Pasara_Despues
+{
+	min-height: 3980px;	
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+}
+
+/* Esto permite que se adapten las columnas a la pantalla, cuando hay una pantalla de 480px o menos muestra las columnas con un width=100% */
+@media only screen and (max-width: 480px){
+
+	#Lugar_Ant_Desp_1 , #Lugar_Ant_Desp_2 ,#Lugar_Ant_Desp_3 ,#Lugar_Ant_Desp_4
+	{
+		width: 100%; float: left; margin: auto; text-align: center;
+	}
+
+	aside#Zipaquira, aside#Cajica 
+	{
+		width: 100%; float: left; margin: auto; text-align: center;
+	}
+	#Zipaquira img , #Cajica img
+	{
+		float: none !important;
+	}
+}
+
+/*06 Comite ORganizador ========================================================= */
+
+#Comite_Organizador_Container
+{
+
+	clear: both;
+	position: relative;	
+	background: white;
+	padding-top: 1.5%;	
+}
+
+#Comite_Organizador_Titulo
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-left: 5%;
+	padding-top: 4%;
+
+}
+
+#Comite_Organizador_Titulo_p
+{
+	color: #555555;
+	font-size: 15px;
+	margin:0 7%;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+
+#Comite_Organizador_1,#Comite_Organizador_2,#Comite_Organizador_3,#Comite_Organizador_4,#Comite_Organizador_5,#Comite_Organizador_6
+{
+	width: 18%; float: left; margin: auto; text-align: center;
+}
+
+#imagen_comite_organizador_1 img, #imagen_comite_organizador_2 img, #imagen_comite_organizador_3 img, #imagen_comite_organizador_4 img,
+#imagen_comite_organizador_5 img, #imagen_comite_organizador_6 img
+{
+	width: 80px;
+	border-radius:50%;
+}
+
+#Comite_Organizador_1 {padding-left: 5%;}
+#Comite_Organizador_6 {padding-right: 1%;}
+
+#Comite_Organizador_Lista li
+{
+	text-align: left;
+	font-size: 18px;
+	color: #ccc;
+}
+
+ul#Comite_Organizador_Lista
+{
+	padding: 0 0 15% 0 !important;
+	margin: 0;
+}
+
+
+/*06 Organizadores ================================================================= */
+
+#Organizadores
+{  /*padre*/
+	width: 100%;
+}
+
+
+#Organizadores .div_org1
+{  /*hijos*/
+	display: inline-block;
+	margin: 0;
+	padding:0;
+}
+
+#Organizadores .div_org1 li {float: left;}
+
+#Organizadores .div_org2{width: 100%}
+
+#img_org1 img {width: 90px;}
+#img_org2 img {width: 110px;}
+#img_org3 img {width: 80px;}
+#img_org4 img {width: 60px;}
+#img_org5 img {width: 60px;}
+
+@media screen and (max-width:761px){
+   #Organizadores .div_org1 , #Organizadores .div_org2{
+   	width: 100%
+   }
+   .div_org{padding: 4.8% 0 !important;}
+}
+
+/* 11 REGISTRO ================================================== */
+
+.Container_Registro 
+{
+	min-height: 500px;
+	clear: both;
+	position: relative;
+	padding-top: 3%;
+	background: white;
+
+}
+
+#Registro_h4_Titulo
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-top: 10%;
+}
+
+#Registro_h4_Titulo_2
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin:0;
+	padding-top: 3%;
+}
+
+#Registro_h4_Titulo_3 , #Concursos_h4_Titulo_2
+{
+	text-align: center;
+	margin: 1em 0;
+	padding-top: 0;
+	font-size:30px;
+	color: #524D4D;
+	font-weight: 700;
+}
+
+#Registro_h4_Titulo_3_1
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-top: 0;
+}
+
+#Registro_p_1
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 14%;
+	line-height: 2em;
+	text-align: justify;
+}
+
+#Registro_p_2
+
+{
+	font-size: 18px;
+	margin:0 16%;
+	line-height: 2.2em;
+	text-align: center;
+}
+
+#Registro_p_a{color: #006699 !important;}
+
+#Registro_p_3
+{
+	font-size: 18px;
+	margin:0;
+	line-height: 2.2em;
+	text-align: center;
+}
+
+#Registro_Info_p
+
+{
+	font-size: 17px;
+	margin:1% 0;
+	line-height: 1.6em;
+	text-align: center;
+}
+
+#Registro_p_terminos_y_condiciones_btn_pago
+{
+	color: black;
+	font-size: 16px;
+	margin: 0 5% 2% 5%;
+	font-family: 'latolight';
+	line-height: 2em;
+	text-align: center;
+}
+
+
+img#Registro_precios_img{width: 100%;}
+
+#Registro_que_incluye1 , #Registro_que_incluye2,#Registro_que_incluye3,#Registro_que_incluye4
+{
+	width: 24%; float: left; margin: auto; text-align: center; padding-top: 5%;
+}
+
+#Registro_que_incluye1 {padding-left: 1%;}
+#Registro_que_incluye4 {padding-right: 1%;}
+
+i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
+
+#Registro_container_que_incluye{min-height: 430px;}
+
+#Registro_Container_Carta_Pagos{min-height: 346px; box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px; }
+
+#Registro_Carta_Invitacion , #Registro_Formas_De_Pago 
+{
+	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+}
+#Registro_Carta_Invitacion{padding-left: 1%;}
+#Registro_Formas_De_Pago {padding-right: 1%; border-left: 1px solid #ccc; }
+
+#Registro_Btn_Pago
+{
+	margin:0 auto 2% auto; width:390px; text-align:center; padding: 2%; background: red; font-size: 2em; font-family: 'latolight';
+}
+
+@media only screen and (max-width: 480px){
+
+	#Registro_que_incluye1 , #Registro_que_incluye2 ,#Registro_que_incluye3 ,#Registro_que_incluye4
+	{
+		width: 100%; float: left; margin: auto; text-align: center;padding: 0;
+
+	}
+
+	i#Registro_Icon_que_incluye{font-size: 3em; color: #006699; padding-top: 12%;}
+
+	#Registro_h4_Titulo_3_1 ,#Registro_h4_Titulo_3,#Registro_h4_Titulo_2 
+	{
+		text-align: center;
+		color: #524D4D;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 1em 0;
+		padding-top: 3%;
+	}
+
+	#Registro_p_2 
+	{
+		font-size: 14px;
+		 margin: 0 ; 
+		line-height: 2.2em;
+		text-align: justify;
+	}
+
+	#Registro_p	{font-size: 14px;}
+
+	div#Registro_Carta_Invitacion ,div#Registro_Formas_De_Pago
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
+	}
+
+	#Registro_Container_Carta_Pagos
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+	}	
+
+	#Registro_Btn_Pago
+	{
+	margin:0; width:100%; text-align:center; padding:4% 0; background: red; font-size: 2em; font-family: 'latolight';
+	}
+
+	#Registro_p_terminos_y_condiciones_btn_pago{margin: 0;padding: 0;}
+
+	#Registro_Carta_Invitacion{padding-left: 0 !important;}
+	#Registro_Formas_De_Pago {padding-right: 0 !important; border:none !important; }
+}
+
+/*11.1 TABLA REGISTRO    =================================================*/
+
+
+table#Table_Registro {
+height: 100%;
+width: 80%;
+margin: 3% 10% 1% 10%;
+font-family: Helvetica; font-weight: 100;
+background: #14937a;
+color: #fff;
+text-align:center;
+}
+
+/* para las filas pares 
+table tr:nth-child(even) td {
+    background-color: #16a085 !important;
+}
+
+*/
+
+#Registro_p_terminos_y_condiciones
+{
+	color: black;
+	font-size: 16px;
+	margin:0 10%;
+	font-family: 'latolight';
+	line-height: 2em;
+	text-align: left;
+}
+
+table#Table_Registro thead th { font-weight: 600; }
+table#Table_Registro thead th, table#Table_Registro tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table_Registro tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #444; background: white;
+}
+table#Table_Registro tbody tr:not(:last-child) {
+border-bottom: 3px solid #ccc;
+}
+
+th#Registro_Fecha
+{	
+	background: #00A585;
+	border-bottom: 8px solid #00836A;
+	border-left: 3px solid #26A38F;
+}
+
+th#Registro_Presidentes
+{	
+	background: #FF9A21;
+	border-bottom: 8px solid #D87E00;
+	border-left: 3px solid #E39E47;
+}
+
+th#Registro_Estudiantes_IEEE
+{	
+	background: #F53231;
+	border-bottom: 8px solid #C62B25;
+	border-left: 3px solid #DA5953;	
+}
+
+th#Registro_Estudiantes
+{	
+	background: #008CCB;
+	border-bottom: 8px solid #006D96;
+	border-left: 3px solid #43AFDB;
+}
+
+th#REgistro_Profesionales_IEEE
+{	
+	background: #924A9A;
+	border-bottom: 8px solid #7E378E;
+	border-left: 3px solid #AB73AE;
+}
+
+td#Registro_body_dia1{border-bottom: 4px dotted #26A38F !important; }
+td#Registro_body_precio1{border-bottom: 4px dotted #E39E47 !important; border-left: 2px solid #E39E47;  }
+td#Registro_body_precio2{border-bottom: 4px dotted #DA5953 !important; border-left: 2px solid #DA5953;}
+td#Registro_body_precio3{border-bottom: 4px dotted #43AFDB !important; border-left: 2px solid #43AFDB;}
+td#Registro_body_precio4{border-bottom: 4px dotted #AB73AE !important; border-left: 2px solid #AB73AE; border-right: 2px solid #AB73AE;}
+
+td#Registro_body_dia2{border-bottom: 4px solid #26A38F !important; }
+td#Registro2_body_precio1{border-bottom: 4px solid #E39E47 !important; border-left: 2px solid #E39E47;  }
+td#Registro2_body_precio2{border-bottom: 4px solid #DA5953 !important; border-left: 2px solid #DA5953;}
+td#Registro2_body_precio3{border-bottom: 4px solid #43AFDB !important; border-left: 2px solid #43AFDB;}
+td#Registro2_body_precio4{border-bottom: 4px solid #AB73AE !important; border-left: 2px solid #AB73AE; border-right: 2px solid #AB73AE;}
+
+@media screen and (max-width: 600px) {
+table#Table_Registro tbody td { display: block; padding: .6rem; }
+table#Table_Registro thead { display: none; }
+table#Table_Registro tbody tr td:first-child { background: #14937a; color: #fff; }
+table#Table_Registro tbody td:before {
+content: attr(data-th); font-weight: bold;
+display: inline-block; width: 6rem;
+}
+}
+
+/* 11 Sponsonrs ================================================== */
+
+
+.Sponsors_Color
+{	
+	height: 280px;	
+}
+
+.Sponsorsh4{width: 100%;}
+
+.Sponsorsh4 h4 , h4.Sponsorsh4 {
+	font-size: 24px;
+	text-transform: capitalize;
+	display: inline-block;
+	margin: 0;
+	color: #524D4D;
+	padding-top: 4%;
+}
+
+#owl-demo .item:hover a
+{
+   	color:#EA6060;
+}
+
+#owl-demo .item img
+{
+    display: block;
+    height: auto;
+    height: 50%;
+  	width: 50%;
+}
+
+.item img,.item a,.item p{
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.item img:hover,.item a:hover,.item p:hover{
+	opacity:1;
+}
+.owl-theme .owl-controls{
+	text-align: center;
+}
+/*-----*/
+.item h4 a{
+	font-family: 'open_sansbold';
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #191919;
+	padding: 0.5em 0 0.4em 0;
+	display:block;
+	transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+}
+.item h4 a:hover{
+	color:#EA6060;
+}
+.item p{
+	font-size: 0.8725em;
+	color: #191919;
+	line-height: 1.8em;
+}
+
+
+/*---//--*/
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	height:34px;
+	width:34px;
+	display:block;
+	font-size: 12px;
+	transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    margin-top: 9px;
+}
+.owl-theme .owl-controls .owl-buttons div:hover{
+	opacity:0.6;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+
+.owl-prev {
+	position: absolute;
+	top: -22%;
+	right: 8%;
+	background: #7F8C8C url(../img/arrows.png) no-repeat 9px 6px;
+}
+.owl-next{
+	position: absolute;
+	top: -22%;
+	right: 0%;
+	background: #7F8C8C url(../img/arrows.png) no-repeat -26px 6px;
+}
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+}
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.24
+ */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+	padding-top: 3%;
+	padding-bottom: 4%;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/*10 PAGUEN !! ================================================================= */
+
+#contenedor_pago
+{
+	background: white;
+	box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px;
+}
+
+#contenedor_pago_lugar
+{
+	background: white;
+}
+
+div#btn_pago 
+{
+	padding-right: 13%;
+	padding-bottom: 7%;
+}
+
+#btn_pago .div_pago2
+{  
+	/*hijos*/	
+	display: table-cell;
+	float: right;
+	text-align: center;
+	padding: 1.41% 0;
+	font-size: 26px;
+	color: white;
+	font-family: 'latolight';
+}
+
+#btn_pago .div_pago1
+{
+	display: table-cell;
+	float: left;
+	padding: 2.58% 0;
+}
+
+
+.div_pago1
+{
+	background: white; width: 75%; height:auto;
+}
+
+.div_pago2
+{
+	background: #FF7E00; width: 25%;
+}
+
+@media screen and (min-width:1230px) and (max-width:1298px){  
+   #btn_pago .div_pago1
+   {
+   	padding: 2.52% 0;
+   }
+}
+
+@media screen and (min-width:1299px){  
+   #btn_pago .div_pago1
+   {
+   	padding: 2.45% 0;
+   }
+}
+
+
+@media screen and (max-width:1212px){  
+   /*#btn_pago .div_pago2
+   {
+   	width: 100%
+   }*/
+
+   #btn_pago .div_pago1
+{
+	display:none;
+}
+   
+}
+
+@media screen and (max-width:851px){  
+   #btn_pago .div_pago2
+   {
+   	width: 100%
+   }
+
+   div#btn_pago 
+   {
+		padding-right: 0%;
+		padding-bottom: 0%;
+		margin: 0;
+	}
+   
+}
+/* 11. INTERBLOCK FOOTER SETTINGS ================================================== */
+
+
+/* Section */
+
+.footer_2{
+	position: relative !important;
+}
+
+#interblock_footer , #contact_info{
+	margin: 0;
+}
+
+#interblock_footer
+{ 
+	padding: 100px 0; 
+	background: #F17C71; 
+	color:#FFF;
+	width:100%;
+
+}
+
+/* Blockquote */
+
+.footer_row{display: inline-block;}
+
+#interblock_footer h2
+{
+	font-size:1.75rem; 
+	font-family: 'latobold', sans-serif;
+	text-transform:uppercase;
+	margin-top: 0.33em;	
+}
+
+/* Text under blockquote */
+
+#interblock_footer p 
+{	
+	font-size:1.3rem; 
+	font-family: 'latolight', sans-serif;
+}
+
+/* Padding top for well displayed Icon */
+
+ul.der.ul_ramas {
+  padding-top: 2%;
+}
+
+#interblock_footer ul 
+{
+	position: absolute;
+	right: 19.8%;
+	top: 30%;
+}
+	
+/* Styling Icon  And display Inline*/
+
+#interblock_footer li
+{ 
+	display:inline-block;
+	padding:40px  0px ;
+	font-style: normal; 
+	font-size: 40px; 
+}
+
+#interblock_footer li a {
+	color: #fff;
+}
+
+/* Icon Hover */
+
+#interblock_footer li:hover {opacity:0.7;}
+
+@media screen and (max-width: 1350px){
+
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 20%;
+	left: 19%;
+	top: 37%;}
+
+	.footer_row
+	{
+		position: absolute;
+		bottom: 50%;
+		right: 11%;
+		left: 11%;
+	}
+
+	.footer_row p 
+		{
+			text-align: center;
+			margin: 0;
+		}
+	.footer_row h2{margin-bottom: 0.2px;}
+}
+
+@media screen and (max-width: 854px){
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 8%;
+	left: 3%;
+	top: 37%;}
+
+	.footer_row
+	{
+		position: absolute;
+		bottom: 37%;
+		right: 11%;
+		left: 11%;
+	}
+
+	#interblock_footer p 
+		{
+			text-align: center;
+			margin: 1.5px 0;
+			font-size: 20px ;
+		}
+
+	#interblock_footer h2
+		{
+			margin-bottom: 0.2px;
+			font-size: 24px ;
+		}
+
+	}
+
+@media screen and (max-width: 483px){
+
+	#interblock_footer p 
+			{
+				text-align: center;
+				margin: 1.5px 0;
+				font-size: 18px ;
+			}
+
+		#interblock_footer h2
+			{
+				font-size: 18px;
+			}
+
+		#interblock_footer ul
+
+		{
+
+			position: absolute;
+			right: 0%;
+			left: -2%;
+			top: 42%;
+		}
+}
+
+
+@media screen and (min-width: 380px) and (max-width: 853px){
+
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 1%;
+	left: 0%;
+	top: 44%;}
+}
+
+
+@media screen and (max-width: 320px){
+	#interblock_footer ul {
+
+	position: absolute;
+	right: 0%;
+	left: -2%;
+	top: 42%;}
+
+	#interblock_footer p 
+			{
+				text-align: center;
+				margin: 1.5px 0;
+				font-size: 16px ;
+			}
+
+		#interblock_footer h2
+			{
+				margin-bottom: 0.2px;
+				font-size: 16px ;
+			}
+}
+
+/* 12 Footer ==================================================*/
+
+ul.ul_ramas{padding-right: 0; padding-left: 0;}
+
+footer
+{
+ 	background: white;
+ 	/*padding: 1% 0% 1% 11%;*/
+ 	margin: auto;
+ 	text-align: center;
+}
+
+
+
+#fot_logo1,#fot_logo2,#fot_logo4 {padding-right:2%;}
+#fot_logo2{padding-left: 2%;}
+#fot_logo3{padding-right: 8%; padding-left: 3%;}
+#fot_logo3 img{ width: 80%;}
+
+#fot_logo1 img,#fot_logo2 img,#fot_logo4 img{ width: 250px;}
+#fot_logo3 img{width:100px;}
+
+#footer_2 li 
+{
+	display: inline-block;
+}
+
+ul.der 
+{
+	font-size: 0px;
+	margin-top: 1%;
+}
+
+#footer_design_by
+{
+	background: #22bce0; 
+	padding: 1px 0;
+}
+
+#footer_design_by_p{text-align: center;font-size: 14px; font-family: 'latolight'; color:white;}
+
+
+#fot_ramas3 img{ width: 80%;}
+#fot_ramas1 img{width:150px; padding-top: 3%; padding-left: 6%;}
+#fot_ramas2 img{ width: 200px; padding-bottom: 20px; padding-left: 12%;}
+#fot_ramas3 img{width:145px; padding-left: 25%;}
+#fot_ramas4 img{ width: 210px; padding-bottom: 21px; padding-left: 15%; padding-right: 8%;}
+#fot_ramas5 img{ width: 145px; padding-left: 5%;}
+
+
+@media (max-width: 1199px) {
+	
+	footer{padding:0;}	
+	ul {padding: 0; margin: 0; text-align: center;}
+
+	#fot_ramas1,#fot_ramas2,#fot_ramas4 {padding:3% 0;}	
+	#fot_ramas3 {padding-top: 3%; padding-left:4%;}
+}
+
+
+@media (max-width: 360px) {
+	
+	#fot_ramas2 img
+ {	
+	padding-left: 0%;
+ }
+
+ #fot_ramas3 img 
+ {
+ 	width: 145px;
+ 	padding-left: 0%; 
+ }
+
+ #fot_ramas4 
+ {
+ 	padding:0; 
+ }
+
+ #fot_ramas4 img 
+ {
+	 width: 200px;
+	 padding-bottom: 24px;
+	 padding-left:  0%; 
+	 padding-right: 0%; 
+ }
+
+ #fot_ramas5 img 
+ {
+	width: 145px;
+ 	padding-left: 0%; 
+ }
+}
 /* 13. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
 
 	.mobile-menu
@@ -692,4 +2979,3 @@ img#logo_evento {
 		font-size: 15px;		 
 	}
 }
-
