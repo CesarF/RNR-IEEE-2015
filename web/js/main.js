@@ -1,20 +1,4 @@
-$(document).ready(function() {        
-        $(".cbp-af-header").load('head.html .row');
-      });
 
-$(document).ready(function() {        
-        $(".footer_2_img").load('head.html .footer_2_Container');
-      });
-
-$(document).ready(function() {        
-        $("#contenedor_pago").load('head.html #btn_pago');
-      });
-$(document).ready(function() {        
-        $("#contenedor_pago_lugar").load('head.html #btn_pago');
-      });
-$(document).ready(function() {        
-        $("#interblock_footer").load('head.html #footer_container');
-      });
 // Document ready
 $(function() {
 
@@ -86,126 +70,6 @@ var cbpAnimatedHeader = (function() {
 // });
 
 
-$(document).ready(function() {        
-
-		$(".AgendaArt2").addClass("AgendaArt2_Gris");
-        $(".AgendaArt2").removeClass("AgendaArt2");
-        $(".AgendaArt3").addClass("AgendaArt3_Gris");
-        $(".AgendaArt3").removeClass("AgendaArt3");
-
-      });
-
-function mostrar1() {
-
-	        div1 = document.getElementById('Schedule1');
-	        div2 = document.getElementById('Schedule2');          
-	        div3 = document.getElementById('Schedule3');
-
-	        $(".AgendaArt1_Gris").addClass("AgendaArt1");            
-	      	$(".AgendaArt1_Gris").removeClass("AgendaArt1_Gris");
-	        $(".AgendaArt2_Gris").addClass("AgendaArt2");            
-	      	$(".AgendaArt2_Gris").removeClass("AgendaArt2_Gris");
-	        $(".AgendaArt3_Gris").addClass("AgendaArt3");            
-	        $(".AgendaArt3_Gris").removeClass("AgendaArt3_Gris");
-		
-		  if ( div1.style.display == 'none')
-
-            {                              
-
-	        $(".AgendaArt2").addClass("AgendaArt2_Gris");
-	        $(".AgendaArt2").removeClass("AgendaArt2");
-	        $(".AgendaArt3").addClass("AgendaArt3_Gris");
-	        $(".AgendaArt3").removeClass("AgendaArt3");
-
-        	div1.style.display = 'block';
-        	div2.style.display = 'none';
-        	div3.style.display = 'none';          	   
-           	}
-
-          else {  
-            div1.style.display = 'none';
-            div2.style.display = 'none';
-            div3.style.display = 'none';  
-          		}
-        }
-
-function mostrar2() {
-
-		div1 = document.getElementById('Schedule1');
-        div2 = document.getElementById('Schedule2');          
-        div3 = document.getElementById('Schedule3');
-
-
-	        $(".AgendaArt1_Gris").addClass("AgendaArt1");
-	        $(".AgendaArt1_Gris").removeClass("AgendaArt1_Gris");
-	        $(".AgendaArt2_Gris").addClass("AgendaArt2");
-	        $(".AgendaArt2_Gris").removeClass("AgendaArt2_Gris");
-	        $(".AgendaArt3_Gris").addClass("AgendaArt3");
-	        $(".AgendaArt3_Gris").removeClass("AgendaArt3_Gris");
-            
-
-          if ( div2.style.display == 'none')
-
-               {
-
-            $(".AgendaArt1").addClass("AgendaArt1_Gris");
-	        $(".AgendaArt1").removeClass("AgendaArt1");
-	        $(".AgendaArt2").addClass("AgendaArt2");
-	        $(".AgendaArt2").removeClass("AgendaArt2_Gris");
-	        $(".AgendaArt3").addClass("AgendaArt3_Gris");
-	        $(".AgendaArt3").removeClass("AgendaArt3");
-        	
-        	div1.style.display = 'none';
-        	div2.style.display = 'block';
-            div3.style.display = 'none';  
-          	   }
-          	   
-          else {             
-            div1.style.display = 'none';
-            div2.style.display = 'none';
-            div3.style.display = 'none'; 
-          }
-        }
-
-function mostrar3() {
-
-          div1 = document.getElementById('Schedule1');
-          div2 = document.getElementById('Schedule2'); 
-          div3 = document.getElementById('Schedule3');
-
-
-	        $(".AgendaArt1_Gris").addClass("AgendaArt1");
-	        $(".AgendaArt1_Gris").removeClass("AgendaArt1_Gris");
-	        $(".AgendaArt2_Gris").addClass("AgendaArt2");
-	        $(".AgendaArt2_Gris").removeClass("AgendaArt2_Gris");
-	        $(".AgendaArt3_Gris").addClass("AgendaArt3");
-	        $(".AgendaArt3_Gris").removeClass("AgendaArt3_Gris");
-
-
-          if ( div3.style.display == 'none')
-
-               {         
-
-            $(".AgendaArt1").addClass("AgendaArt1_Gris");
-	        $(".AgendaArt1").removeClass("AgendaArt1");
-	        $(".AgendaArt2").addClass("AgendaArt2_Gris");
-	        $(".AgendaArt2").removeClass("AgendaArt2");
-	        $(".AgendaArt3").addClass("AgendaArt3");
-	        $(".AgendaArt3").removeClass("AgendaArt3_Gris");           
-
-
-            	div1.style.display = 'none';
-            	div2.style.display = 'none';
-            	div3.style.display = 'block'; 
-          	   }
-          	   
-          else { 
-          	div1.style.display = 'none';
-            div2.style.display = 'none';
-            div3.style.display = 'none'; 
-          }
-        }
-
 //Sweet Scroll Efect.
 
  $(function(){
@@ -239,59 +103,37 @@ function mostrar3() {
  // Slider script 
  $(function () {
 
-	      // Slideshow 4
-	      $("#slider").responsiveSlides({
-	        auto: true,
-	        pager: false,
-	        nav: true,
-	        speed: 2000,
-	        namespace: "callbacks",
-	        before: function () {
-	          $('.events').append("<li>before event fired.</li>");
-	        },
-	        after: function () {
-	          $('.events').append("<li>after event fired.</li>");
-	        }
-	      });
+  // Slideshow 4
+  $("#slider").responsiveSlides({
+	auto: true,
+	pager: false,
+	nav: true,
+	speed: 2000,
+	namespace: "callbacks",
+	before: function () {
+	  $('.events').append("<li>before event fired.</li>");
+	},
+	after: function () {
+	  $('.events').append("<li>after event fired.</li>");
+	}
+  });
 
-	    });
+});
 
- 		$(function() {
+$(function() {
 
-				$("#owl-demo").owlCarousel({
-					items : 4,
-					lazyLoad : true,
-					autoPlay : true,
-					navigation : true,
-					navigationText : ["", ""],
-					rewindNav : true,
-					scrollPerPage : false,
-					pagination : false,
-					paginationNumbers : false,
-				});
+	$("#owl-demo").owlCarousel({
+		items : 4,
+		lazyLoad : true,
+		autoPlay : true,
+		navigation : true,
+		navigationText : ["", ""],
+		rewindNav : true,
+		scrollPerPage : false,
+		pagination : false,
+		paginationNumbers : false,
+	});
 
-			});
+});
 
- 		$(document).ready(function(){ 
-   $('#biografia_1_btn').on('click',function(){
-      $('#bigrafia_1_div').toggle('slow');
-      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Lorena' : 'Ocultar información');
-   });
-   $('#biografia_2_btn').on('click',function(){
-      $('#bigrafia_2_div').toggle('slow');
-      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Antonio' : 'Ocultar información');
-   });
-   $('#biografia_3_btn').on('click',function(){
-      $('#bigrafia_3_div').toggle('slow');
-      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Augusto' : 'Ocultar información');
-   });
-   $('#biografia_4_btn').on('click',function(){
-      $('#bigrafia_4_div').toggle('slow');
-      $(this).html($(this).html() == 'Ocultar información' ? 'Conoce más sobre Marinara' : 'Ocultar información');
-   });
-   $('#index_1_btn').on('click',function(){
-      $('#index_1_div').toggle('slow');
-      $(this).html($(this).html() == 'Ocultar Agradecimiento' ? 'Leer Agradecimiento' : 'Ocultar Agradecimiento');
-      $(".WhatsRNR_index_2").toggleClass("WhatsRNR_index");
-   });
- });
+ 		
