@@ -1,6 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
+
 body 
 {
-    font-family: 'Helvetica', sans-serif;
+    /* font-family: 'Helvetica', sans-serif; */
+	  font-family: 'Dosis', sans-serif !important;
+  font-size: 17px !important;
 }
 
 html {
@@ -690,4 +695,153 @@ img#logo_evento {
 		padding-left: 28px;
 		font-size: 15px;		 
 	}
+}
+
+#home{
+    position: relative;
+    overflow: hidden;
+}
+
+/*************************
+*******RNR CSS******
+**************************/
+
+#rnr {
+  background-color: #1881a2;
+  background-image: url("../img/build_bg.jpg");
+  background-position: center bottom;
+  background-position:50% 0;
+  background-repeat:no-repeat;
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 100px;  
+  color: #fff;
+}
+
+.watch {
+  position: absolute;
+  left: 0;
+  top: 7%;
+}
+
+
+@media (max-width: 767px){
+.watch{
+    display: none;
+}
+}
+
+#rnr h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#countdown {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 0
+}
+
+#countdown li {
+  list-style: none;
+  display:inline-block;
+  margin-right: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  position: relative;
+}
+
+#countdown li:last-child {
+  margin-right: 0
+}
+
+#countdown li span {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  height: 82px;
+  line-height: 79px;
+  width: 75px;
+  border-radius: 10px;
+  border-right: 1px solid #2B3E51;
+  border-bottom: 1px solid #2B3E51;
+}
+
+#countdown li .days {
+  background-color: #2B3E51;/* 
+  border-top: 1px solid ##2B3E51;
+  border-left: 1px solid #6ac1b1; */
+}
+
+#countdown li .hours {
+  background-color: #2B3E51; 
+ /*  border-top: 1px solid #f2d470;
+  border-left: 1px solid #f2d470; */
+}
+
+#countdown li .minutes {
+  background-color: #2B3E51;
+  /* border-top: 1px solid #e89565;
+  border-left: 1px solid #e89565; */
+}
+
+#countdown li .seconds {
+  background-color: #2B3E51;
+ /*  border-top: 1px solid #e57b6d;
+  border-left: 1px solid #e57b6d; */
+}
+
+#countdown li:before {
+  background-color: #FFFFFF;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: 36px;
+  width: 1px;
+}
+
+#countdown li:after {
+  background-color: #FFFFFF;
+  content: "";
+  height: 11px;
+  right:0;
+  position: absolute;
+  top: 36px;
+  width: 1px;
+}
+
+.cart {
+  background-color: #174C77;  
+  position: absolute;
+  right:-200px;
+  top: 37%;
+  width:252px;
+   -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.cart:hover {
+  right:0;
+}
+
+
+.cart a {
+  color: #FFFFFF;
+  display: block;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.cart a i {
+  font-size: 30px;  
+  padding: 20px 12px;
+  background-color: #F9B33A; 
+  margin-right: 3px;
 }

@@ -1,4 +1,18 @@
+jQuery(function($) {'use strict',
+	
+	//Countdown js
+	 $("#countdown").countdown({
+			date: "29 april 2016 10:00:00",
+			format: "on"
+		},
+		
+		function() {
+			// callback function
+		});
+		
 
+});		
+		
 // Document ready
 $(function() {
 
