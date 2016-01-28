@@ -706,7 +706,7 @@ img#logo_evento {
 *******RNR CSS******
 **************************/
 
-#rnr {
+#time {
   background-color: #1881a2;
   background-image: url("../img/build_bg.jpg");
   background-position: center bottom;
@@ -731,7 +731,7 @@ img#logo_evento {
 }
 }
 
-#rnr h2 {
+#time h2 {
   font-size: 42px;
   text-transform: uppercase;
   text-align: center;
@@ -844,4 +844,20 @@ img#logo_evento {
   padding: 20px 12px;
   background-color: #F9B33A; 
   margin-right: 3px;
+}
+
+/*************************
+*******ABOUT CSS******
+**************************/
+#rnr{
+	padding: 100px 0 70px 0
+}
+#rnr .section-title {
+  margin: 0 0 25px;
+}
+#rnr figure {
+  margin-bottom: 25px;
+}
+#rnr h3{
+  font-size: 42px
 }
