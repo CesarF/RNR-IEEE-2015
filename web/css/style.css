@@ -225,7 +225,7 @@ img#logo_evento {
 #nav>li>a {
 	/* Layout */
 	display: block;
-	padding: 3px 15px 0 15px;
+	padding: 3px 5px 0 5px !important;
 
 	/* Typography */
 	font-family: 'latobold', sans-serif;
