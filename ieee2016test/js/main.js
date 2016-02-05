@@ -185,14 +185,14 @@ $(function() {
 		el: '#gmap',
 		lat: 11.2797742,
 		lng: -73.8703376,
-		scrollwheel:false,
-		zoom: 16,
+		scrollwheel:true,
+		zoom: 11,
 		zoomControl : true,
 		panControl : true,
-		streetViewControl : false,
-		mapTypeControl: false,
-		overviewMapControl: false,
-		clickable: false
+		streetViewControl : true,
+		mapTypeControl: true,
+		overviewMapControl: true,
+		clickable: true
 	});
 
 	var image = 'img/map-icon.png';
