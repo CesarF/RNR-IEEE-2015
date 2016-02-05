@@ -19,6 +19,24 @@ $(document).ready(function () {
         targetContent.toggleClass('in');
         $(this).toggleClass('collapsed');
     });
+	
+	$('.schedule-tab').on('click', function(e){
+		e.preventDefault();
+		$('#tab-schedule-1').removeClass('active')
+		$('#tab-schedule-2').removeClass('active')
+		$('#tab-schedule-3').removeClass('active')
+		$('#day1').removeClass('active')
+		$('#day2').removeClass('active')
+		$('#day3').removeClass('active')
+		$(this).parent().addClass('active')
+		var tab = $(this).attr('data-tab');
+		$(tab).addClass('active')
+	});
+	
+	$('.carousel').carousel({
+		  interval: false
+		});
+	
 });	
 // Document ready
 $(function() {
@@ -165,7 +183,7 @@ $(function() {
 
 	map = new GMaps({
 		el: '#gmap',
-		lat: 0,
+		lat: 11.2797742,
 		lng: -73.8703376,
 		scrollwheel:false,
 		zoom: 16,
@@ -179,7 +197,7 @@ $(function() {
 
 	var image = 'img/map-icon.png';
 	map.addMarker({
-		lat: 0,
+		lat: 11.2797742,
 		lng: -73.8703376,
 		icon: image,
 		animation: google.maps.Animation.DROP,

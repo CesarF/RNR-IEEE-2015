@@ -1,3 +1,8 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+@import url("owlcarousel.css");
+@import url("uikit.scrollspy.css");
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
 
@@ -877,6 +882,12 @@ img#logo_evento {
     background-color: #f8f8f8;
 }
 
+.content-section-c {
+    padding: 50px 0;    
+    background-color: #ED1B24;
+	color: #FFF !important
+}
+
 #concursos a{
 	color: #1881a2;
 	font-size: 25px;
@@ -888,7 +899,8 @@ img#logo_evento {
 
 #premios{
 	background-color: #fed136;
-	color: #FFF !important;
+	color: #FFF !important;	
+	padding-bottom:50px;
 }
 #premios .rnr-title h1 {
 	color: #1881a2 !important;
@@ -899,6 +911,7 @@ img#logo_evento {
 
 #premios .lead{
 	color: #fff !important;	
+	font-weight:bold
 }
 .timeline{
 	list-style:none;
@@ -1157,11 +1170,16 @@ img#logo_evento {
 }
 #agenda  .full-width:after{
     position: absolute;
-    content: "\f3d8";
+    content: "\f078";
     right: 0;
-    font-family: 'Ionicons';
+    font-family: 'FontAwesome';
     color: #000;
     transition: all 0.2s ease-in-out;
+}
+
+#agenda .tab-content .tab-head{
+	background-color:#1881a2;
+	height:10px;
 }
 #agenda  .collapsed>.full-width:after{
     -ms-transform: rotate(180deg); /* IE 9 */
@@ -1226,10 +1244,12 @@ img#logo_evento {
 #agenda .team-member{
 	text-align:center !important;
 	margin-bottom:50px
+	
 }
 #agenda .team-member img{
 	margin:0 auto;
-	border:7px solid #fff
+	border:7px solid #fff;
+	width:250px
 }
 #agenda .team-member h4{
 	margin-top:25px;
@@ -1251,18 +1271,22 @@ img#logo_evento {
 
 .place{
 	margin: 0;
-	padding: 0;
+	padding-bottom:50px;
 	background-color: cadetblue !important;
 	color: #FFF !important;
 }
 
-.place img{
+/* .place img{
 	border:5px solid #000;
 	margin: 10px 0 10px 0;
 	width:100%;
 }
-
+ */
 .place h1{
+	color: #FFF !important;
+}
+
+.place p{
 	color: #FFF !important;
 }
 
@@ -1271,13 +1295,383 @@ img#logo_evento {
 	padding-bottom:50px;
 }
 
+/* Main carousel style */
+.place .carousel {
+    width: 100%;
+}
+
+/* Indicators list style */
+.place .article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.place .article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.place .article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.place .article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+	
+}
+.place .carousel-inner .item img{
+	height:600px;
+}
+
+.place .image-place{
+	padding-top:80px;
+}
+
 #map {
   position: relative;
 }
 
 #gmap {
 	width:100%;
-  height:450px;  
+	height:450px;  
+}
+
+/**
+*** SPONSOR
+**/
+
+.sponsor{
+	padding-top:80px;
+	padding-bottom:80px;
+}
+
+#sponsor img{
+	height:100px;
+	margin:10px
+}
+
+#sponsor h2{
+	color:#BDBDBD
+}
+
+/***
+** REGISTRO
+****/
+
+.Container_Registro 
+{
+	min-height: 500px;
+	clear: both;
+	position: relative;
+	padding-top: 3%;
+	background: white;
+
+}
+
+#Registro_h4_Titulo
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-top: 10%;
+}
+
+#Registro_h4_Titulo_2
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin:0;
+	padding-top: 3%;
+}
+
+#Registro_h4_Titulo_3 , #Concursos_h4_Titulo_2
+{
+	text-align: center;
+	margin: 1em 0;
+	padding-top: 0;
+	font-size:30px;
+	color: #524D4D;
+	font-weight: 700;
+}
+
+#Registro_h4_Titulo_3_1
+{
+	text-align: center;
+	color: #524D4D;
+	font-size:30px;
+	font-weight: 700;
+	margin: 1em 0;
+	padding-top: 0;
+}
+
+#Registro_p_1
+
+{
+	color: #555555;
+	font-size: 18px;
+	margin:0 14%;
+	line-height: 2em;
+	text-align: justify;
+}
+
+#Registro_p_2
+
+{
+	font-size: 18px;
+	margin:0 16%;
+	line-height: 2.2em;
+	text-align: center;
+}
+
+#Registro_p_a{color: #006699 !important;}
+
+#Registro_p_3
+{
+	font-size: 18px;
+	margin:0;
+	line-height: 2.2em;
+	text-align: center;
+}
+
+#Registro_Info_p
+
+{
+	font-size: 17px;
+	margin:1% 0;
+	line-height: 1.6em;
+	text-align: center;
+}
+
+#Registro_p_terminos_y_condiciones_btn_pago
+{
+	color: black;
+	font-size: 16px;
+	margin: 0 5% 2% 5%;
+	font-family: 'latolight';
+	line-height: 2em;
+	text-align: center;
 }
 
 
+img#Registro_precios_img{width: 100%;}
+
+#Registro_que_incluye1 , #Registro_que_incluye2,#Registro_que_incluye3,#Registro_que_incluye4
+{
+	width: 24%; float: left; margin: auto; text-align: center; padding-top: 5%;
+}
+
+#Registro_que_incluye1 {padding-left: 1%;}
+#Registro_que_incluye4 {padding-right: 1%;}
+
+i#Registro_Icon_que_incluye{font-size: 4em; color: #006699;}
+
+#Registro_container_que_incluye{min-height: 430px;}
+
+#Registro_Container_Carta_Pagos{min-height: 346px; box-shadow: rgba(37, 161, 119, 0.5) 0 10px 19px 0px; }
+
+#Registro_Carta_Invitacion , #Registro_Formas_De_Pago 
+{
+	width: 48%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+}
+#Registro_Carta_Invitacion{padding-left: 1%;}
+#Registro_Formas_De_Pago {padding-right: 1%; border-left: 1px solid #ccc; }
+
+#Registro_Btn_Pago
+{
+	margin:0 auto 2% auto; width:390px; text-align:center; padding: 2%; background: red; font-size: 2em; font-family: 'latolight';
+}
+
+@media only screen and (max-width: 480px){
+
+	#Registro_que_incluye1 , #Registro_que_incluye2 ,#Registro_que_incluye3 ,#Registro_que_incluye4
+	{
+		width: 100%; float: left; margin: auto; text-align: center;padding: 0;
+
+	}
+
+	i#Registro_Icon_que_incluye{font-size: 3em; color: #006699; padding-top: 12%;}
+
+	#Registro_h4_Titulo_3_1 ,#Registro_h4_Titulo_3,#Registro_h4_Titulo_2 
+	{
+		text-align: center;
+		color: #524D4D;
+		font-size: 30px;
+		font-weight: 700;
+		margin: 1em 0;
+		padding-top: 3%;
+	}
+
+	#Registro_p_2 
+	{
+		font-size: 14px;
+		 margin: 0 ; 
+		line-height: 2.2em;
+		text-align: justify;
+	}
+
+	#Registro_p	{font-size: 14px;}
+
+	div#Registro_Carta_Invitacion ,div#Registro_Formas_De_Pago
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:0;font-family:'latoregular';
+	}
+
+	#Registro_Container_Carta_Pagos
+	{
+		width: 100%; float: left; margin: auto; text-align: center; padding-top:2%;font-family:'latoregular';
+	}	
+
+	#Registro_Btn_Pago
+	{
+	margin:0; width:100%; text-align:center; padding:4% 0; background: red; font-size: 2em; font-family: 'latolight';
+	}
+
+	#Registro_p_terminos_y_condiciones_btn_pago{margin: 0;padding: 0;}
+
+	#Registro_Carta_Invitacion{padding-left: 0 !important;}
+	#Registro_Formas_De_Pago {padding-right: 0 !important; border:none !important; }
+}
+
+/*11.1 TABLA REGISTRO    =================================================*/
+
+
+table#Table_Registro {
+	height: 100%;
+	width: 100%;
+	/* margin: 3% 10% 1% 10%; */
+	font-family: Helvetica; font-weight: 100;
+	background: #14937a;
+	color: #fff;
+	text-align:center;
+}
+
+/* para las filas pares 
+table tr:nth-child(even) td {
+    background-color: #16a085 !important;
+}
+
+*/
+
+#Registro_p_terminos_y_condiciones
+{
+	color: black;
+	font-size: 16px;
+	margin:0 10%;
+	font-family: 'latolight';
+	line-height: 2em;
+	text-align: left;
+}
+
+table#Table_Registro thead th { font-weight: 600; }
+table#Table_Registro thead th, table#Table_Registro tbody td {
+padding: .8rem; font-size: 1.4rem;}
+table#Table_Registro tbody td {
+padding: .8rem; font-size: 1.4rem;
+color: #444; background: white;
+}
+table#Table_Registro tbody tr:not(:last-child) {
+border-bottom: 3px solid #ccc;
+}
+
+th#Registro_Fecha
+{	
+	background: #00A585;
+	border-bottom: 8px solid #00836A;
+	border-left: 3px solid #26A38F;
+}
+
+th#Registro_Presidentes
+{	
+	background: #FF9A21;
+	border-bottom: 8px solid #D87E00;
+	border-left: 3px solid #E39E47;
+}
+
+th#Registro_Estudiantes_IEEE
+{	
+	background: #F53231;
+	border-bottom: 8px solid #C62B25;
+	border-left: 3px solid #DA5953;	
+}
+
+th#Registro_Estudiantes
+{	
+	background: #008CCB;
+	border-bottom: 8px solid #006D96;
+	border-left: 3px solid #43AFDB;
+}
+
+th#REgistro_Profesionales_IEEE
+{	
+	background: #924A9A;
+	border-bottom: 8px solid #7E378E;
+	border-left: 3px solid #AB73AE;
+}
+
+td#Registro_body_dia1{border-bottom: 4px dotted #26A38F !important; }
+td#Registro_body_precio1{border-bottom: 4px dotted #E39E47 !important; border-left: 2px solid #E39E47;  }
+td#Registro_body_precio2{border-bottom: 4px dotted #DA5953 !important; border-left: 2px solid #DA5953;}
+td#Registro_body_precio3{border-bottom: 4px dotted #43AFDB !important; border-left: 2px solid #43AFDB;}
+td#Registro_body_precio4{border-bottom: 4px dotted #AB73AE !important; border-left: 2px solid #AB73AE; border-right: 2px solid #AB73AE;}
+
+td#Registro_body_dia2{border-bottom: 4px solid #26A38F !important; }
+td#Registro2_body_precio1{border-bottom: 4px solid #E39E47 !important; border-left: 2px solid #E39E47;  }
+td#Registro2_body_precio2{border-bottom: 4px solid #DA5953 !important; border-left: 2px solid #DA5953;}
+td#Registro2_body_precio3{border-bottom: 4px solid #43AFDB !important; border-left: 2px solid #43AFDB;}
+td#Registro2_body_precio4{border-bottom: 4px solid #AB73AE !important; border-left: 2px solid #AB73AE; border-right: 2px solid #AB73AE;}
+
+@media screen and (max-width: 600px) {
+	table#Table_Registro tbody td { display: block; padding: .6rem; }
+	table#Table_Registro thead { display: none; }
+	table#Table_Registro tbody tr td:first-child { background: #14937a; color: #fff; }
+	table#Table_Registro tbody td:before {
+	content: attr(data-th); font-weight: bold;
+	display: inline-block; width: 6rem;
+	}
+}
+
+/**
+FOOTER
+**/
+
+#contacto {
+    font-size: 18px;	
+    background: #EEE;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+#contacto a{
+	font-size: 36px;
+    color: #999;
+}
+#contacto ul{
+	margin: 0 0 30px 0;
+	display:block;
+	padding:0;
+}
+#contacto ul li{
+	display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+}
+#contacto p{
+	text-align:center;
+}
