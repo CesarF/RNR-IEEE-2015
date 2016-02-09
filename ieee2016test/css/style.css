@@ -888,9 +888,15 @@ img#logo_evento {
 	color: #FFF !important
 }
 
-#concursos a{
+.concursos a{
 	color: #1881a2;
 	font-size: 25px;
+}
+
+.concursos img{
+	border-width:4px;
+	border-color:#BDBDBD;
+	border-style:solid;
 }
 
 /*************************
