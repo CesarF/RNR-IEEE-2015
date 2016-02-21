@@ -195,7 +195,7 @@ $(function() {
 		clickable: true
 	});
 
-	var image = 'img/map-icon.png';
+	var image = 'https://s3-us-west-2.amazonaws.com/rnr2016/img/map-icon.png';
 	map.addMarker({
 		lat: 11.2797742,
 		lng: -73.8703376,
