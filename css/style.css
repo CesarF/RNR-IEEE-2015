@@ -1590,46 +1590,53 @@ table#Table_Registro thead th { font-weight: 600; }
 table#Table_Registro thead th, table#Table_Registro tbody td {
 padding: .8rem; font-size: 1.4rem;}
 table#Table_Registro tbody td {
-padding: .8rem; font-size: 1.4rem;
-color: #444; background: white;
+	padding: .8rem; font-size: 1.4rem;
+	color: #444; background: white;
 }
 table#Table_Registro tbody tr:not(:last-child) {
 border-bottom: 3px solid #ccc;
 }
 
-th#Registro_Fecha
+th#Registro_Fecha 
 {	
-	background: #00A585;
+	background: #00A585 !important;
 	border-bottom: 8px solid #00836A;
 	border-left: 3px solid #26A38F;
 }
 
-th#Registro_Presidentes
+th#Registro_Presidentes, td#Registro_Presidentes
 {	
-	background: #FF9A21;
+	background: #FF9A21 !important;
 	border-bottom: 8px solid #D87E00;
 	border-left: 3px solid #E39E47;
 }
 
-th#Registro_Estudiantes_IEEE
+th#Registro_Estudiantes_IEEE,  td#Registro_Estudiantes_IEEE 
 {	
-	background: #F53231;
+	background: #F53231 !important;
 	border-bottom: 8px solid #C62B25;
 	border-left: 3px solid #DA5953;	
 }
 
-th#Registro_Estudiantes
+th#Registro_Estudiantes,  td#Registro_Estudiantes
 {	
-	background: #008CCB;
+	background: #008CCB !important;
 	border-bottom: 8px solid #006D96;
 	border-left: 3px solid #43AFDB;
 }
 
-th#REgistro_Profesionales_IEEE
+th#REgistro_Profesionales_IEEE, td#REgistro_Profesionales_IEEE
 {	
-	background: #924A9A;
+	background: #924A9A !important;
 	border-bottom: 8px solid #7E378E;
 	border-left: 3px solid #AB73AE;
+}
+
+th#REgistro_Profesionales, td#REgistro_Profesionales
+{	
+	background: #3245A5 !important;
+	border-bottom: 8px solid #2C359E;
+	border-left: 3px solid #5172D0;
 }
 
 td#Registro_body_dia1{border-bottom: 4px dotted #26A38F !important; }
@@ -1637,21 +1644,35 @@ td#Registro_body_precio1{border-bottom: 4px dotted #E39E47 !important; border-le
 td#Registro_body_precio2{border-bottom: 4px dotted #DA5953 !important; border-left: 2px solid #DA5953;}
 td#Registro_body_precio3{border-bottom: 4px dotted #43AFDB !important; border-left: 2px solid #43AFDB;}
 td#Registro_body_precio4{border-bottom: 4px dotted #AB73AE !important; border-left: 2px solid #AB73AE; border-right: 2px solid #AB73AE;}
+td#Registro_body_precio5{border-bottom: 4px dotted #3245A5 !important; border-left: 2px solid #3245A5; border-right: 2px solid #3245A5;}
 
 td#Registro_body_dia2{border-bottom: 4px solid #26A38F !important; }
 td#Registro2_body_precio1{border-bottom: 4px solid #E39E47 !important; border-left: 2px solid #E39E47;  }
 td#Registro2_body_precio2{border-bottom: 4px solid #DA5953 !important; border-left: 2px solid #DA5953;}
 td#Registro2_body_precio3{border-bottom: 4px solid #43AFDB !important; border-left: 2px solid #43AFDB;}
 td#Registro2_body_precio4{border-bottom: 4px solid #AB73AE !important; border-left: 2px solid #AB73AE; border-right: 2px solid #AB73AE;}
+td#Registro2_body_precio5{border-bottom: 4px solid #3245A5 !important; border-left: 2px solid #3245A5; border-right: 2px solid #3245A5;}
+
+td#Registro_body_diaM{background: #14937a !important; color: #fff !important;}
+
+a#btn_register{font-size:42px;background-color:#F53231;}
 
 @media screen and (max-width: 600px) {
-	table#Table_Registro tbody td { display: block; padding: .6rem; }
+	.web_table { display: none; } 
+	.mobile_table{display:block; width: 50%;}
+	.mobile_table td{width: 50%;}
+	.mobile_table tbody tr td:first-child {color: #fff !important; border:0px !important; }
+	
+	/* table#Table_Registro tbody td { display: block; padding: .6rem; }
 	table#Table_Registro thead { display: none; }
 	table#Table_Registro tbody tr td:first-child { background: #14937a; color: #fff; }
 	table#Table_Registro tbody td:before {
 	content: attr(data-th); font-weight: bold;
 	display: inline-block; width: 6rem;
-	}
+	} */
+}
+@media (min-width: 601px) {
+	.mobile_table{display: none;}
 }
 
 /**
