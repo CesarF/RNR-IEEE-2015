@@ -19,8 +19,10 @@
 	<link href="https://s3-us-west-2.amazonaws.com/rnr2016/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome Iconos vectoriales -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Template  -->
+   
     <link href="https://s3-us-west-2.amazonaws.com/rnr2016/css/style.css" rel="stylesheet">
+	<!--  Template
+	<link href="css/style.css" rel="stylesheet">  -->
     <!-- Normalize resetea el css  -->
     <link href="https://s3-us-west-2.amazonaws.com/rnr2016/css/normalize.css" rel="stylesheet">
 	
@@ -115,14 +117,10 @@
 	<section id="home">
 		<div class="callbacks_container">
 			<ul class="rslides" id="slider">
-				<!-- <a href="concursos.html"><li><img src="img/casos_de_exito_slide.jpg" alt=""></li></a>
-				<a href="registro.html"><li><img src="img/pagos.jpg" alt=""></li></a>
-				<a href="concursos.html"><li><img src="img/concurso_video_slide.jpg" alt=""></li></a>		-->
+				<li><a href="#registro"><img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/slider/slider_5.jpg" alt=""></a></li>
 				<li><img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/slider/slider_4.jpg" alt=""></li>
-				<!-- <li><img src="img/slider_2.png" alt=""></li> -->
-				<li><img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/slider/slider_1.jpg" alt=""></li>
+				<li><a href="#concursos"><img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/slider/slider_1.jpg" alt=""></a></li>
 				<li><img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/slider/slider_2.jpg" alt=""></li>
-				<li><img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/slider/slider_3.jpg" alt=""></li>
 			</ul>
 		</div>
 	</section>
@@ -672,7 +670,30 @@
 				</div>
 			</div>
 		</div>
-		
+		<div class="container ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Invitados Especiales</h2><br>
+					<p class="text-center text-muted">Muy pronto todos nuestros invitados</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Jimmy Túllume</h4>
+                        <p class="text-muted text-center">IEEE Regional Student Activities Chair<br>Perú</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="https://s3-us-west-2.amazonaws.com/rnr2016/img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Esteban Oliveros</h4>
+                        <p class="text-muted text-center">Asesor Telemática e Informática Alcaldía de Cali<br>Colombia</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
 	</section>
 	
 	<section id="lugar" class="place">
@@ -761,38 +782,90 @@
 		<div class="content-section-a">
 			<div class="container">
 				<div class="row">
-					<table id="Table_Registro">
-					<thead>
-					<tr>
-						<th id="Registro_Fecha">Fecha</th>
-						<th id="Registro_Presidentes">Presidentes*</th>
-						<th id="Registro_Estudiantes_IEEE">Estudiantes IEEE y GSM members</th>						
-						<th id="REgistro_Profesionales_IEEE">Profesionales IEEE</th>
-						<th id="Registro_Estudiantes">Estudiantes</th>
-						<th id="REgistro_Profesionales_IEEE">Profesionales</th>
-					</tr>
-					</thead>
+					<table id="Table_Registro" class="web_table">
+						<thead>
+							<tr>
+								<th id="Registro_Fecha">Fecha</th>
+								<th id="Registro_Presidentes">Presidentes*</th>
+								<th id="Registro_Estudiantes_IEEE">Estudiantes IEEE y<br> GSM members</th>						
+								<th id="REgistro_Profesionales_IEEE">Profesionales IEEE</th>
+								<th id="Registro_Estudiantes">Estudiantes</th>
+								<th id="REgistro_Profesionales">Profesionales</th>
+							</tr>
+						</thead>
 
-					<tbody>
+						<tbody>
+							<tr id="Registro_body">
+								<td id="Registro_body_dia1">1ra Fecha Pago. <br>(22 Febrero - 21 Marzo)</td>
+								<td id="Registro_body_precio1"><strong>$ 350000</strong></td>
+								<td id="Registro_body_precio2"><strong>$ 400000</strong> </td>
+								<td id="Registro_body_precio4"><strong>$ 450000</strong></td>
+								<td id="Registro_body_precio3"><strong>$ 490000</strong></td>
+								<td id="Registro_body_precio5"><strong>$ 500000</strong></td>
+							</tr>
 
-					<tr id="Registro_body">
-						<td id="Registro_body_dia1">1ra Fecha Pago. <br>(22 Febrero - 21 Marzo)</td>
-						<td id="Registro_body_precio1"><strong>$ 350000</strong></td>
-						<td id="Registro_body_precio2"><strong>$ 400000</strong> </td>
-						<td id="Registro_body_precio4"><strong>$ 450000</strong></td>
-						<td id="Registro_body_precio3"><strong>$ 490000</strong></td>
-						<td id="Registro_body_precio4"><strong>$ 500000</strong></td>
-					</tr>
+							<tr>
+								<td id="Registro_body_dia2">2da Fecha Pago. <br>(22 Marzo - 18 Abril)</td>
+								<td id="Registro2_body_precio1"><strong>$ 450000</strong></td>
+								<td id="Registro2_body_precio2"><strong>$ 450000</strong></td>	
+								<td id="Registro2_body_precio4"><strong>$ 500000</strong></td>	
+								<td id="Registro2_body_precio3"><strong>$ 540000</strong></td>	
+								<td id="Registro2_body_precio5"><strong>$ 550000</strong></td>	
+							</tr>		
+						</tbody>
+					</table>
+					
+					
+					<table id="Table_Registro" class="mobile_table">
+						<tbody>
+							<tr>	
+								<td id="Registro_body_diaM" colspan="2">1ra Fecha Pago. <br>(22 Febrero - 21 Marzo)</td>	
+							</tr>
+							<tr>											
+								<td id="Registro_Presidentes">Presidentes*</td>
+								<td id="Registro_body_precio1"><strong>$ 350000</strong></td>
+							</tr>
+							<tr>											
+								<td id="Registro_Estudiantes_IEEE">Estudiantes IEEE y GSM members</td>
+								<td id="Registro_body_precio2"><strong>$ 400000</strong> </td>
+							</tr>
+							<tr>											
+								<td id="REgistro_Profesionales_IEEE">Profesionales IEEE</td>
+								<td id="Registro_body_precio4"><strong>$ 450000</strong></td>
+							</tr>
+							<tr>											
+								<td id="Registro_Estudiantes">Estudiantes</td>
+								<td id="Registro_body_precio3"><strong>$ 490000</strong></td>
+							</tr>
+							<tr>											
+								<td id="REgistro_Profesionales">Profesionales</td>
+								<td id="Registro_body_precio5"><strong>$ 500000</strong></td>
+							</tr>
 
-					<tr>
-						<td id="Registro_body_dia2">2da Fecha Pago. <br>(22 Marzo - 18 Abril)</td>
-						<td id="Registro2_body_precio1"><strong>$ 450000</strong></td>
-						<td id="Registro2_body_precio2"><strong>$ 450000</strong></td>	
-						<td id="Registro2_body_precio4"><strong>$ 500000</strong></td>	
-						<td id="Registro2_body_precio3"><strong>$ 540000</strong></td>	
-						<td id="Registro2_body_precio4"><strong>$ 550000</strong></td>	
-					</tr>		
-					</tbody>
+							<tr>
+								<td id="Registro_body_diaM" colspan="2">2da Fecha Pago. <br>(22 Marzo - 18 Abril)</td>
+							</tr>
+							<tr>											
+								<td id="Registro_Presidentes">Presidentes</td>
+								<td id="Registro2_body_precio1"><strong>$ 450000</strong></td>
+							</tr>
+							<tr>											
+								<td id="Registro_Estudiantes_IEEE">Estudiantes IEEE y GSM members</td>
+								<td id="Registro2_body_precio2"><strong>$ 450000</strong></td>	
+							</tr>
+							<tr>											
+								<td id="REgistro_Profesionales_IEEE">Profesionales IEEE</td>
+								<td id="Registro2_body_precio4"><strong>$ 500000</strong></td>	
+							</tr>
+							<tr>											
+								<td id="Registro_Estudiantes">Estudiantes</td>
+								<td id="Registro2_body_precio3"><strong>$ 540000</strong></td>
+							</tr>
+							<tr>											
+								<td id="REgistro_Profesionales">Profesionales</td>	
+								<td id="Registro2_body_precio5"><strong>$ 550000</strong></td>	
+							</tr>		
+						</tbody>
 					</table>
 					<br>
 					<p class="text-muted">Precios en pesos colombianos - COP</p>
@@ -801,7 +874,8 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 text-center rnr-title">
-						<h1>A partir del próximo 24 de Febrero podrás encontrar el link para realizar tus pagos.</h1>
+						<h1>Aparta tu cupo desde ahora.</h1>
+						<a id="btn_register" class="btn btn-danger btn-lg" target="_blank" href="https://www.asistiendo.com/prod/0020101/0121V2A4D4/reg/login.asp?lang=es&id=000001A0F5I8J8H1F9T2G2S8S6W8G3V2A4D4">PRE-REGISTRO</a>						
 					</div>
 				</div>
 
@@ -864,6 +938,16 @@
 		</div>
 	</section>
 	<section id="sponsor" class="sponsor">
+			<div class="sponsor-bg"></div>
+			<div class="container">			
+				<div class="row">	
+					<div class="col-lg-12 text-center rnr-sponsor">
+						<h1>¿TU EMPRESA O UNIVERSIDAD ESTÁ INTERESADA EN SER PATROCINADOR DE ESTE IMPORTANTE EVENTO? <br>CONTACTANOS YA MISMO A rnr@ieee.org</h1>						
+					</div>
+				</div>
+			</div>
+	</section>
+	<section id="organize" class="organize">
 		<div class="container">
 			<!-- <div class="row">
 				<div class="col-lg-12 text-left">
