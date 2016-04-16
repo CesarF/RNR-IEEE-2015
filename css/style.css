@@ -1369,6 +1369,13 @@ img#logo_evento {
 	/**
 	background-color: #f8f8f8;	1881a2 ABABAB**/
 }
+#sponsor img{
+	height:250px;
+	margin:10px
+}
+#sponsor h2{
+	color:#BDBDBD
+}
 .sponsor-bg{
 	
 	/**background-color: #f8f8f8;	1881a2 ABABAB**/
