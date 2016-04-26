@@ -1370,7 +1370,7 @@ img#logo_evento {
 	background-color: #f8f8f8;	1881a2 ABABAB**/
 }
 #sponsor img{
-	height:250px;
+	height:150px;
 	margin:10px
 }
 #sponsor h2{
@@ -1390,7 +1390,7 @@ img#logo_evento {
 }
 
 .organize{
-	padding-top:80px;
+	/**padding-top:80px;**/
 	padding-bottom:80px;	
 }
 #organize img{
