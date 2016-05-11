@@ -2,16 +2,16 @@
 /* 	
 	/* //Countdown js */
 	/*  $("#countdown").countdown({
-			date: "29 april 2016 10:00:00",
-			format: "on"
-		},
-		
-		function() {
-			// callback function
-		});
-		
-
-});	*/
+/*			date: "29 april 2016 10:00:00",
+/*			format: "on"
+/*		},
+/*		
+/*		function() {
+/*			// callback function
+/*		});
+	/*	
+/*
+/*});	*/
 $(document).ready(function () {
 	$('.schedule_expand').on('click', function(e){
         e.preventDefault();
