@@ -1,7 +1,7 @@
-jQuery(function($) {'use strict',
-	
-	//Countdown js
-	 $("#countdown").countdown({
+/*Query(function($) {'use strict',
+/* 	
+	/* //Countdown js */
+	/*  $("#countdown").countdown({
 			date: "29 april 2016 10:00:00",
 			format: "on"
 		},
@@ -11,7 +11,7 @@ jQuery(function($) {'use strict',
 		});
 		
 
-});		
+});	*/
 $(document).ready(function () {
 	$('.schedule_expand').on('click', function(e){
         e.preventDefault();
