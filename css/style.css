@@ -1363,6 +1363,7 @@ img#logo_evento {
 **/
 
 .sponsor{
+	padding-top:80px;
 	min-height:250px;
 	max-height:550px;
 	position: relative;
